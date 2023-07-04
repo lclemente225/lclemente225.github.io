@@ -1,0 +1,116 @@
+
+/*desktop*/
+@media only screen and (min-width: 960px){
+    .container{
+        width: 960px;
+    }
+    .header-left{
+        height: 495px;
+    }
+    .header-watch-image{
+        padding: 0 90px;
+    }
+    .join-together--left-column{
+        padding:20px 50px;
+    }
+    .join-together--middle-column{
+        padding:20px 50px;
+    }
+    .join-together--right-column{
+        padding:20px 50px;
+    }
+}
+/*midsizes*/
+@media only screen and (max-width: 960px){
+    .container{
+        width: 600px;
+    }
+    .header-watch-image{
+        width: 45vw;
+    }
+}
+/*mobile*/
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .header-left{
+        width: 100%;
+        padding:0;
+    }
+    .header-right{
+        width:100%;
+        padding:0;
+    }
+    .header-watch-image{
+        width:100%;
+    }
+    .advance-table-title div.pink-large-rectangle{
+        width:90% !important;
+    }
+    .lets-you-row{
+        width:100%;
+    }
+    .lets-you-row .lets-you-row--left-column{
+        width:50%;
+    }
+    .lets-you-row .lets-you-row--middle-column{
+        width:50%;
+    }
+    .lets-you-row .lets-you-row--right-column{
+        width:100%;
+    }
+    .advance-table--left-column{
+        width: 100%;
+    }
+    .advance-table--right-column{
+        width:100%
+    }
+    .apple-store-button{
+        width:100%;
+        text-align:center;
+    }
+    .google-play-button{
+        width:100%;
+        text-align: center;
+    }
+    .join-together--left-column{
+        width:100%;
+    }
+    .join-together--middle-column{
+        width:100%;
+    }
+    .join-together--right-column{
+        width:100%;
+    }
+
+    .one-row-table .left-column{
+        padding-bottom:20px;
+    }
+    .one-row-table .left-column{
+        width:100%;
+    }
+    .one-row-table .right-column{
+        width:100%;
+    }
+   .one-row--right-column-middle .icon-table{
+    padding-left:0 !important;
+   }
+   .one-row--left-column-top .icon-table p{
+    padding-left:10%;
+   }
+   .one-row--right-column-middle .icon-table p{
+    padding-left:8% !important;
+   }
+   .one-row--left-column-bottom .icon-table p{
+    padding-left:8% !important;
+   }
+   .one-row--right-column-bottom .icon-table p{
+    padding-left:3% !important;
+   }
+   .interest-table p{
+    font-size: 12px !important;
+    padding: 0 50px !important;
+   }
+   
+}   
