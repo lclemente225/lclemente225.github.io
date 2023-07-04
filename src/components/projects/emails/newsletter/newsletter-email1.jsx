@@ -1,7 +1,11 @@
 import React from 'react';
+import Navbar from '../../../navbar/Navbar';
 
-const FirstNewsletterEmail = () => {
+const FirstNewsletterEmail = ({isHomePage}) => {
+  isHomePage(false);
   return (
+    <>
+    <Navbar/>
     <div className="first-newsletter-email-body" style={{ backgroundColor: 'black' }}>
       {/* Reference Email https://emailtuna.com/fashionnova.com/2284609 */}
       <table width="100%" cellSpacing={0} cellPadding={0}>
@@ -14,7 +18,7 @@ const FirstNewsletterEmail = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <img src="../../../../../public/newsletter-assets/fashion-nova-top-logo.png" alt="fashion-nova-logo" style={{ height: '50px' }} />
+                      <img src="/newsletter-assets/fashion-nova-top-logo.png" alt="fashion-nova-logo" style={{ height: '50px' }} />
                     </td>
                   </tr>
                 </tbody>
@@ -104,7 +108,7 @@ const FirstNewsletterEmail = () => {
                   <tr>
                     <td>
                       <a href="#">
-                        <img src="../../../../../public/newsletter-assets/veterans-day-img.jpg" alt="Veterans Day Sale 40% Off SiteWide" style={{ width: '100%' }} />
+                        <img src="/newsletter-assets/veterans-day-img.jpg" alt="Veterans Day Sale 40% Off SiteWide" style={{ width: '100%' }} />
                       </a>
                     </td>
                   </tr>
@@ -115,7 +119,7 @@ const FirstNewsletterEmail = () => {
                   <tr>
                     <td>
                       <a href="#">
-                        <img src="../../../../../public/newsletter-assets/fashion-nova-curve.jpg" alt="Curve Sale 40% Off SiteWide" style={{ width: '100%' }} />
+                        <img src="/newsletter-assets/fashion-nova-curve.jpg" alt="Curve Sale 40% Off SiteWide" style={{ width: '100%' }} />
                       </a>
                     </td>
                   </tr>
@@ -126,7 +130,7 @@ const FirstNewsletterEmail = () => {
                   <tr>
                     <td>
                       <a href="#">
-                        <img src="../../../../../public/newsletter-assets/fashion-nova-men.jpg" alt="Men Sale 40% Off SiteWide" style={{ width: '100%' }} />
+                        <img src="/newsletter-assets/fashion-nova-men.jpg" alt="Men Sale 40% Off SiteWide" style={{ width: '100%' }} />
                       </a>
                     </td>
                   </tr>
@@ -137,7 +141,7 @@ const FirstNewsletterEmail = () => {
                   <tr>
                     <td>
                       <a href="#">
-                        <img src="../../../../../public/newsletter-assets/quadpay-info.jpg" alt="QuadPay Info" style={{ width: '100%' }} />
+                        <img src="/newsletter-assets/quadpay-info.jpg" alt="QuadPay Info" style={{ width: '100%' }} />
                       </a>
                     </td>
                   </tr>
@@ -162,10 +166,10 @@ const FirstNewsletterEmail = () => {
                         <tbody>
                           <tr>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/apple-app-store-button.jpg" alt="App Store Button" align="right" style={{ height: '32px' }} />
+                              <img src="/newsletter-assets/apple-app-store-button.jpg" alt="App Store Button" align="right" style={{ height: '32px' }} />
                             </td>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/google-play-button.jpg" alt="Google Play Button" align="left" style={{ height: '32px' }} />
+                              <img src="/newsletter-assets/google-play-button.jpg" alt="Google Play Button" align="left" style={{ height: '32px' }} />
                             </td>
                           </tr>
                         </tbody>
@@ -178,7 +182,7 @@ const FirstNewsletterEmail = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <img src="../../../../../public/newsletter-assets/get-text-alerts.jpg" alt="Get Text Alerts" width="100%" />
+                      <img src="/newsletter-assets/get-text-alerts.jpg" alt="Get Text Alerts" width="100%" />
                     </td>
                   </tr>
                 </tbody>
@@ -191,22 +195,22 @@ const FirstNewsletterEmail = () => {
                         <tbody>
                           <tr align="center">
                             <td>
-                              <img src="../../../../../public/newsletter-assets/instagram-icon.png" alt="instagram" style={{ width: '32px' }} />
+                              <img src="/newsletter-assets/instagram-icon.png" alt="instagram" style={{ width: '32px' }} />
                             </td>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/facebook-icon.png" alt="facebook" style={{ width: '32px' }} />
+                              <img src="/newsletter-assets/facebook-icon.png" alt="facebook" style={{ width: '32px' }} />
                             </td>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/twitter-icon.png" alt="twitter" style={{ width: '32px' }} />
+                              <img src="/newsletter-assets/twitter-icon.png" alt="twitter" style={{ width: '32px' }} />
                             </td>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/snapchat-icon.png" alt="snapchat" style={{ width: '32px' }} />
+                              <img src="/newsletter-assets/snapchat-icon.png" alt="snapchat" style={{ width: '32px' }} />
                             </td>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/youtube-icon.png" alt="youtube" style={{ width: '32px' }} />
+                              <img src="/newsletter-assets/youtube-icon.png" alt="youtube" style={{ width: '32px' }} />
                             </td>
                             <td>
-                              <img src="../../../../../public/newsletter-assets/referral-price.jpg" alt="refer a friend" style={{ width: '155px', height: '32px' }} />
+                              <img src="/newsletter-assets/referral-price.jpg" alt="refer a friend" style={{ width: '155px', height: '32px' }} />
                             </td>
                           </tr>
                         </tbody>
@@ -282,6 +286,7 @@ const FirstNewsletterEmail = () => {
         </tbody>
       </table>
     </div>
+    </>
   )
 }
 

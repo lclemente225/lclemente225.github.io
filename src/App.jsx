@@ -5,13 +5,14 @@ import FirstNewsletterEmail from './components/projects/emails/newsletter/newsle
 import './App.css';
 
 function App() {
+  const [PageState,isHomePage] = React.useState(true);
 
   return (
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Homepage/>}/>
-          <Route path="/first-newsletter-sample" element={<FirstNewsletterEmail />}/>
+          <Route exact path="/" element={<Homepage isHomePage={isHomePage} PageState={PageState} />}/>
+          <Route path="/first-newsletter-sample" element={<FirstNewsletterEmail isHomePage={isHomePage}/>}/>
         </Routes>
       </Router>
     </div>

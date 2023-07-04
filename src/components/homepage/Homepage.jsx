@@ -3,7 +3,9 @@ import Navbar from "../navbar/Navbar";
 import './homepage.css';
 
 
-const Homepage = () => {
+const Homepage = ({PageState,isHomePage}) => {
+    isHomePage(true);
+
     /*
     Have 3 different categories?
     Must be in array to filter out 
@@ -28,7 +30,7 @@ const Homepage = () => {
 
   return (
     <div>
-        <Navbar/>
+        <Navbar PageState={PageState}/>
         <div className='project-list'>
            <h1>Emails</h1>
             <div class="list email-list">
@@ -39,12 +41,12 @@ const Homepage = () => {
                             </a>
                     </li>
                     <li>
-                        <a href="/first-newsletter-sample">
+                        <a href="#">
                             Promotional Email
                             </a>
                     </li>
                     <li>
-                        <a href="/first-newsletter-sample">
+                        <a href="#">
                             Transactional Email
                         </a>
                     </li>
@@ -54,12 +56,12 @@ const Homepage = () => {
                 <div class="list landing-page-list">
                     <ul>
                         <li>
-                            <a href="/first-newsletter-sample">
+                            <a href="#">
                                 First Landing Page
                             </a>
                         </li>
                         <li>
-                            <a href="/first-newsletter-sample">
+                            <a href="#">
                                 Second Landing Page
                             </a>
                         </li>
