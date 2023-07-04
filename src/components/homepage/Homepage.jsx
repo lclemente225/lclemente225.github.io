@@ -31,7 +31,7 @@ const Homepage = () => {
         <Navbar/>
         <div className='project-list'>
            <h1>Emails</h1>
-            <div>
+            <div class="list email-list">
                 <ul>
                     <li>
                         <a href="/first-newsletter-sample">
@@ -43,8 +43,28 @@ const Homepage = () => {
                             Promotional Email
                             </a>
                     </li>
+                    <li>
+                        <a href="/first-newsletter-sample">
+                            Transactional Email
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <h1>Landing Pages</h1>
+                <div class="list landing-page-list">
+                    <ul>
+                        <li>
+                            <a href="/first-newsletter-sample">
+                                First Landing Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/first-newsletter-sample">
+                                Second Landing Page
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </div>
   )
