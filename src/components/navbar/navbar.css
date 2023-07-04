@@ -1,0 +1,9 @@
+.navbar{
+    display:flex;
+    justify-content: flex-start;
+}
+.navbar-list{
+    width: 20vw;
+    display:flex;
+    justify-content: space-between;
+}
