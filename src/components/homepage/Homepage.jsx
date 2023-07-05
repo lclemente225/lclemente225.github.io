@@ -27,12 +27,20 @@ const Homepage = ({PageState,isHomePage}) => {
                     </li>
                     <li>
                         <a href="/first-promotional-sample/">
-                            Sample Promotional Email
+                            <div className='project-list-individual-container'>
+                                <p>Sample Promotional Email</p>
+                                <img className='email-preview'
+                                src="/homepage-images/hero-watch-email-preview.png"/>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="/first-transactional-sample/">
-                           Doordash Order Transaction Email
+                            <div className='project-list-individual-container'>
+                                 <p>Doordash Order Transaction Email</p>
+                                 <img className="email-preview"
+                                 src="/homepage-images/doordash-order-email.png"/>
+                           </div>
                         </a>
                     </li>
                 </ul>

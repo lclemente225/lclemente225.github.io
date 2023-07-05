@@ -9,7 +9,7 @@ const Navbar = ({PageState}) => {
         {PageState ? 
         <>
           <li>
-            <a href="/">My Blog</a>
+            <a href="https://lawrenceclemente.wordpress.com/">My Blog</a>
           </li>
           <li>
             <a href="/about">About</a>
@@ -17,7 +17,10 @@ const Navbar = ({PageState}) => {
         </>
        : 
           <li>
-          <a href="/">Back to portfolio</a>
+            <a href="/">
+              <i className="fa-solid fa-left-long arrow-icon" />   
+              <span> Back to portfolio</span>
+            </a>
           </li>
     }
         </ul>

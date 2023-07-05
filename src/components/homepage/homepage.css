@@ -22,14 +22,13 @@ a{
 }
 .project-list ul{
     margin:0;
-    padding:0;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     border: 2px solid black;
-    padding: 10px;
-    height: 50vh;
+    padding: 10px 0 20px 0;
+    height: auto;
     width: 80vw;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 30px 0;
 }
 .project-list-individual-container{
     width: 100%;
@@ -41,4 +40,9 @@ a{
 }
 .email-preview{
     width: 250px;
+}
+@media only screen and (max-width: 700px){
+   .project-list ul{
+    grid-template-columns: 1fr;
+   }
 }
