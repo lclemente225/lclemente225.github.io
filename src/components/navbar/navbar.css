@@ -1,6 +1,8 @@
 .navbar{
     display:flex;
     justify-content: flex-start;
+    border-bottom: 2px solid black;
+    width:100vw;
 }
 .navbar-list{
     width: 20vw;

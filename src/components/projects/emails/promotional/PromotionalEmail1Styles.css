@@ -1,4 +1,6 @@
-
+.first-promo-email-body a:hover{
+    text-shadow: none;
+}
 /*desktop*/
 @media only screen and (min-width: 960px){
     .container{
@@ -9,6 +11,11 @@
     }
     .header-watch-image{
         padding: 0 90px;
+    }
+    .most-advanced-app-header-text{
+        width: 1200px;
+        padding: 0 0 0 200px;
+        border:2px solid red;
     }
     .join-together--left-column{
         padding:20px 50px;
@@ -25,8 +32,13 @@
     .container{
         width: 600px;
     }
+    .most-advanced-app-header-text{
+        width: 960px;
+        padding: 0 0 0 200px;
+        border:2px solid blue;
+    }
     .header-watch-image{
-        width: 45vw;
+        height: 425px;
     }
 }
 /*mobile*/

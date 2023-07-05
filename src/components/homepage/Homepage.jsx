@@ -33,7 +33,7 @@ const Homepage = ({PageState,isHomePage}) => {
         <Navbar PageState={PageState}/>
         <div className='project-list'>
            <h1>Emails</h1>
-            <div class="list email-list">
+            <div className="list email-list">
                 <ul>
                     <li>
                         <a href="/first-newsletter-sample">
@@ -41,19 +41,19 @@ const Homepage = ({PageState,isHomePage}) => {
                             </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/first-promotional-sample">
                             Promotional Email
                             </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/first-transactional-sample">
                             Transactional Email
                         </a>
                     </li>
                 </ul>
             </div>
             <h1>Landing Pages</h1>
-                <div class="list landing-page-list">
+                <div className="list landing-page-list">
                     <ul>
                         <li>
                             <a href="#">

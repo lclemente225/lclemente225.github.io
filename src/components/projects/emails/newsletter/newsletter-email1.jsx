@@ -1,8 +1,11 @@
 import React from 'react';
 import Navbar from '../../../navbar/Navbar';
 
-const FirstNewsletterEmail = ({isHomePage}) => {
-  isHomePage(false);
+const FirstNewsletterEmail = ({PageState,isHomePage}) => {
+  React.useEffect(() => {
+        isHomePage(false);
+        },[PageState])
+
   return (
     <>
     <Navbar/>
