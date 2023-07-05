@@ -8,29 +8,85 @@
     .container{
         width: 600px;
     }
-    .fashion-nova-logo{
-        width: 100%;
-        height: 40px !important;
-    }
-    .newsletter-social-links{
-        padding-right:5px;
-    }
+   
 }
 /*mobile*/
 @media only screen and (max-width: 600px){
     .container{
         width: 100%;
     }
-    .fashion-nova-logo{
-        width: 100%;
-        height: 20% !important;
+    .top-banner{
+        width:90% !important;
     }
-    .newsletter-free-shipping-text{
+    .thank-you-row{
+        padding: 0 20px 35px 20px !important;
+    }
+    .thank-you-message h1{
+        font-size:22px !important;
+    }
+    .track-order-button-row{
+        padding-top:10px !important;
+    }
+    .track-order-button{
+        font-size: 12px;
+        padding: 8px 20px !important;
+    }
+    .delivery-time-info{
+        font-size:12px;
+    }
+    .info-you-row .info-you-table{
+        width: 100%;
+        border-width: 10px !important;
+        padding: 10px !important;
+    }
+    .info-you-table,
+    .info-you-table p{
         font-size:10px !important;
     }
-    .newsletter-social-links{
-        width:20px !important;
-        padding-right:5px;
+    .your-receipt{
+        font-weight:800 !important;
+        text-transform: uppercase;
+        font-size: 12px;
     }
-
+    .receipt-horizontal-line{
+        width:85% !important;
+    }
+    .doordash-icon-horizontal-divider{
+        width:80% !important;
+    }
+    .transactional-review-row-text{
+        padding:10px 15px !important;
+        font-size: 12px;
+    }
+    .transactional-review-row-text h4{
+        font-size:14px;
+    }
+    .review-star-container{
+        padding-left: 10px !important;
+        padding-bottom:15px;
+    }
+    .review-star{
+        padding-left:5px !important;
+        width: 30px !important;
+    }
+    .transactional-doordash-icon-bottom{
+        height:50px;
+        padding: 10px 0 0 30px !important;
+    }
+    .transaction-link-button-container{
+        width: 50% !important;
+        display: grid !important;
+        grid-template-columns: 2fr 2fr !important;
+        gap: 15px 0;
+        padding-left:30px !important;
+    }
+    .transaction-link-buttons{
+        height:80px;
+    }
+    .footer-social-links{
+        height:15px !important;
+    }
+    .footer-text{
+        font-size:10px !important;
+    }
 }
