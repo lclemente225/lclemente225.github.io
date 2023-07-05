@@ -10,7 +10,7 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
   return (
     <>
       <Navbar/>
-      <div className="first-promo-email-body" style={{backgroundColor: 'black'}}>
+      <div className="first-promo-email-body" style={{backgroundColor: 'rgb(92, 92, 92)'}}>
           <div>
             <table cellSpacing={0} cellPadding={0} width="100%">
                 <tbody>
@@ -336,8 +336,8 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                               </tbody>
                                               <tbody>
                                               <tr>
-                                                <td>
-                                                  <p align="center"
+                                                <td align="center">
+                                                  <p 
                                                       className="most-advanced-app-header-text"
                                                       style={{ 
                                                             width: 'fit-content', 
@@ -444,7 +444,8 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                             </tr>
                                           </tbody>
                                           <tbody>
-                                            <tr style={{ 
+                                            <tr>
+                                              <div style={{ 
                                                       color: 'white', 
                                                       fontFamily: "'Open Sans', sans-serif", 
                                                       fontSize: '12px', 
@@ -452,30 +453,31 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                                       display: 'flex', 
                                                       justifyContent: 'space-around' 
                                                       }}>
-                                              <td>
-                                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                  <i className="fa-solid fa-location-dot"></i>
-                                                  <span style={{ padding: '20px 0' }}>Locations</span>
-                                                </div>
-                                              </td>
-                                              <td>
-                                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                  <i className="fa-solid fa-microphone"></i>
-                                                  <span style={{ padding: '20px 0' }}>Voice-Over</span>
-                                                </div>
-                                              </td>
-                                              <td>
-                                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                  <i className="fa-regular fa-calendar"></i>
-                                                  <span style={{ padding: '20px 0' }}>Calendar</span>
-                                                </div>
-                                              </td>
-                                              <td>
-                                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                  <i className="fa-regular fa-heart"></i>
-                                                  <span style={{ padding: '20px 0' }}>Heart Rate</span>
-                                                </div>
-                                              </td>
+                                                  <td>
+                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                      <i className="fa-solid fa-location-dot"></i>
+                                                      <span style={{ padding: '20px 0' }}>Locations</span>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                      <i className="fa-solid fa-microphone"></i>
+                                                      <span style={{ padding: '20px 0' }}>Voice-Over</span>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                      <i className="fa-regular fa-calendar"></i>
+                                                      <span style={{ padding: '20px 0' }}>Calendar</span>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                      <i className="fa-regular fa-heart"></i>
+                                                      <span style={{ padding: '20px 0' }}>Heart Rate</span>
+                                                    </div>
+                                                  </td>
+                                              </div>
                                             </tr>
                                           </tbody>
                                         </table>
@@ -933,7 +935,7 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                           <table className="interest-table" width="100%" align="center" cellSpacing={0} cellPadding={0} border={0} 
                                               style={{ 
                                                     color: 'white', 
-                                                    background: 'linear-gradient(135deg, rgba(101,255,253,1){0}, rgba(34,150,238,1) 90%)', 
+                                                    background: 'linear-gradient(135deg, rgba(101,255,253,1) 0, rgba(34,150,238,1) 90%)', 
                                                     fontFamily: 'Open-Sans, sans-serif', 
                                                     padding: '65px 0' 
                                                     }}>
@@ -1009,8 +1011,9 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                                 <tbody>
                                                   <tr>
                                                       <td align="center">
-                                                          <p style={{fontSize:'8px'}}>20XX All rights Reserved. Your company Here. Is your inbox overflowing? 
-                                                              <a href="#" style={{color:'rgb(59, 59, 196)'}}>Unsubscribe</a>
+                                                          <p style={{fontSize:'8px'}}>20XX All rights Reserved. Your company Here. 
+                                                          Is your inbox overflowing? <a href="#" 
+                                                          style={{color:'rgb(59, 59, 196)'}}>Unsubscribe</a>
                                                           </p>
                                                       </td>
                                                   </tr>

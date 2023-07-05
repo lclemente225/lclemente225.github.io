@@ -12,10 +12,9 @@
     .header-watch-image{
         padding: 0 90px;
     }
-    .most-advanced-app-header-text{
-        width: 1200px;
-        padding: 0 0 0 200px;
-        border:2px solid red;
+    .advance-table-title div.pink-large-rectangle{
+        width:90% !important;
+        height: 300px !important;
     }
     .join-together--left-column{
         padding:20px 50px;
@@ -31,11 +30,6 @@
 @media only screen and (max-width: 960px){
     .container{
         width: 600px;
-    }
-    .most-advanced-app-header-text{
-        width: 960px;
-        padding: 0 0 0 200px;
-        border:2px solid blue;
     }
     .header-watch-image{
         height: 425px;

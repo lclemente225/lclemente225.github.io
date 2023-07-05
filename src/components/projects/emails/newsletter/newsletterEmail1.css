@@ -1,0 +1,36 @@
+@media only screen and (min-width: 960px){
+    .container{
+        width: 960px;
+    }
+}
+/*midsizes*/
+@media only screen and (max-width: 960px){
+    .container{
+        width: 600px;
+    }
+    .fashion-nova-logo{
+        width: 100%;
+        height: 40px !important;
+    }
+    .newsletter-social-links{
+        padding-right:5px;
+    }
+}
+/*mobile*/
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .fashion-nova-logo{
+        width: 100%;
+        height: 20% !important;
+    }
+    .newsletter-free-shipping-text{
+        font-size:10px !important;
+    }
+    .newsletter-social-links{
+        width:20px !important;
+        padding-right:5px;
+    }
+
+}
