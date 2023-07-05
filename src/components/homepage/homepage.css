@@ -14,7 +14,8 @@ a{
     text-decoration: none;
     color: rgb(56, 56, 56);
 }
-a:hover{
+.navbar-list a:hover,
+.project-list a:hover{
     text-shadow: 0 0 5px rgb(0, 255, 13);
     color: rgba(0, 0, 0, 0.322);
 }

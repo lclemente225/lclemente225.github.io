@@ -20,27 +20,10 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
                             {/* <!--Start of header row--> */}
                                     <tr>
                                         <td className="header-row" >
-                                            <div className="header-text" 
-                                            style={{
-                                                fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                                                backgroundColor: "red",
-                                                color: "white",
-                                                width: 400 + "px",
-                                                fontWeight: 500,
-                                                borderRadius: "0 20px 20px 0",
-                                                padding: 10 + "px",
-                                                textAlign: "right"
-                                            }}>
-                                            <span style={{paddingRight:'50px'}}> a neighborhood of good in every order</span>
-                                                <img src="/order-confirm-assets/doordash-short-icon.png" 
+                                                <img src="/order-confirm-assets/top-banner.png" 
                                                 style={{
-                                                    width:'40px',
-                                                    height:'20px',
-                                                    top:'68px',
-                                                    left:'56.5%',
-                                                    position:'absolute'
+                                                    width:'400px',
                                                     }}/>
-                                            </div>
                                         </td>
                                     </tr>
                             </tbody>
