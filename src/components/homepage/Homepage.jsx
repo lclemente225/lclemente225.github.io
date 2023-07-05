@@ -17,17 +17,22 @@ const Homepage = ({PageState,isHomePage}) => {
                 <ul>
                     <li>
                         <a href="/first-newsletter-sample/">
-                            Newsletter Email
+                            <div className='project-list-individual-container'>
+                                <p>Fashion Nova Newsletter Email</p>
+                                <img className="email-preview"
+                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />
+                           </div>
                         </a>
+                        
                     </li>
                     <li>
                         <a href="/first-promotional-sample/">
-                            Promotional Email
+                            Sample Promotional Email
                         </a>
                     </li>
                     <li>
                         <a href="/first-transactional-sample/">
-                            Transactional Email
+                           Doordash Order Transaction Email
                         </a>
                     </li>
                 </ul>

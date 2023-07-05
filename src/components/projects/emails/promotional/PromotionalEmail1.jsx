@@ -445,7 +445,8 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                           </tbody>
                                           <tbody>
                                             <tr>
-                                              <div style={{ 
+                                              <td>
+                                                <div style={{ 
                                                       color: 'white', 
                                                       fontFamily: "'Open Sans', sans-serif", 
                                                       fontSize: '12px', 
@@ -453,31 +454,24 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                                       display: 'flex', 
                                                       justifyContent: 'space-around' 
                                                       }}>
-                                                  <td>
-                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                      <i className="fa-solid fa-location-dot"></i>
-                                                      <span style={{ padding: '20px 0' }}>Locations</span>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                      <i className="fa-solid fa-microphone"></i>
-                                                      <span style={{ padding: '20px 0' }}>Voice-Over</span>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                      <i className="fa-regular fa-calendar"></i>
-                                                      <span style={{ padding: '20px 0' }}>Calendar</span>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
-                                                      <i className="fa-regular fa-heart"></i>
-                                                      <span style={{ padding: '20px 0' }}>Heart Rate</span>
-                                                    </div>
-                                                  </td>
-                                              </div>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                            <i className="fa-solid fa-location-dot"></i>
+                                                            <span style={{ padding: '20px 0' }}>Locations</span>
+                                                        </div>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                            <i className="fa-solid fa-microphone"></i>
+                                                            <span style={{ padding: '20px 0' }}>Voice-Over</span>
+                                                        </div>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                            <i className="fa-regular fa-calendar"></i>
+                                                            <span style={{ padding: '20px 0' }}>Calendar</span>
+                                                        </div>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5px' }}>
+                                                            <i className="fa-regular fa-heart"></i>
+                                                            <span style={{ padding: '20px 0' }}>Heart Rate</span>
+                                                        </div>
+                                                  </div>
+                                                </td>
                                             </tr>
                                           </tbody>
                                         </table>
@@ -1004,7 +998,37 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
                                                 <tbody>
                                                   <tr>
                                                       <td align="center">
-                                                          Socials Go Here
+                                                        <table width="50%" cellSpacing={0} align="center" cellPadding={0} border={0}>
+                                                          <tbody>
+                                                            <tr align="center">
+                                                              <td>
+                                                                <img src="/newsletter-assets/instagram-icon.png" alt="instagram" 
+                                                                className="promotional-social-links"
+                                                                style={{ width: '32px' }} />
+                                                              </td>
+                                                              <td>
+                                                                <img src="/newsletter-assets/facebook-icon.png" alt="facebook" 
+                                                                className="promotional-social-links"
+                                                                style={{ width: '32px' }} />
+                                                              </td>
+                                                              <td>
+                                                                <img src="/newsletter-assets/twitter-icon.png" alt="twitter" 
+                                                                className="promotional-social-links"
+                                                                style={{ width: '32px' }} />
+                                                              </td>
+                                                              <td>
+                                                                <img src="/newsletter-assets/snapchat-icon.png" alt="snapchat" 
+                                                                className="promotional-social-links"
+                                                                style={{ width: '32px' }} />
+                                                              </td>
+                                                              <td>
+                                                                <img src="/newsletter-assets/youtube-icon.png" alt="youtube" 
+                                                                className="promotional-social-links"
+                                                                style={{ width: '32px' }} />
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
                                                       </td>
                                                   </tr>
                                                 </tbody>
