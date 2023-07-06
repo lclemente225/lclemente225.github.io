@@ -49,8 +49,8 @@ const Homepage = ({PageState,isHomePage}) => {
                 <div className="list landing-page-list">
                     <ul>
                         <li>
-                            <a href="#">
-                                First Landing Page
+                            <a href="/sample-kaiba-corp-landingPage/">
+                                Kaiba Corp 
                             </a>
                         </li>
                         <li>

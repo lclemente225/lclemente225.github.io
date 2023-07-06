@@ -144,9 +144,9 @@ div.lexus-email .jumbo-slider__description{
     transition: transform .4s ease-in-out 2.5s,
     opacity .4s ease-in-out 2.5s;
 }
-.jumbo-slider__slide--active .jumbo-slider__slide-number,
-.jumbo-slider__slide--active .jumbo-slider__title,
-.jumbo-slider__slide--active .jumbo-slider__description{
+div.lexus-email .jumbo-slider__slide--active .jumbo-slider__slide-number,
+div.lexus-email .jumbo-slider__slide--active .jumbo-slider__title,
+div.lexus-email .jumbo-slider__slide--active .jumbo-slider__description{
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }

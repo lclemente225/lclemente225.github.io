@@ -3,68 +3,30 @@ import './lexusProducts.css';
 import Navbar from '../../../navbar/Navbar';
 
 const LexusLandingPage = ({PageState,isHomePage}) => {
+    const [pageState, setPageState] = React.useState()
     React.useEffect(() => {
         isHomePage(false);
         },[PageState])
+/*
+1. make active state
+2. toggle active state over a setInterval time
+3. Selected elements will be affected by active state
+  >> they will have their classes added and removed
 
+  how about the images?
+  Ideas
+  1. put them into an array and map over it
+     >> everytime the setInterval function is called
+     >>count++ goes up until 3 (count < 3)
+
+
+  Issues
+  1. maybe a class can't be removed at a different time?
+        >>maybe have different states being triggered at different times for stagger effect
+
+*/
     React.useEffect(() => {
-            const init = () => {
-              let container = document.getElementsByClassName('jumbo-slider__container')[0],
-                slides = document.getElementsByClassName('jumbo-slider__slide'),
-                circles = document.getElementsByClassName('jumbo-slider__circle'),
-                links = document.getElementsByClassName('jumbo-slider__link'),
-                current = 1,
-                time = 12000;
-        
-              // initiate animations
-              slides[0].classList.add('jumbo-slider__slide--active');
-              links[current - 1].classList.add('jumbo-slider__link--active');
-              circles[current - 1].classList.add('jumbo-slider__circle--filled');
-              setTimeout(() => {
-                slides[0].classList.remove('jumbo-slider__slide--active');
-              }, 4000);
-        
-              // update ellipses and links
-              function updateNav(current) {
-                for (let index = 0; index < slides.length; index++) {
-                  // remove class from circle and side title
-                  links[index].classList.remove('jumbo-slider__link--active');
-                  circles[index].classList.remove('jumbo-slider__circle--filled');
-                }
-                links[current - 1].classList.add('jumbo-slider__link--active');
-                circles[current - 1].classList.add('jumbo-slider__circle--filled');
-              }
-        
-              function startSliding() {
-                setInterval(() => {
-                  // add and remove before the setInterval triggers again so that
-                  // you can have the fade in and out effect
-                  setTimeout(() => {
-                    slides[0].classList.add('jumbo-slider__slide--active');
-                  }, 2000);
-        
-                  setTimeout(() => {
-                    slides[0].classList.remove('jumbo-slider__slide--active');
-                  }, 6000);
-                  // copy first child of container and append it to the end of the container
-                  container.appendChild(slides[0].cloneNode([true]));
-                  // remove first child of container
-                  container.removeChild(slides[0]);
-        
-                  if (current < slides.length) {
-                    current++;
-                    updateNav(current);
-                  } else {
-                    current = 1;
-                    updateNav(current);
-                  }
-                }, time);
-              }
-        
-              startSliding();
-            };
-        
-            init();
+            
           }, []);
 
   return (

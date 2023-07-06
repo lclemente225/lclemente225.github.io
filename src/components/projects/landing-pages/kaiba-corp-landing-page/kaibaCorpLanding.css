@@ -1,0 +1,56 @@
+.exodia-image{
+    height:100vh;
+    width:100%;
+    position:relative;
+    background-image: url("/kaiba-corp-landing-images/exodia-background.png" );
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: saturate(0.6);
+}
+.kaiba-nav-container1,
+.kaiba-nav-links,
+.kaiba-social-links{
+    display:flex;
+    z-index:10 !important;
+}
+.kaiba-nav-container1 a{
+    color:#fad231;
+}
+.kaiba-nav-container1 a:hover{
+    color: blue;
+}
+.kaiba-nav-container1{
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(56, 113, 199, 0.726);
+    backdrop-filter: blur(50px);
+}
+.kaiba-nav-links{
+    width:250px;
+    justify-content: space-between;
+}
+.kaiba-social-links{
+    width:150px;
+    padding-right:20px;
+    justify-content: space-between;
+}
+.kaiba-welcome-message-container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.kaiba-welcome-message{
+    width:50vw;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    color:rgb(7, 7, 255);
+    border-radius: 70%;
+    box-shadow: 0 0 20px gold;
+}
+.kaiba-next-section{
+    height: 100vh;
+    width: 100vw;
+}
