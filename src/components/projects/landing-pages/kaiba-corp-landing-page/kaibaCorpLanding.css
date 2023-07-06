@@ -1,12 +1,23 @@
+.kaiba-corp-body div,
+.kaiba-corp-body a,
+.kaiba-corp-body img,
+.kaiba-corp-body nav,
+.kaiba-corp-body ul,
+.kaiba-corp-body li{
+    margin:0;
+    padding:0;
+    font-family: 'Play', sans-serif;
+}
 .exodia-image{
     height:100vh;
     width:100%;
     position:relative;
     background-image: url("/kaiba-corp-landing-images/exodia-background.png" );
     background-position: center;
-    background-size:cover;
+    background-size: 110% 110%;
     background-repeat: no-repeat;
     filter: saturate(0.6);
+    
 }
 .kaiba-nav-container1,
 .kaiba-nav-links,
@@ -20,29 +31,30 @@
 .kaiba-nav-container1 a:hover{
     color: blue;
 }
-.kaiba-nav-container1{
+.kaiba-corp-body .kaiba-nav-container1{
     justify-content: space-between;
     align-items: center;
     background-color:rgba(56, 113, 199, 0.726);
     backdrop-filter: blur(50px);
 }
-.kaiba-nav-links{
+.kaiba-corp-body .kaiba-nav-links{
     width:250px;
     justify-content: space-between;
 }
-.kaiba-social-links{
+.kaiba-corp-body .kaiba-social-links{
     width:150px;
     padding-right:20px;
     justify-content: space-between;
 }
 .kaiba-welcome-message-container{
-    width:100vw;
+    width:100%;
     height:100vh;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .kaiba-welcome-message{
+    padding:203px 0;
     width:50vw;
     text-align: center;
     backdrop-filter: blur(20px);
@@ -51,6 +63,49 @@
     box-shadow: 0 0 20px gold;
 }
 .kaiba-next-section{
+    padding:0;
+    margin:0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    position:relative;
+    background-image: url("/kaiba-corp-landing-images/blue-eyes-background.jpg" );
+    background-position: center;
+    background-size:100% 120%;
+    background-repeat: no-repeat;
+    filter: saturate(0.6);
+}
+.kaiba-self-portrait{
+    
+    padding:0;
+    margin:0;
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kaiba-email-form{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:40vh;
+    box-shadow: 0 0 20px black;
+    backdrop-filter: blur(20px);
+}
+.kaiba-email-form-button:hover{
+    background-color: #fad231;
+    box-shadow: 0 0 5px black;
+    color: rgba(255, 255, 255, 0.61);
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    font-size:12px;
+    background: rgba(56, 113, 199, 0.726);
+    padding:20px;
 }
