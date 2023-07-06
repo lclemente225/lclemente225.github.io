@@ -1,0 +1,207 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+div.lexus-email div,
+div.lexus-email span,
+div.lexus-email h1,
+div.lexus-email ul,
+div.lexus-email li,
+div.lexus-email p,
+div.lexus-email section,
+div.lexus-email a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} 
+/* HTML5 display-role reset for older browsers */
+div.lexus-email header,
+div.lexus-email nav,
+div.lexus-email section {
+	display: block;
+}
+div.lexus-email {
+	line-height: 1;
+}
+div.lexus-email ul {
+	list-style: none;
+}
+div.lexus-email div.navbar ul.navbar-list{
+    height:10vh;
+}
+div.lexus-email .page-header{
+    border:2px solid red;
+    color: white;
+    background-color: black;
+    z-index: 10;
+    display: flex !important;
+    width: 100%;
+}
+div.lexus-email .page-header__nav{
+    justify-self: flex-end !important;
+    padding:20px 0;
+    border:2px solid red;
+}
+div.lexus-email .page-header-logo{
+    justify-self: flex-start;
+    border:2px solid red;
+    padding:20px 0;
+}
+div.lexus-email .page-header__nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+div.lexus-email .jumbo-slider{
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1b1b;
+    position: relative;
+    overflow: hidden;
+}
+div.lexus-email .jumbo-slider__container{
+    position: relative;
+}
+div.lexus-email .jumbo-slider__slide{
+    width: 100%;
+    height: 100vh;
+}
+div.lexus-email .jumbo-slider__slide-bg{
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity .5s ease-in-out 2s;
+    cursor: pointer;
+    filter: saturate(0.6);
+    position: absolute;
+    z-index: 0;
+}
+div.lexus-email .jumbo-slider__video-player{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    pointer-events: none;
+}
+div.lexus-email .jumbo-slider__slide--active .jumbo-slider__slide-bg{
+    opacity: .5;
+}
+div.lexus-email .jumbo-slider__info-container{
+    width: 100%;
+    margin: 5% 0 0 5%;
+    max-width: 1200px;
+    position: absolute;
+}
+div.lexus-email .jumbo-slider__info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 500px;
+    justify-content: center;
+    color: #03fc7f;
+}
+div.lexus-email .jumbo-slider__slide-number{
+    font-size: 15rem;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: transform .4s ease-in-out 1.4s,
+    opacity .4s ease-in-out 1.4s;
+}
+div.lexus-email .jumbo-slider__title{
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px;
+    width: fit-content;
+    margin-bottom: 2rem;
+    opacity: 0;
+    position: relative;
+    transform: translate3d(0, 100px, 0);
+    transition: transform .4s ease-in-out 2s,
+    opacity .4s ease-in-out 2s;
+
+}
+div.lexus-email .jumbo-slider__description{
+    max-width: 600px;
+    line-height: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0;
+    position: relative;
+    transform: translate3d(0, 100px, 0);
+    transition: transform .4s ease-in-out 2.5s,
+    opacity .4s ease-in-out 2.5s;
+}
+.jumbo-slider__slide--active .jumbo-slider__slide-number,
+.jumbo-slider__slide--active .jumbo-slider__title,
+.jumbo-slider__slide--active .jumbo-slider__description{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+div.lexus-email .jumbo-slider__nav{
+    display:block;
+    position: absolute;
+    top: 200px;
+    right: 10px;    
+    writing-mode: vertical-rl;
+    z-index: 4;
+}
+div.lexus-email .jumbo-slider__link{
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+}
+div.lexus-email .jumbo-slider__link--active{
+    color: #03fc7f;
+}
+div.lexus-email .jumbo-slider__ellipsis{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.lexus-email .jumbo-slider__circle{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:2px solid #03fc7f;
+}
+div.lexus-email .jumbo-slider__circle--filled{
+    background-color: #03fc7f;
+}
+div.lexus-email .jumbo-slider__timeline{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+div.lexus-email .jumbo-slider__line{
+    height: 5px;
+    width: 0;
+    background-color: #ffffff;
+    transition: width 3.7s;
+}
+div.lexus-email .jumbo-slider__slide--active .jumbo-slider__line{
+    width: 100%;
+    background-color: #03fc7f
+}

@@ -1,14 +1,15 @@
 .navbar{
-    display:flex;
-    justify-content: flex-start;
-    border-bottom: 2px solid black;
-    width:100vw;
+    display:flex !important;
+    justify-content: flex-start !important;
+    border-bottom: 2px solid black !important;
+    width:100% !important;
 }
-.navbar-list{
-    width: 70vw;
-    display:flex;
-    justify-content: space-between;
+div.navbar ul.navbar-list{
+    width: 70vw !important;
+    display:flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
 .arrow-icon{
-    padding-right:10px;
+    padding: 0 20px !important;
 }
