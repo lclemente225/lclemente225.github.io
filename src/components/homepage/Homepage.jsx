@@ -50,12 +50,12 @@ const Homepage = ({PageState,isHomePage}) => {
                     <ul>
                         <li>
                             <a href="/sample-kaiba-corp-landingPage/">
-                                Kaiba Corp 
+                                Tournament Sign up 
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Second Landing Page
+                            <a href="/sample-apartment-landingPage/">
+                                Apartment Landing Page
                             </a>
                         </li>
                     </ul>
