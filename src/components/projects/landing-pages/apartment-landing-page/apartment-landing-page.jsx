@@ -3,17 +3,30 @@ import Navbar from '../../../navbar/Navbar';
 import './apartmentLandingPage.css'
 
 const ApartmentLandingPage = ({PageState,isHomePage}) => {
+    const [isMenuOpen, toggleOpenMenu] = React.useState(false);
+    //if menuopen then add class of menu open
+    //in css make default display:none
+    //if menu is open, then do 
+    // .menuopen dropdownnav{display:visible}
+
     React.useEffect(() => {
         isHomePage(false);
         },[PageState])
 
+    function openMenu(){
+        console.log(isMenuOpen)
+        return toggleOpenMenu((isTrue)=>{
+            return isTrue ? !isTrue : true
+        })
+    }
   return (
     <div className='apartment-landing-page-body'>
         <Navbar />
-        <div className='apartment-landing-page-nav-container'>
+        <div className={`apartment-landing-page-nav-container 
+            ${isMenuOpen ? 'apartment-landing-page-menu-open' : 'apartment-landing-page-not-open'}`}>
             <div className='apartment-landing-page-nav'>
-                <a href="#">
-                    logo here
+                <a id="apartment-landing-top-logo" href="#">
+                <i className="fa-solid fa-vihara" style={{color:'white'}}/>
                 </a>
                 <nav>
                     <a href="#apartment-landing-page-explore">
@@ -32,13 +45,38 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                         Inquire Now
                     </a>
                 </nav>
+                <div id="apartment-landing-hamburger" onClick={openMenu}>
+                <i className="fa-solid fa-bars fa-xl" style={{color:'white'}} />
+                </div>
             </div>
+
+            <div className='apartment-landing-dropdown-nav'>
+                <nav>
+                    <a href="#apartment-landing-page-explore">
+                        Explore
+                    </a>
+                    <a href="#apartment-landing-page-your-space">
+                        Your Space
+                    </a>
+                    <a href="#apartment-landing-page-location">
+                        Location
+                    </a>
+                    <a href="#apartment-landing-page-experience">
+                        Experience
+                    </a>
+                    <a id="apartment-nav-inquire-button" href="#apartment-landing-page-form">
+                        Inquire Now
+                    </a>
+                </nav>   
+            </div>
+            
         </div>
+      
 
         <div className='apartment-landing-page-hero-section'>
             <div className='apartment-landing-page-hero-text'>
                 <h1>
-                    Your Space to Experience
+                    Your space to experience
                 </h1>
                 <div className='four-diamonds-container'>
                     <i className="fa-solid fa-diamond fa-2xs"/>
@@ -178,14 +216,14 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             }}>
                     Location
                 </h6>
-                <p style={{fontSize:'18px'}}>
+                <p id="location-first-p" style={{fontSize:'18px'}}>
                     Surrounding some of the most precious landmarks
                 </p>
                 <div>
                     <i className="fa-solid fa-diamond fa-2xs" 
                     style={{color:'rgb(225,183,136)'}}/>
                 </div>
-                <p>
+                <p id="location-second-p">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                     architecto beatae
@@ -217,8 +255,32 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
             </div>
         </div>
 
+        <div className='apartment-landing-page-location' id='apartment-landing-page-location'>
+            <div>
+                <h6 style={{
+                            color:'white',
+                            letterSpacing:1.5,
+                            textTransform:'uppercase'
+                            }}>
+                    Lifestyle
+                </h6>
+                <p id="location-first-p" style={{fontSize:'18px'}}>
+                Living an experience you deserve
+                </p>
+                <div>
+                    <i className="fa-solid fa-diamond fa-2xs" 
+                    style={{color:'rgb(225,183,136)'}}/>
+                </div>
+                <p id="location-second-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+
         <div className='apartment-landing-page-form' id='apartment-landing-page-form'>
-            <div className='apartment-landing-page-heading'>
+            <div className='apartment-landing-page-form-heading'>
                 <h4>
                     Your space to experience
                 </h4>
@@ -290,13 +352,13 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
             </div>
 
             <div className='apartment-landing-page-social-links'>
-                <a>
+                <a href="https://www.facebook.com">
                     Fb.
                 </a>
-                <a>
+                <a href="https://www.twitter.com">
                     Tw.
                 </a>
-                <a>
+                <a href="https://www.instagram.com">
                     Ig.
                 </a>
             </div>

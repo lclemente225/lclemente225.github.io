@@ -15,15 +15,17 @@
     background-color: rgba(9,9,10,0.79);
     z-index:100;
 }
+#apartment-landing-top-logo{
+    margin-left:2 b0px;
+}
 .apartment-landing-page-nav{
-    border:2px solid red;
     padding:10px;
     display:flex;
     justify-content: space-between;
     align-items: baseline;
 }
 .apartment-landing-page-nav nav{
-    margin-right:40px;
+    margin-right:30px;
     width:38%;
     display:flex;
     justify-content: space-between;
@@ -72,6 +74,10 @@
     line-height: 1.5;
     text-align: center;
 }
+.apartment-landing-page-explore i:hover{
+    background-color: rgb(225,183,136) !important;
+    transition: background-color 0.8s ease;
+}
 .apartment-landing-page-interior-image img{
     height:90vh;
     width:100%;
@@ -108,7 +114,6 @@
     filter:saturate(0.1);
 }
 .highlights-container{
-    border:2px solid red;
     position:relative;
     bottom:90%;
     left:45%;
@@ -160,8 +165,7 @@
     line-height: 1.5;
     text-align: center;
 }
-.apartment-landing-page-experience,
-.apartment-landing-page-experience > div{
+.apartment-landing-page-experience{
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -190,7 +194,7 @@
     text-align: center;
 }
 .apartment-landing-page-form,
-.apartment-landing-page-heading ,
+.apartment-landing-page-form-heading ,
 .apartment-landing-page-form-container,
 .apartment-landing-page-form-container form{
     display:flex;
@@ -202,9 +206,8 @@
 .apartment-landing-page-form{
     height:80vh;
     background-color: rgb(225,183,136);
-    border-top:1px solid rgba(0, 0, 0,0.2);
 }
-.apartment-landing-page-heading{
+.apartment-landing-page-form-heading{
     width:350px;
     text-align: center;
     font-size:12px;
@@ -216,6 +219,7 @@
 .apartment-landing-page-form-container form{
     width:100%;
     height:100%;
+    text-transform: uppercase;
 }
 
 .apartment-landing-input-field-container{
@@ -245,17 +249,13 @@
 }
 .apartment-landing-input-field-top input{
     width:100%;
-    height:30px;
+    height:35px;
     background-color: rgb(225,183,136);
 }
 .apartment-landing-input-field-bottom input{
-    height:30px;
+    height:35px;
     width:200px;
     background-color: rgb(225,183,136);
-}
-
-.apartment-form-button{
-    justify-self: flex-end;
 }
 .apartment-landing-footer-container{
     width: 100%;
@@ -287,17 +287,226 @@
     .container{
         width: 960px;
     }
+    .apartment-landing-dropdown-nav,
+    #apartment-landing-hamburger,
+    #apartment-landing-hamburger i{
+        display:none !important;
+    }
+
 }
 /*midsizes*/
-@media only screen and (max-width: 960px){
+@media only screen and (min-width: 600px) and (max-width: 960px){
+    .apartment-landing-dropdown-nav,
+    #apartment-landing-hamburger,
+    #apartment-landing-hamburger i{
+        display:none !important;
+    }
     .apartment-landing-page-nav nav{
         width:70%;
+    }
+    .apartment-landing-top-logo{
+        margin-left:100px !important;
+        color:red !important;
+        padding-left:20px;
+    }
+
+    .apartment-landing-page-hero-section{
+        height:490px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        margin-bottom:20px;
+        padding:20px 0;
+    }
+    .apartment-landing-page-hero-text{
+        padding:0;
+        height:260px;
+        text-align:left;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .apartment-landing-page-hero-text h1{
+        margin:10px 0;
+        width:80%;
+        font-weight:400;
+        padding: 0 25px;
+    }
+    .four-diamonds-container{
+        padding-left: 25px;
+    }
+    .apartment-landing-page-hero-text i{
+        padding: 0;
+    }
+    .apartment-landing-page-hero-text p{
+        width: 80%;
+        padding: 0 25px;
+        font-size: 12px;
+    }
+    .apartment-landing-page-hero-image{
+        padding-top:20px;
+    }
+    .apartment-landing-page-explore,
+    .apartment-landing-page-explore > div{
+        margin:0;
+        padding:0;
+        height: 450px;
+        width: 100%;
+    }
+    .apartment-landing-page-explore > div h6{
+        margin:0;
+    }
+    .apartment-landing-page-explore > div p{
+        width: 50%;
+        margin-bottom:10px;
+        font-size:12px;
+    } 
+    
+    .apartment-landing-page-your-space,
+    .apartment-landing-page-your-space > div{
+        height:450px;
+    }
+    .apartment-landing-page-your-space > div h6{
+        margin:0;
+        margin-top:10px;
+        font-weight:400;
+    }
+    .apartment-landing-page-your-space > div p{
+        width:50%;
+        margin-bottom: 10px;
+    }
+    #apartment-your-space-first-p{
+        margin-top:5px;
+        font-size:19px !important;
+    }
+    .apartment-landing-page-highlights{
+        height:550px;
+    }
+    .highlights-container{
+        left:200px;
+        bottom:90%;
+        width:50%;
+        padding:0;
+        transform:rotate(0.5deg);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .apartment-highlights-text{
+        height:90%;
+        width:64%;
+        padding:60px 20px 80px 20px;
+    }
+    .apartment-highlights-text h4,
+    .apartment-highlights-text div,
+    .apartment-highlights-text p{
+        padding:0;
+        margin:0;
+    }
+    .apartment-highlights-text h4{
+        font-weight: 400;
+        width:110%;
+        padding:0;
+        font-size:20px;
+    }
+    .highlights-image{
+        background-position: -250px 0px;
+        background-size: 100% 100%;
+    }
+    .apartment-landing-page-location{
+        width:100%;
+        height:320px;
+    }
+    .apartment-landing-page-location > div h6{
+        margin :0;
+    }
+    .apartment-landing-page-location > div p{
+        margin :10px 0;
+        width:60%;
+    } 
+    #location-second-p{
+        width:50%;
+    }
+    .apartment-landing-page-experience{
+        height:350px;
+        width:100%;
+        }
+    .apartment-landing-page-experience > div{
+        transform:rotate(0 deg);
+        width:60%;
+        height:230px;
+    }
+    .apartment-landing-page-form-heading h4{
+        font-weight:400;
+        font-size:20px;
+    }
+    .apartment-landing-page-form-container label{
+        font-size:11px;
+        letter-spacing: 1.3px;
+    }
+    .apartment-form-button{
+        margin:0;
+        margin-top:25px;
+    }
+    .apartment-form-button a{
+        font-size:11px !important;
+        letter-spacing: 1.3px !important;
+        padding:6px 11px !important;
+    }
+    .apartment-landing-footer-container{
+        height:130px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .apartment-landing-footer{
+        width:70%;
+        height:35px;
+        margin:0;
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .apartment-landing-page-social-links{
+        margin:0;
+        margin-top:10px;
+        width:70px;
+    }
+    .apartment-landing-page-social-links a{
+        font-size:13px;
     }
 }
 /*mobile*/
 @media only screen and (max-width: 600px){
     .apartment-landing-page-nav nav{
         display:none;
+    }
+    .apartment-landing-dropdown-nav{
+        position:absolute;
+        background-color: rgb(9,9,10);
+        width:100%;
+        height:auto;
+        border-top:1px solid white;
+        padding:15px 5px;
+        display:none;
+    }
+    .apartment-landing-page-menu-open .apartment-landing-dropdown-nav{
+        display: block;
+        transition:top 2s;
+    }
+    .apartment-landing-dropdown-nav nav{
+        margin-left:16px;
+        width:90%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .apartment-landing-dropdown-nav a{
+        padding:10px 14px;
+        display:block;
     }
     .apartment-landing-page-hero-section{
         height:490px;
@@ -389,6 +598,101 @@
         padding:0;
         font-size:20px;
     }
-    
-    
+    .apartment-landing-page-location{
+        width:100%;
+        height:300px;
+    }
+    .apartment-landing-page-location > div h6{
+        margin :0;
+    }
+    .apartment-landing-page-location > div p{
+        margin :0;
+        width:70%;
+    }
+    #location-first-p{
+        padding-bottom: 10px;
+    }
+    #location-second-p{
+        padding-top: 10px;
+        width:80%;
+    }
+    .apartment-landing-page-experience{
+    height:400px;
+    width:100%;
+    }
+    .apartment-landing-page-experience > div{
+        transform:rotate(0 deg);
+        width:90%;
+        height:230px;
+    }
+    .apartment-landing-page-form{
+        width:100%;
+        height:520px;
+    }
+    .apartment-landing-page-form-heading{
+        width:80%;
+        height:110px;
+        line-height:1.7;
+        margin-bottom:30px;
+    }
+    .apartment-landing-page-form-heading h4{
+        font-weight:400;
+        font-size:20px;
+        margin:0;
+    }
+
+    .apartment-landing-page-form-container form{
+        height:700px;
+        width:100%;
+    }
+    .apartment-landing-input-field-top{
+        width:85%;
+        margin-bottom:25px;
+    }
+    .apartment-landing-input-field-bottom{
+        margin:0;
+        height:140px;
+        width:85%;
+        flex-direction: column;
+    }
+    .apartment-landing-input-field-bottom input{
+        width:100%;
+    }
+    .apartment-landing-page-form-container label{
+        font-size:11px;
+        letter-spacing: 1.3px;
+    }
+    .apartment-form-button{
+        margin:0;
+        margin-top:25px;
+    }
+    .apartment-form-button a{
+        font-size:11px !important;
+        letter-spacing: 1.3px !important;
+        padding:6px 11px !important;
+    }
+    .apartment-landing-footer-container{
+        height:130px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .apartment-landing-footer{
+        width:70%;
+        height:35px;
+        margin:0;
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .apartment-landing-page-social-links{
+        margin:0;
+        margin-top:10px;
+        width:70px;
+    }
+    .apartment-landing-page-social-links a{
+        font-size:13px;
+    }
+
 }
