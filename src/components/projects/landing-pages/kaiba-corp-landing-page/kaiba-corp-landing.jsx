@@ -1,5 +1,6 @@
 import React from 'react';
 import './kaibaCorpLanding.css';
+import Navbar from '../../../navbar/Navbar';
 
 
 const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
@@ -9,7 +10,7 @@ const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
 
   return (
     <div className="kaiba-corp-body">
-
+      <Navbar />
       <div className='exodia-image'>
           <div className="kaiba-top-nav">
             <nav className="kaiba-nav-container1">		

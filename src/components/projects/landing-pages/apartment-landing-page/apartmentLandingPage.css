@@ -1,0 +1,394 @@
+.apartment-landing-page-body .navbar a{
+    color:black;
+}
+.apartment-landing-page-body a{
+    color:white;
+    font-family:serif;
+}
+.apartment-landing-page-body{
+    scroll-behavior: smooth;
+}
+.apartment-landing-page-nav-container{
+    position: sticky;
+    top:0;
+    width:100%;
+    background-color: rgba(9,9,10,0.79);
+    z-index:100;
+}
+.apartment-landing-page-nav{
+    border:2px solid red;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.apartment-landing-page-nav nav{
+    margin-right:40px;
+    width:38%;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.apartment-landing-page-nav > nav > a{ 
+    letter-spacing: 12;
+}
+#apartment-nav-inquire-button{
+    border:2px solid white;
+    padding:5px 10px;
+    z-index:121;
+}
+.apartment-landing-page-hero-section{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    background-color: rgb(9,9,10);
+}
+.apartment-landing-page-hero-text{
+    color:white;
+    padding:0 100px;
+}
+.four-diamonds-container > :nth-child(n + 2):nth-child(-n + 5){
+    padding-left: 10px;
+}
+.four-diamonds-container i{
+    color:rgb(225,183,136);
+}
+.apartment-landing-page-hero-image img{
+    width:100%;
+}
+.apartment-landing-page-explore,
+.apartment-landing-page-explore > div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9,9,10);
+}
+.apartment-landing-page-explore p{
+    width:30%;
+    color:white;
+    font-size:12px;
+    line-height: 1.5;
+    text-align: center;
+}
+.apartment-landing-page-interior-image img{
+    height:90vh;
+    width:100%;
+    filter: saturate(0.1);
+}
+.apartment-landing-page-your-space,
+.apartment-landing-page-your-space > div{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9,9,10);
+    color:white;
+}
+.apartment-landing-page-your-space p{
+    width:30%;
+    color:white;
+    font-size:12px;
+    line-height: 1.5;
+    text-align: center;
+}
+.apartment-landing-page-highlights{
+    height: 90vh;
+    width: 100%;
+    background-color:rgb(225,183,136);
+}
+.highlights-image{
+    height:100%;
+    position:relative;
+    background-image: url('/apartment-landing-page-images/apartment-entrance.jpg');
+    background-size: 70% 120%;
+    background-repeat: no-repeat;
+    filter:saturate(0.1);
+}
+.highlights-container{
+    border:2px solid red;
+    position:relative;
+    bottom:90%;
+    left:45%;
+    background-color: rgb(9,9,10);
+    height:74%;
+    width: 28%;
+    padding:0 100px;
+    transform: rotate(1deg);
+    box-shadow: 1px 1px 20px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.apartment-highlights-text h4,
+.apartment-highlights-text div{
+    margin:0;
+    padding:0;
+}
+.apartment-highlights-text h4{
+    padding-bottom:5px;
+}
+.apartment-highlights-text{
+    height: 55%;
+    color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.apartment-highlights-text i{
+    color: rgb(225,183,136) ;
+}
+.apartment-highlights-text p{
+    font-size:10px;
+}
+.apartment-landing-page-location,
+.apartment-landing-page-location > div{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9,9,10);
+    color:white;
+}
+.apartment-landing-page-location p{
+    width:40%;
+    color:white;
+    font-size:12px;
+    line-height: 1.5;
+    text-align: center;
+}
+.apartment-landing-page-experience,
+.apartment-landing-page-experience > div{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225,183,136);
+}
+.apartment-landing-page-experience > div{
+    height: 45%;
+    width:30%;
+    padding:25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(9,9,10,0.7);
+    color:white;
+    transform:rotate(0.4deg);
+}
+.apartment-landing-page-experience p{
+    padding:10px 0;
+    margin:0;
+    width:85%;
+    color:white;
+    font-size:12px;
+    line-height: 1.5;
+    text-align: center;
+}
+.apartment-landing-page-form,
+.apartment-landing-page-heading ,
+.apartment-landing-page-form-container,
+.apartment-landing-page-form-container form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.apartment-landing-page-form{
+    height:80vh;
+    background-color: rgb(225,183,136);
+    border-top:1px solid rgba(0, 0, 0,0.2);
+}
+.apartment-landing-page-heading{
+    width:350px;
+    text-align: center;
+    font-size:12px;
+}
+.apartment-landing-page-form-container{
+    width:100%;
+    height:50%;
+}
+.apartment-landing-page-form-container form{
+    width:100%;
+    height:100%;
+}
+
+.apartment-landing-input-field-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    width:100%;
+    height: 100%;
+}
+.apartment-landing-input-field{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.apartment-landing-input-field-container label{
+    font-size:12px;
+    padding-bottom:5px;
+}
+.apartment-landing-input-field-top{
+    width:425px;
+}
+.apartment-landing-input-field-bottom{
+    width: 430px;
+    display:flex;
+    justify-content: space-between;
+}
+.apartment-landing-input-field-top input{
+    width:100%;
+    height:30px;
+    background-color: rgb(225,183,136);
+}
+.apartment-landing-input-field-bottom input{
+    height:30px;
+    width:200px;
+    background-color: rgb(225,183,136);
+}
+
+.apartment-form-button{
+    justify-self: flex-end;
+}
+.apartment-landing-footer-container{
+    width: 100%;
+    height:100px;
+    background-color: rgb(9,9,10);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apartment-landing-footer{
+    margin-left:50px;
+    color:white;
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apartment-landing-page-social-links{
+    margin-right:60px;
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 960px){
+    .container{
+        width: 960px;
+    }
+}
+/*midsizes*/
+@media only screen and (max-width: 960px){
+    .apartment-landing-page-nav nav{
+        width:70%;
+    }
+}
+/*mobile*/
+@media only screen and (max-width: 600px){
+    .apartment-landing-page-nav nav{
+        display:none;
+    }
+    .apartment-landing-page-hero-section{
+        height:490px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .apartment-landing-page-hero-text{
+        padding:0;
+        margin-bottom:20px;
+        height:260px;
+        text-align:center;
+    }
+    .apartment-landing-page-hero-text h1{
+        margin:10px 0;
+        font-weight:400;
+    }
+    .apartment-landing-page-hero-text i{
+        padding:0;
+    }
+    .apartment-landing-page-hero-text p{
+        padding: 0 25px;
+        font-size:12px;
+    }
+    .apartment-landing-page-explore,
+    .apartment-landing-page-explore > div{
+        margin:0;
+        padding:0;
+        height: 450px;
+        width: 100%;
+    }
+    .apartment-landing-page-explore > div h6{
+        margin:0;
+    }
+    .apartment-landing-page-explore > div p{
+        width: 90%;
+        margin-bottom:10px;
+        font-size:10px;
+    } 
+    .apartment-landing-page-your-space,
+    .apartment-landing-page-your-space > div{
+        height:350px;
+    }
+    .apartment-landing-page-your-space > div h6{
+        margin:0;
+        margin-top:10px;
+
+    }
+    .apartment-landing-page-your-space > div p{
+        width:80%;
+        margin-bottom: 10px;
+    }
+    #apartment-your-space-first-p{
+        margin-top:5px;
+    }
+    .apartment-landing-page-highlights{
+        height:600px;
+    }
+    .highlights-image{
+        background-position: 0 200px;
+        background-size: 100% 400px;
+    }
+    .highlights-container{
+        left:20px;
+        bottom:97%;
+        width:85%;
+        height: 340px;
+        padding:0;
+        transform:rotate(0deg);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .apartment-highlights-text{
+        height:90%;
+        width:64%;
+        padding:20px 20px 40px 20px;
+    }
+    .apartment-highlights-text h4,
+    .apartment-highlights-text div,
+    .apartment-highlights-text p{
+        padding:0;
+        margin:0;
+    }
+    .apartment-highlights-text h4{
+        font-weight: 400;
+        width:110%;
+        padding:0;
+        font-size:20px;
+    }
+    
+    
+}
