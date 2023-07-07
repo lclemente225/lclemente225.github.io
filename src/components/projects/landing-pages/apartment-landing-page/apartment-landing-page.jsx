@@ -115,7 +115,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                     <i className="fa-solid fa-diamond fa-2xs" 
                     style={{color:'rgb(225,183,136)'}}/>
                 </div>
-                <p>
+                <p id="apartment-landing-page-explore-second-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
@@ -153,7 +153,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             }}>
                     Your Space
                 </h6>
-                <p id="apartment-your-space-first-p" style={{fontSize:'18px'}}>
+                <p id="apartment-your-space-first-p" style={{fontSize:'22px'}}>
                     With gorgeous interiors the spectacular residences bring together an holistic 
                     design vision with a passion for individuality and carefully considered detail.
                 </p>
@@ -161,7 +161,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                     <i className="fa-solid fa-diamond fa-2xs"
                         style={{color:'rgb(225,183,136)'}}/>
                 </div>
-                <p>
+                <p id="apartment-your-space-second-p">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                     doloremque laudantium, totam rem aperiam.
                 </p>
@@ -248,7 +248,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                     <i className="fa-solid fa-diamond fa-2xs" 
                     style={{color:'rgb(225,183,136)'}}/>
                 </div>
-                <p>
+                <p id="apartment-landing-page-experience-second-p">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
                     accusantium doloremque laudantium, totam rem aperiam
                 </p>
