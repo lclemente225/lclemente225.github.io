@@ -330,23 +330,23 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
 
         <div className='apartment-landing-footer-container'>
             <div className='apartment-landing-footer'>
-                <a>
+                <a href="#">
                     Crafted by Marion & Co.
                 </a>
                 &nbsp;|&nbsp;
-                <a>
+                <a href="#">
                     Powered by Webflow
                 </a>
                 &nbsp;|&nbsp;
-                <a>
+                <a href="#">
                     More templates
                 </a>
                 &nbsp;|&nbsp;
-                <a>
+                <a href="#">
                     Image License
                 </a>
                 &nbsp;|&nbsp;
-                <a>
+                <a href="#">
                     Style Guide
                 </a>
             </div>
