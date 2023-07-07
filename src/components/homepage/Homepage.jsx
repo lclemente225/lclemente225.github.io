@@ -55,7 +55,11 @@ const Homepage = ({PageState,isHomePage}) => {
                         </li>
                         <li>
                             <a href="/sample-apartment-landingPage/">
-                                Apartment Landing Page
+                                <div className='project-list-individual-container'>
+                                    <p>Apartment Landing Page</p>
+                                    <img className="email-preview"
+                                        src="/homepage-images/apartment-landing-page-preview.png"/>
+                                </div>
                             </a>
                         </li>
                     </ul>
