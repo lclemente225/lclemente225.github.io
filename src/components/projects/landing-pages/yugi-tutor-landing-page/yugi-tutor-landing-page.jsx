@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './yugiTutorLanding.css';
+import Navbar from '../../../navbar/Navbar';
 
 const YugiTutorBusiness = ({PageState,isHomePage}) => {
     React.useEffect(() => {
@@ -6,6 +8,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
         },[PageState])
 
   return (
+    <>
+    <Navbar/>
     <div className='yugi-tutor-landing-page-body'>
         <div className='yugi-tutor-top-banner'>
             <p>Hello Duelist</p>
@@ -15,10 +19,11 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                 Let's work together to make you a stronger duelist so that you can win a championship!
             </p>
         </div>
-        <div>
+        <div className='yugi-tutor-info-row'>
             <div className='yugi-tutor-left-column'>
                 <div className='yugi-tutor-left-column-row'>
-                    <img src=''/>
+                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                        className="yugi-tutor-arrow-right"/>
                     <div className='yugi-tutor-left-column-row-text'>
                         <h4>
                             Free Online Workshop
@@ -29,7 +34,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                     </div>
                 </div>
                 <div className='yugi-tutor-left-column-row'>
-                    <img src=''/>
+                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                        className="yugi-tutor-arrow-right"/>
                     <div className='yugi-tutor-left-column-row-text'>
                         <h4>
                             Order my book
@@ -40,7 +46,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                     </div>
                 </div>
                 <div className='yugi-tutor-left-column-row'>
-                    <img src=''/>
+                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                        className="yugi-tutor-arrow-right"/>
                     <div className='yugi-tutor-left-column-row-text'>
                         <h4>
                             Dive into my blog
@@ -52,7 +59,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                     </div>
                 </div>
                 <div className='yugi-tutor-left-column-row'>
-                    <img src=''/>
+                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                        className="yugi-tutor-arrow-right"/>
                     <div className='yugi-tutor-left-column-row-text'>
                         <h4>
                             Listen to my podcast
@@ -64,7 +72,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                     </div>
                 </div>
                 <div className='yugi-tutor-left-column-row'>
-                    <img src=''/>
+                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                        className="yugi-tutor-arrow-right"/>
                     <div className='yugi-tutor-left-column-row-text'>
                         <h4>
                             Take the quiz
@@ -75,6 +84,7 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                     </div>
                 </div>
             </div>
+
             <div className='yugi-tutor-right-column'>
                 <div className='yugi-tutor-guide-container'>
                     <h1>
@@ -113,16 +123,16 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                 </div>
                 <div className='social links'>
                     <a href='#'>
-                        Facebook
+                        <i style={{color:'white'}} className="fa-brands fa-facebook-f" />
                     </a>
                     <a href='#'>
-                        Twitter
+                        <i style={{color:'white'}} className="fa-brands fa-twitter" />
                     </a>
                     <a href='#'>
-                        linkedin
+                        <i style={{color:'white'}} className="fa-brands fa-linkedin-in" />
                     </a>
                     <a href='#'>
-                        instagram
+                        <i style={{color:'white'}} className="fa-brands fa-instagram" />
                     </a>
                 </div>
                 <div>
@@ -135,6 +145,7 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 
