@@ -9,6 +9,16 @@ a{
     text-decoration: none;
     color: rgb(56, 56, 56);
 }
+.intro-section{
+    margin:0;
+    height:300px;
+    color:#f0f0f0;
+    background-color: rgb(56, 56, 56);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .navbar-list a:hover,
 .project-list a:hover{
     text-shadow: 0 0 5px rgb(0, 255, 13);
@@ -22,7 +32,6 @@ a{
 }
 .project-list ul{
     margin:0;
-    border: 2px solid black;
     padding: 10px 0 20px 0;
     height: auto;
     width: 80vw;
@@ -37,6 +46,16 @@ a{
     flex-wrap:nowrap;
     flex-flow: column;
     align-items: center;
+}
+.project-list-individual-container img:hover{
+    filter:drop-shadow(0 0 5px rgb(71, 71, 71)) opacity(0.6);
+}
+.project-list h1{
+    margin:0;
+    padding:20px 0;
+    width:100%;
+    text-align: center;
+    background-color: rgb(255, 244, 230);
 }
 .email-preview{
     width: 250px;

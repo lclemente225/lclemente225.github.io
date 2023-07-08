@@ -1,13 +1,18 @@
 .navbar{
+    margin:0;
     display:flex !important;
     justify-content: flex-start !important;
-    border-bottom: 2px solid black !important;
+    align-items:center;
+    height:50px;
     width:100% !important;
 }
 div.navbar ul.navbar-list{
-    width: 70vw !important;
+    margin:0;
+    height:100%;
+    background-color: rgba(255, 255, 179, 0.452);
+    width: 100% !important;
     display:flex !important;
-    justify-content: space-between !important;
+    justify-content: space-around !important;
     align-items: center !important;
 }
 .arrow-icon{

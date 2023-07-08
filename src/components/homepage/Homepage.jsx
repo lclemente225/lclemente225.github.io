@@ -11,6 +11,14 @@ const Homepage = ({PageState,isHomePage}) => {
   return (
     <div>
         <Navbar PageState={PageState}/>
+        <div className='intro-section'>
+            <h1>
+                Welcome to Lawrence's Portfolio
+            </h1>
+            <h2>
+                My works are down below
+            </h2>
+        </div>
         <div className='project-list'>
            <h1>Emails</h1>
             <div className="list email-list">
@@ -49,8 +57,12 @@ const Homepage = ({PageState,isHomePage}) => {
                 <div className="list landing-page-list">
                     <ul>
                         <li>
-                            <a href="/sample-yugi-tutor-landingPage/">
-                                Life Coach Landing Page 
+                        <a href="/sample-apartment-landingPage/">
+                                <div className='project-list-individual-container'>
+                                    <p>Life Coach Landing Page </p>
+                                    <img className="email-preview"
+                                        src="/homepage-images/yugi-tutor-preview.png"/>
+                                </div>
                             </a>
                         </li>
                         <li>
