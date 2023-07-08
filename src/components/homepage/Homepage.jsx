@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../navbar/Navbar";
 import './homepage.css';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Homepage = ({PageState,isHomePage}) => {
     React.useEffect(() => {
@@ -36,7 +36,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     </li>
                 </ul>
            </div>
-           <div className='one-column-skills-section'>
+           <div className='one-column-skills-sect   ion'>
              <h2>
                 Front End Web Development Tools
              </h2>
@@ -77,32 +77,31 @@ const Homepage = ({PageState,isHomePage}) => {
             <div className="list email-list">
                 <ul>
                     <li>
-                        <Link to="/first-newsletter-sample/">
-                            <div className='project-list-individual-container'>
+                        <div className='project-list-individual-container'>
+                            <Link to="/first-newsletter-sample/">
                                 <p>Fashion Nova Newsletter Email</p>
                                 <img className="email-preview"
-                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />
-                           </div>
-                        </Link>
-                        
+                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />                        
+                            </Link>
+                        </div>
                     </li>
                     <li>
-                        <Link to="/first-promotional-sample/">
-                            <div className='project-list-individual-container'>
+                        <div className='project-list-individual-container'>
+                            <Link to="/first-promotional-sample/">
                                 <p>Sample Promotional Email</p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
-                            </div>
-                        </Link>
+                            </Link>
+                         </div>
                     </li>
                     <li>
-                        <Link to="/first-transactional-sample/">
-                            <div className='project-list-individual-container'>
+                        <div className='project-list-individual-container'>
+                            <Link to="/first-transactional-sample/">
                                  <p>Doordash Order Transaction Email</p>
                                  <img className="email-preview"
                                  src="/homepage-images/doordash-order-email.png"/>
-                           </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -110,22 +109,22 @@ const Homepage = ({PageState,isHomePage}) => {
                 <div className="list landing-page-list">
                     <ul>
                         <li>
-                        <Link to="/sample-yugi-tutor-landingPage/">
-                                <div className='project-list-individual-container'>
-                                    <p>Life Coach Landing Page </p>
+                            <div className='project-list-individual-container'>
+                                <Link to="/sample-yugi-tutor-landingPage/">
+                                    <p>Personal Business Landing Page </p>
                                     <img className="email-preview"
                                         src="/homepage-images/yugi-tutor-preview.png"/>
-                                </div>
-                            </Link>
+                                </Link>
+                            </div>
                         </li>
                         <li>
-                            <Link to="/sample-apartment-landingPage/">
-                                <div className='project-list-individual-container'>
-                                    <p>Apartment Landing Page</p>
-                                    <img className="email-preview"
-                                        src="/homepage-images/apartment-landing-page-preview.png"/>
-                                </div>
-                            </Link>
+                           <div className='project-list-individual-container'>
+                                <Link to="/sample-apartment-landingPage/">
+                                        <p>Apartment Landing Page</p>
+                                        <img className="email-preview"
+                                            src="/homepage-images/apartment-landing-page-preview.png"/>
+                                </Link>
+                            </div>
                         </li>
                     </ul>
                 </div>
