@@ -9,15 +9,68 @@ const Homepage = ({PageState,isHomePage}) => {
         },[PageState])
 
   return (
-    <div>
+    <div className='home-page'>
         <Navbar PageState={PageState}/>
         <div className='intro-section'>
             <h1>
                 Welcome to Lawrence's Portfolio
             </h1>
             <h2>
-                My works are down below
+                Front End Developer | HTML Email Developer
             </h2>
+        </div>
+        <div className='skills-section'>
+           <div className='one-column-skills-section'>
+             <h2>
+                Languages
+            </h2>
+                <ul>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                    <li>
+                        Javascript
+                    </li>
+                </ul>
+           </div>
+           <div className='one-column-skills-section'>
+             <h2>
+                Front End Web Development Tools
+             </h2>
+                <ul>
+                    <li>
+                        Responsive Web Design
+                    </li>
+                    <li>
+                        Bootstrap
+                    </li>
+                    <li>
+                        Flexbox | CSS Grid | Bootstrap Grid
+                    </li>
+                    <li>
+                        Node.js
+                    </li>
+                    <li>
+                        React JS
+                    </li>
+                </ul>
+           </div>
+           <div className='one-column-skills-section'>
+             <h2>
+             Design Tools
+            </h2>
+                <ul>
+                    <li>
+                        Figma
+                    </li>
+                    <li>
+                        Photoshop
+                    </li>
+                </ul>
+           </div>         
         </div>
         <div className='project-list'>
            <h1>Emails</h1>
@@ -57,7 +110,7 @@ const Homepage = ({PageState,isHomePage}) => {
                 <div className="list landing-page-list">
                     <ul>
                         <li>
-                        <a href="/sample-apartment-landingPage/">
+                        <a href="/sample-yugi-tutor-landingPage/">
                                 <div className='project-list-individual-container'>
                                     <p>Life Coach Landing Page </p>
                                     <img className="email-preview"

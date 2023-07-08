@@ -5,6 +5,8 @@
     align-items:center;
     height:50px;
     width:100% !important;
+    box-shadow:0 0 2px black;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 div.navbar ul.navbar-list{
     margin:0;
