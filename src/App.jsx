@@ -8,6 +8,7 @@ import KaibaCorpLanding from './components/projects/landing-pages/kaiba-corp-lan
 import ApartmentLandingPage from './components/projects/landing-pages/apartment-landing-page/apartment-landing-page.jsx';
 import YugiTutorBusiness from './components/projects/landing-pages/yugi-tutor-landing-page/yugi-tutor-landing-page.jsx';
 
+
 import './App.css';
 
 function App() {
