@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./components/homepage/Homepage.jsx";
 import FirstNewsletterEmail from './components/projects/emails/newsletter/newsletter-email1.jsx';
 import FirstTransactionalEmail from './components/projects/emails/transactional-emails/first-transactional-email.jsx';
