@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../navbar/Navbar";
 import './homepage.css';
-
+import { Outlet, Link } from 'react-router-dom';
 
 const Homepage = ({PageState,isHomePage}) => {
     React.useEffect(() => {
@@ -77,32 +77,32 @@ const Homepage = ({PageState,isHomePage}) => {
             <div className="list email-list">
                 <ul>
                     <li>
-                        <a href="/first-newsletter-sample/">
+                        <Link to="/first-newsletter-sample/">
                             <div className='project-list-individual-container'>
                                 <p>Fashion Nova Newsletter Email</p>
                                 <img className="email-preview"
                                 src="/homepage-images/fashion-nova-newsletter-email-preview.png" />
                            </div>
-                        </a>
+                        </Link>
                         
                     </li>
                     <li>
-                        <a href="/first-promotional-sample/">
+                        <Link to="/first-promotional-sample/">
                             <div className='project-list-individual-container'>
                                 <p>Sample Promotional Email</p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/first-transactional-sample/">
+                        <Link to="/first-transactional-sample/">
                             <div className='project-list-individual-container'>
                                  <p>Doordash Order Transaction Email</p>
                                  <img className="email-preview"
                                  src="/homepage-images/doordash-order-email.png"/>
                            </div>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -110,22 +110,22 @@ const Homepage = ({PageState,isHomePage}) => {
                 <div className="list landing-page-list">
                     <ul>
                         <li>
-                        <a href="/sample-yugi-tutor-landingPage/">
+                        <Link to="/sample-yugi-tutor-landingPage/">
                                 <div className='project-list-individual-container'>
                                     <p>Life Coach Landing Page </p>
                                     <img className="email-preview"
                                         src="/homepage-images/yugi-tutor-preview.png"/>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/sample-apartment-landingPage/">
+                            <Link to="/sample-apartment-landingPage/">
                                 <div className='project-list-individual-container'>
                                     <p>Apartment Landing Page</p>
                                     <img className="email-preview"
                                         src="/homepage-images/apartment-landing-page-preview.png"/>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
