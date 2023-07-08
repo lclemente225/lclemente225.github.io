@@ -6,27 +6,38 @@
 }
 .yugi-tutor-top-banner{
     margin-top:0;
-    background-color: rgb(255, 103, 103);
-    height:226px;
-    color:white;
+    height:300px;
+    width:100%;
+    background:url('/yugi-tutor-landing-page-images/yugi-top-image.jpg');
+    background-size:100%;
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+    filter: grayscale(30%);
+}
+.yugi-tutor-top-banner>div{
+    height:100%;
+    width:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.yugi-tutor-top-banner :nth-child(n){
-    color:white;
+.yugi-tutor-top-banner>div :nth-child(n){
+    color:rgb(251, 255, 0);
+    filter: drop-shadow(0 0 2px black) grayscale(0%);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
     padding:0;
     margin:5px 0;
 }
 .yugi-tutor-top-banner :nth-child(3){
     width:60%;
     text-align: center;
-    font-size:13px;
+    font-size:16px;
 }
 .yugi-tutor-info-row{
     background-color:rgb(136, 136, 250);
     display:flex;
+    justify-content: center;
     align-items: center;
     height:100vh;
     width:100%;
@@ -37,28 +48,39 @@
     height:100%;
 }
 .yugi-tutor-left-column{
-    border-right:2px solid red;
     background-color: rgba(251,247,239,1);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.yugi-tutor-left-column-container{
+    height:80%;
+    width:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .yugi-tutor-left-column-row{
+    width:30%;
     display:flex;
-    align-items:center;
+    justify-content: center;
+    align-items:flex-start;
 }
 .yugi-tutor-left-column-row-text{
+    width:60% !important;
     font-size: 11px;
+    margin-left:40px !important;
 }
 .yugi-tutor-left-column-row-text h4{
-    margin: 30px 0 5px 0;
-    width:70%;
+    font-size:15px;
+    margin:0 0 20px 0;
 }
 .yugi-tutor-left-column-row-text p{
     margin:0;
-    width:90%;
-    font-size:10px;
+    font-size:13px;
 }
 .yugi-tutor-arrow-right{
-    margin: 12px 10px 0px 80px;
-
     width: 50px !important;
 }
 .yugi-tutor-right-column{
@@ -67,17 +89,165 @@
     justify-content: center;
 }
 .yugi-tutor-guide-container{
+    height:100%;
     text-align: center;
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    border:2px  solid red;
+}
+.yugi-tutor-guide-container h1{
+    margin: 0;
+    margin-top:40px;
+    width:70%;
+}
+.yugi-tutor-guide-container p{
+    margin:0;
+}
+.yugi-tutor-get-guide-button{
+    text-transform: uppercase;
+    font-weight:600;
+    border:2px solid black;
+    color:black;
+    background-color: white;
+    padding:10px 15px;
+}
+.yugi-tutor-get-guide-button:hover{
+    color:white;
+    background-color: black;
+    transition: color 0.5s ease-out, background-color 0.5s ease-out; 
+}
+.yugi-tutor-sitting-image{
+    width:80%;
 }
 
 .yugi-tutor-email-signup{
+    width:100%;
+    height:400px;
     color:white;
     background-color: rgba(25,23,23,1);
 }
 .yugi-tutor-email-signup a{
     color:white;
+}
+.yugi-tutor-email-signup-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.yugi-tutor-email-signup-text{
+    text-align: center;
+}
+.yugi-tutor-email-signup-form{
+    width:400px !important;
+    height:70px;
+}
+.yugi-tutor-email-signup-form form{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.yugi-tutor-email-signup-form input{
+    width:97%;
+}
+.yugi-tutor-email-signup-form input:focus{
+    background-color: rgba(230, 230, 230, 0.7);
+}
+.yugi-tutor-email-signup-form a{
+    width:100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+    color:black;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.yugi-tutor-email-signup-form a:hover{
+    background-color: rgba(230, 230, 230, 0.7);
+    transition: background-color .5s;
+}
+.yugi-tutor-social-links{
+    width:100px !important;
+    display:flex;
+    justify-content: space-between;
+}
+.yugi-tutor-footer{
+    font-size:11px;
+    text-align: center;
+    line-height: 1.4;
+    width:50% !important;
+}
+.yugi-tutor-footer a{
+    text-decoration: underline;
+}
+.yugi-tutor-footer a:hover{
+    text-decoration: none;
+}
+.yugi-tutor-social-links i:hover{
+    color: rgba(230, 230, 230, 0.7) !important;
+}
+@media only screen and (min-width: 960px){
+   
+}
+/*midsizes*/
+@media only screen and (min-width: 600px) and (max-width: 960px){
+    .yugi-tutor-top-banner{
+        background-size:1200px 900px;
+        background-position: -200px -200px !important;
+    }
+    .yugi-tutor-info-row{
+        background-color:rgb(136, 136, 250);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:1200px;
+        width:100%;
+    }  
+    .yugi-tutor-sitting-image{
+        width:400px !important;
+    }
+    .yugi-tutor-guide-container p{
+        margin:0;
+        width:80%;
+    }
+}
+/*mobile*/
+@media only screen and (max-width: 600px){
+    .yugi-tutor-top-banner{
+        background-size:700px 500px;
+        background-position: -105px 0px !important;
+    }
+    .yugi-tutor-info-row{
+        background-color:rgb(136, 136, 250);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:1200px;
+        width:100%;
+    }  
+    .yugi-tutor-email-signup{
+        padding: 0;
+        margin:0;
+        border: 2px solid green;
+    }
+    
+.yugi-tutor-email-signup-form{
+    width:auto !important;
+    height:80px;
+}
+    .yugi-tutor-email-signup-form form{
+        width:200px;
+    }
+  
+    .yugi-tutor-email-signup-container{
+        border:2px solid blue;
+    }
 }

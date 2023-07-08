@@ -12,75 +12,79 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
     <Navbar/>
     <div className='yugi-tutor-landing-page-body'>
         <div className='yugi-tutor-top-banner'>
-            <p>Hello Duelist</p>
-            <h1>I'm Yugi Mutou</h1>
-            <p>
-                I'm a master duelist passionate about the greatest TCG. 
-                Let's work together to make you a stronger duelist so that you can win a championship!
-            </p>
+            <div>
+                <p>Hello Duelist</p>
+                <h1>I'm Yugi Mutou</h1>
+                <p>
+                    I'm a master duelist passionate about the greatest TCG. 
+                    Let's work together to make you a stronger duelist so that you can win a championship!
+                </p>
+            </div>
         </div>
         <div className='yugi-tutor-info-row'>
             <div className='yugi-tutor-left-column'>
-                <div className='yugi-tutor-left-column-row'>
-                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
-                        className="yugi-tutor-arrow-right"/>
-                    <div className='yugi-tutor-left-column-row-text'>
-                        <h4>
-                            Free Online Workshop
-                        </h4>
-                        <p>
-                            Build a deck on a budget with my strategic theory.
-                        </p>
+                <div className='yugi-tutor-left-column-container'>
+                    <div className='yugi-tutor-left-column-row'>
+                        <img src='/yugi-tutor-landing-page-images/arrow-right.png' alt="arrow right.png" 
+                            className="yugi-tutor-arrow-right"/>
+                        <div className='yugi-tutor-left-column-row-text'>
+                            <h4>
+                                Free Online Workshop
+                            </h4>
+                            <p>
+                                Build a deck on a budget with my strategic theory.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='yugi-tutor-left-column-row'>
-                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
-                        className="yugi-tutor-arrow-right"/>
-                    <div className='yugi-tutor-left-column-row-text'>
-                        <h4>
-                            Order my book
-                        </h4>
-                        <p>
-                            "Through My Millenium Eyes" will help you make strides towards your dreams!
-                        </p>
+                    <div className='yugi-tutor-left-column-row'>
+                        <img src='/yugi-tutor-landing-page-images/arrow-right.png' alt="arrow right.png" 
+                            className="yugi-tutor-arrow-right"/>
+                        <div className='yugi-tutor-left-column-row-text'>
+                            <h4>
+                                Order my book
+                            </h4>
+                            <p>
+                                "Through My Millenium Eyes" will help you make strides towards your dreams!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='yugi-tutor-left-column-row'>
-                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
-                        className="yugi-tutor-arrow-right"/>
-                    <div className='yugi-tutor-left-column-row-text'>
-                        <h4>
-                            Dive into my blog
-                        </h4>
-                        <p>
-                            You'll find articles of my previous duels and gameplans to help you become a
-                            strong duelist.
-                        </p>
+                    <div className='yugi-tutor-left-column-row'>
+                        <img src='/yugi-tutor-landing-page-images/arrow-right.png' alt="arrow right.png" 
+                            className="yugi-tutor-arrow-right"/>
+                        <div className='yugi-tutor-left-column-row-text'>
+                            <h4>
+                                Dive into my blog
+                            </h4>
+                            <p>
+                                You'll find articles of my previous duels and gameplans to help you become a
+                                strong duelist.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='yugi-tutor-left-column-row'>
-                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
-                        className="yugi-tutor-arrow-right"/>
-                    <div className='yugi-tutor-left-column-row-text'>
-                        <h4>
-                            Listen to my podcast
-                        </h4>
-                        <p>
-                            Learn from the greatest minds in Duel Masters. In "Get Your Game On" podcast,
-                            I speak with former rivals and fellow friends.
-                        </p>
+                    <div className='yugi-tutor-left-column-row'>
+                        <img src='/yugi-tutor-landing-page-images/arrow-right.png' alt="arrow right.png" 
+                            className="yugi-tutor-arrow-right"/>
+                        <div className='yugi-tutor-left-column-row-text'>
+                            <h4>
+                                Listen to my podcast
+                            </h4>
+                            <p>
+                                Learn from the greatest minds in Duel Masters. In "Get Your Game On" podcast,
+                                I speak with former rivals and fellow friends.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='yugi-tutor-left-column-row'>
-                    <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
-                        className="yugi-tutor-arrow-right"/>
-                    <div className='yugi-tutor-left-column-row-text'>
-                        <h4>
-                            Take the quiz
-                        </h4>
-                        <p>
-                            Find out which of the 9 duelist archetypes you are.
-                        </p>
+                    <div className='yugi-tutor-left-column-row'>
+                        <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                            className="yugi-tutor-arrow-right"/>
+                        <div className='yugi-tutor-left-column-row-text'>
+                            <h4>
+                                Take the quiz
+                            </h4>
+                            <p>
+                                Find out which of the 9 duelist archetypes you are.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,17 +98,19 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                         Grab my free guide to championship success
                     </p>
                     <div>
-                        <a href="#">
+                        <a href="#" className='yugi-tutor-get-guide-button'>
                             Get the Guide
                         </a>
                     </div>
-                    <img src="" />
+                    <img src="/yugi-tutor-landing-page-images/yugi-sitting.jpg" alt="yugi sitting"
+                    className='yugi-tutor-sitting-image' />
                 </div>
             </div>
         </div>
         <div className='yugi-tutor-email-signup'>
-            <div>
-                <div>
+            <div className='yugi-tutor-email-signup-container'>
+
+                <div className='yugi-tutor-email-signup-text'>
                     <h2>
                         Sign up for the ultimate dueling tips
                     </h2>
@@ -113,7 +119,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                         to accelerate your dueling prowess.
                     </p>
                 </div>
-                <div>
+
+                <div className='yugi-tutor-email-signup-form'>
                     <form>
                         <input placeholder='email'/>
                         <a href='#'>
@@ -121,7 +128,8 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                         </a>
                     </form>
                 </div>
-                <div className='social links'>
+
+                <div className='yugi-tutor-social-links'>
                     <a href='#'>
                         <i style={{color:'white'}} className="fa-brands fa-facebook-f" />
                     </a>
@@ -135,13 +143,15 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                         <i style={{color:'white'}} className="fa-brands fa-instagram" />
                     </a>
                 </div>
-                <div>
+
+                <div className='yugi-tutor-footer'>
                     <p>
                         Copyright Kayle Jansen.All rights reserved. <a href='#'>Privacy Policy</a> 
                         &nbsp; | &nbsp;
                         Created with <a href='#'>KaibaCorp</a>
                     </p>
                 </div>
+
             </div>
         </div>
     </div>
