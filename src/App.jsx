@@ -18,12 +18,12 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Homepage isHomePage={isHomePage} PageState={PageState} />}/>
-          <Route path="/first-newsletter-sample/" element={<FirstNewsletterEmail isHomePage={isHomePage} PageState={PageState}/>}/>
-          <Route path="/first-promotional-sample/" element={<FirstPromotionalEmail isHomePage={isHomePage} PageState={PageState}/>}/>
-          <Route path="/first-transactional-sample/" element={<FirstTransactionalEmail isHomePage={isHomePage} PageState={PageState}/>}/>
-          <Route path="/sample-kaiba-corp-landingPage/" element={<KaibaCorpLanding isHomePage={isHomePage} PageState={PageState}/>}/>
-          <Route path="/sample-yugi-tutor-landingPage/" element={<YugiTutorBusiness isHomePage={isHomePage} PageState={PageState}/>}/>
-          <Route path="/sample-apartment-landingPage/" element={<ApartmentLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="#/first-newsletter-sample/" element={<FirstNewsletterEmail isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="#/first-promotional-sample/" element={<FirstPromotionalEmail isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="#/first-transactional-sample/" element={<FirstTransactionalEmail isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="#/sample-kaiba-corp-landingPage/" element={<KaibaCorpLanding isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="#/sample-yugi-tutor-landingPage/" element={<YugiTutorBusiness isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="#/sample-apartment-landingPage/" element={<ApartmentLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
         </Routes>
       </Router>
     </div>
