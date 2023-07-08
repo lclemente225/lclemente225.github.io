@@ -75,7 +75,7 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                         </div>
                     </div>
                     <div className='yugi-tutor-left-column-row'>
-                        <img src='/yugi-tutor-landing-page-images/arrow-right.png/' alt="arrow right.png" 
+                        <img src='/yugi-tutor-landing-page-images/arrow-right.png' alt="arrow right.png" 
                             className="yugi-tutor-arrow-right"/>
                         <div className='yugi-tutor-left-column-row-text'>
                             <h4>
