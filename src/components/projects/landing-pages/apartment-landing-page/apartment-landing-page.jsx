@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../../navbar/Navbar';
-import './apartmentLandingPage.css'
+import './apartmentLandingPage.css';
 
 const ApartmentLandingPage = ({PageState,isHomePage}) => {
     const [isMenuOpen, toggleOpenMenu] = React.useState(false);
@@ -14,7 +14,6 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
         },[PageState])
 
     function openMenu(){
-        console.log(isMenuOpen)
         return toggleOpenMenu((isTrue)=>{
             return isTrue ? !isTrue : true
         })
@@ -26,7 +25,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
             ${isMenuOpen ? 'apartment-landing-page-menu-open' : 'apartment-landing-page-not-open'}`}>
             <div className='apartment-landing-page-nav'>
                 <a id="apartment-landing-top-logo" href="#">
-                <i className="fa-solid fa-vihara" style={{color:'white'}}/>
+                <i className="fa-solid fa-vihara fa-xl" style={{color:'white'}}/>
                 </a>
                 <nav>
                     <a href="#apartment-landing-page-explore">
@@ -106,7 +105,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             }}>
                     Explore
                 </h6>
-                <p style={{fontSize:'18px'}}>
+                <p  id="apartment-landing-page-explore-first-p">
                     44 Rhys showcases a philosophy of exceptional design that 
                     integrates stylish good looks, spacial harmony and a wealth
                     of practical solutions for everyday living.
@@ -125,7 +124,8 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                  style={{
                         color:'white',
                         letterSpacing:1.5,
-                        textTransform:'uppercase'
+                        textTransform:'uppercase',
+                        fontSize:'20px'
                         }}>
                         Watch <a><i className="fa-solid fa-play" 
                         style={{
@@ -216,7 +216,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             }}>
                     Location
                 </h6>
-                <p id="location-first-p" style={{fontSize:'18px'}}>
+                <p id="location-first-p">
                     Surrounding some of the most precious landmarks
                 </p>
                 <div>
@@ -241,7 +241,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             }}>
                     Experience
                 </h6>
-                <p style={{fontSize:'18px'}}>
+                <p>
                     Get acquainted with your surroundings and local ammenities
                 </p>
                 <div>
@@ -264,7 +264,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             }}>
                     Lifestyle
                 </h6>
-                <p id="location-first-p" style={{fontSize:'18px'}}>
+                <p id="location-first-p">
                 Living an experience you deserve
                 </p>
                 <div>
@@ -316,8 +316,8 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                             <a href='#' 
                                 style={{
                                     border:'1.8px solid black',
-                                    padding:'5px 10px',
-                                    fontSize:'12px',
+                                    padding:'10px 15px',
+                                    fontSize:'20px',
                                     color:'black'
                                 }}>
                                 Inquire Now
