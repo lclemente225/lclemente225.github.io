@@ -36,7 +36,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     </li>
                 </ul>
            </div>
-           <div className='one-column-skills-sect   ion'>
+           <div className='one-column-skills-section'>
              <h2>
                 Front End Web Development Tools
              </h2>

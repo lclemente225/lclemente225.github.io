@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Homepage from "./components/homepage/Homepage.jsx";
 import FirstNewsletterEmail from './components/projects/emails/newsletter/newsletter-email1.jsx';
 import FirstTransactionalEmail from './components/projects/emails/transactional-emails/first-transactional-email.jsx';
@@ -14,9 +14,9 @@ import './App.css';
 function App() {
   const [PageState,isHomePage] = React.useState(true);
 
-  const router = createBrowserRouter(
-    createRoutesFromElements( 
-        <Route>
+  return (
+    <div>
+        <Routes>
           <Route exact path="/" element={<Homepage isHomePage={isHomePage} PageState={PageState} />}/>
           <Route path="/first-newsletter-sample/" element={<FirstNewsletterEmail isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/first-promotional-sample/" element={<FirstPromotionalEmail isHomePage={isHomePage} PageState={PageState}/>}/>
@@ -24,13 +24,7 @@ function App() {
           <Route path="/sample-kaiba-corp-landingPage/" element={<KaibaCorpLanding isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-yugi-tutor-landingPage/" element={<YugiTutorBusiness isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-apartment-landingPage/" element={<ApartmentLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
-        </Route>
-    )
-  )
-
-  return (
-    <div>
-        <RouterProvider router={router}/>
+        </Routes>
     </div>
   )
 }
