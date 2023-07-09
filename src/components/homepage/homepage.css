@@ -31,7 +31,7 @@ a{
     justify-content: space-around;
 }
 .skills-section li{
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 .one-column-skills-section ul{
     list-style:circle !important;
@@ -81,21 +81,38 @@ a{
     width: 250px;
 }
 @media only screen and (min-width:700px) and (max-width: 1100px){
+    
+    .intro-section h1{
+        font-size:45px;
+        width:80%;
+    }
+    .intro-section h2{
+        font-size:25px;
+    }
     .skills-section{
         height:1000px;
         flex-direction: column;
         align-items: center;
     }
     .one-column-skills-section{
-        border:2px solid red;
         width:400px;
     }
     .skills-section h2{
         font-size:35px !important;
-        border:2px solid red;
    }
     }
 @media only screen and (max-width: 700px){
+    .intro-section{
+        height:400px !important;
+    }
+    .intro-section h1{
+        font-size:35px;
+        width:80%;
+    }
+    .intro-section h2{
+        font-size:20px;
+        width:75%;
+    }
    .project-list ul{
     grid-template-columns: 1fr;
     align-items: center;
@@ -105,9 +122,21 @@ a{
     height:1000px;
     flex-direction: column;
     align-items: center;
-}
-   .skills-section ul h2{
-        font-size:15px !important;
-        border:2px solid red;
+    }
+    .one-column-skills-section{
+        width:400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .skills-section h2{
+    width:50%;
+        font-size:24px !important;
+        text-align: center;
+   }
+   .skills-section ul{
+        width:50%;
+        font-size:24px !important;
+        align-self:self-start !important;
    }
 }
