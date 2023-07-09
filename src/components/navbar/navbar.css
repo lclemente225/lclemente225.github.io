@@ -6,6 +6,7 @@
     height:80px;
     width:100% !important;
     font-family: 'Ubuntu', sans-serif !important;
+    font-size:20px;
 }
 div.navbar ul.navbar-list{
     margin:0;

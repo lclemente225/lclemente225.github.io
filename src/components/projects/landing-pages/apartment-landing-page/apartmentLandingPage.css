@@ -824,7 +824,6 @@
     .apartment-landing-page-form{
         width:100%;
         height:700px;
-        border:2px solid green;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -845,7 +844,7 @@
         margin:0;
     }
     .apartment-landing-page-form-container{
-        margin-bottom:20px;
+        margin-bottom:40px;
         height:350px;
     }
     .apartment-landing-page-form-container form{
