@@ -663,7 +663,7 @@
     }
     .apartment-landing-dropdown-nav{
         position:absolute;
-        padding: 0;
+        padding: 15px 0;
         background-color: rgb(9,9,10);
         width:100%;
         height:auto;
@@ -769,7 +769,6 @@
     .apartment-highlights-text{
         height:90%;
         width:64%;
-        padding:20px 20px 40px 20px;
     }
     .apartment-highlights-text h4,
     .apartment-highlights-text div,
@@ -779,10 +778,10 @@
     }
     .apartment-highlights-text h4{
         font-weight: 400;
-        font-size:25px;
+        font-size:20px;
     }
     .apartment-highlights-text p{
-        font-size:13px;
+        font-size:11px;
     }
     .apartment-landing-page-location{
         width:100%;
@@ -812,7 +811,11 @@
         width:90%;
         height:430px;
     }
+    .apartment-landing-page-experience h6{
+        margin-bottom:30px;
+    }
     .apartment-landing-page-experience p{
+        width:70%;
         font-size:15px;
     }
     #apartment-landing-page-experience-second-p{
@@ -821,12 +824,16 @@
     .apartment-landing-page-form{
         width:100%;
         height:700px;
+        border:2px solid green;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .apartment-landing-page-form-heading{
         width:80%;
-        height:110px;
+        height: 210px;
         line-height:1.7;
-        margin-bottom:30px;
+        margin-top:45px;
     }
     .apartment-landing-page-form-heading h4{
         font-weight:400;
@@ -837,13 +844,17 @@
         font-size:15px !important;
         margin:0;
     }
+    .apartment-landing-page-form-container{
+        margin-bottom:20px;
+        height:350px;
+    }
     .apartment-landing-page-form-container form{
-        height:500px;
         width:100%;
+        height:100%;
     }
     .apartment-landing-input-field-top{
         width:85%;
-        margin-top:25px;
+        margin-top:45px;
     }
     .apartment-landing-input-field-bottom{
         margin:0;
