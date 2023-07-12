@@ -580,13 +580,42 @@
         width:80%;
         height:500px;
     }
+    .apartment-landing-page-form{
+        height:700px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .apartment-landing-page-form-heading {
+        margin:0;
+        margin-top:30px;
+    }
     .apartment-landing-page-form-heading h4{
         font-weight:400;
         font-size:20px;
     }
+    .apartment-landing-page-form-heading p{
+        margin:0;
+    }
+    .apartment-landing-page-form-container{
+        margin-bottom:50px;
+    }
     .apartment-landing-page-form-container label{
         font-size:15px;
         letter-spacing: 1.3px;
+    }
+    .apartment-landing-input-field-top{
+        width:85%;
+        margin-top:50px;
+    }
+    .apartment-landing-input-field-bottom{
+        margin:0;
+        height:140px;
+        width:85%;
+        flex-direction: column;
+    }
+    .apartment-landing-input-field-bottom input{
+        width:100%;
     }
     .apartment-form-button{
         margin:0;
