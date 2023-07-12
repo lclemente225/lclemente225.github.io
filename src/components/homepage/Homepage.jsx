@@ -73,7 +73,7 @@ const Homepage = ({PageState,isHomePage}) => {
            </div>         
         </div>
         <div className='project-list'>
-           <h1>Emails</h1>
+           <h1>Sample Emails</h1>
             <div className="list email-list">
                 <ul>
                     <li>
@@ -88,7 +88,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <div className='project-list-individual-container'>
                             <Link to="/first-promotional-sample/">
-                                <p>Sample Promotional Email</p>
+                                <p>Generic Promotional Email</p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
                             </Link>
@@ -105,7 +105,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     </li>
                 </ul>
             </div>
-            <h1>Landing Pages</h1>
+            <h1>Sample Landing Pages</h1>
                 <div className="list landing-page-list">
                     <ul>
                         <li>
