@@ -8,10 +8,10 @@
     font-family: 'Ubuntu', sans-serif !important;
     font-size:20px;
 }
-div.navbar ul.navbar-list{
+ul.navbar-list{
     margin:0;
     height:100%;
-    background-color: rgba(255, 255, 179, 0.452);
+    background-color: rgb(255, 244, 230);
     width: 100% !important;
     display:flex !important;
     justify-content: space-around !important;
@@ -19,4 +19,15 @@ div.navbar ul.navbar-list{
 }
 .arrow-icon{
     padding: 0 20px !important;
+}
+@media only screen and (max-width:960px){
+    ul.navbar-list{
+        justify-content: center;
+    }
+    #navbar-project-page{
+        margin-right:50px;
+    }
+    #navbar-home-about{
+        margin-right:40px;
+    }
 }
