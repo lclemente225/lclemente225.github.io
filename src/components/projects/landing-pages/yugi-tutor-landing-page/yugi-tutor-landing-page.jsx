@@ -146,7 +146,7 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
 
                 <div className='yugi-tutor-footer'>
                     <p>
-                        Copyright Kayle Jansen.All rights reserved. <a href='#'>Privacy Policy</a> 
+                        Copyright Kazuki Takahashi.All rights reserved. <a href='#'>Privacy Policy</a> 
                         &nbsp; | &nbsp;
                         Created with <a href='#'>KaibaCorp</a>
                     </p>

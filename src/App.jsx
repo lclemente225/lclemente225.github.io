@@ -6,6 +6,7 @@ import FirstTransactionalEmail from './components/projects/emails/transactional-
 import FirstPromotionalEmail from './components/projects/emails/promotional/PromotionalEmail1.jsx';
 import KaibaCorpLanding from './components/projects/landing-pages/kaiba-corp-landing-page/kaiba-corp-landing.jsx';
 import ApartmentLandingPage from './components/projects/landing-pages/apartment-landing-page/apartment-landing-page.jsx';
+import ItServiceLandingPage from './components/projects/landing-pages/it-service-landing-page/it-service-landing-page.jsx';
 import YugiTutorBusiness from './components/projects/landing-pages/yugi-tutor-landing-page/yugi-tutor-landing-page.jsx';
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/sample-kaiba-corp-landingPage/" element={<KaibaCorpLanding isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-yugi-tutor-landingPage/" element={<YugiTutorBusiness isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-apartment-landingPage/" element={<ApartmentLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="/sample-service-it-landingPage/" element={<ItServiceLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
         </Routes>
     </div>
   )

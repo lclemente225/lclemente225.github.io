@@ -4,11 +4,7 @@ import './apartmentLandingPage.css';
 
 const ApartmentLandingPage = ({PageState,isHomePage}) => {
     const [isMenuOpen, toggleOpenMenu] = React.useState(false);
-    //if menuopen then add class of menu open
-    //in css make default display:none
-    //if menu is open, then do 
-    // .menuopen dropdownnav{display:visible}
-
+    
     React.useEffect(() => {
         isHomePage(false);
         },[PageState])
