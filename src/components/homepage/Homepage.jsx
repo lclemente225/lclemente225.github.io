@@ -26,13 +26,13 @@ const Homepage = ({PageState,isHomePage}) => {
             </h2>
                 <ul>
                     <li>
-                        HTML
+                        <i className="fa-brands fa-html5" /> HTML
                     </li>
                     <li>
-                        CSS
+                        <i className="fa-brands fa-css3-alt"/> CSS
                     </li>
                     <li>
-                        Javascript
+                    <i className="fa-brands fa-js" /> Javascript
                     </li>
                 </ul>
            </div>
@@ -42,19 +42,19 @@ const Homepage = ({PageState,isHomePage}) => {
              </h2>
                 <ul>
                     <li>
-                        Responsive Web Design
+                        <i className="fa-solid fa-mobile-screen-button" /> Responsive Web Design
                     </li>
                     <li>
-                        Bootstrap
+                        <i className="fa-brands fa-bootstrap" /> Bootstrap
                     </li>
                     <li>
                         Flexbox | CSS Grid | Bootstrap Grid
                     </li>
                     <li>
-                        Node.js
+                        <i className="fa-brands fa-node-js"/> Node.js
                     </li>
                     <li>
-                        React JS
+                        <i className="fa-brands fa-react" /> React JS
                     </li>
                 </ul>
            </div>
@@ -64,7 +64,7 @@ const Homepage = ({PageState,isHomePage}) => {
             </h2>
                 <ul>
                     <li>
-                        Figma
+                        <i className="fa-brands fa-figma"/> Figma
                     </li>
                     <li>
                         Photoshop
@@ -128,6 +128,11 @@ const Homepage = ({PageState,isHomePage}) => {
                         </li>
                     </ul>
                 </div>
+        </div>
+        <div id="homepage-footer">
+            <p>
+                This portfolio was created with <i className="fa-brands fa-react" /> React + Vite
+            </p>
         </div>
     </div>
   )
