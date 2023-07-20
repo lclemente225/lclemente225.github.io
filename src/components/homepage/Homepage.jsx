@@ -88,7 +88,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <div className='project-list-individual-container'>
                             <Link to="/first-promotional-sample/">
-                                <p>Generic Promotional Email</p>
+                                <p>Sample Promotional Email</p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
                             </Link>
