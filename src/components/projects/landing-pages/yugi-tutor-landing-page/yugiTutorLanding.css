@@ -9,7 +9,7 @@
     height:300px;
     width:100%;
     background:url('/yugi-tutor-landing-page-images/yugi-top-image.jpg');
-    background-position: top;
+    background-position: top-right;
     background-size:cover;
     background-repeat: no-repeat;
     filter: grayscale(30%);
@@ -234,6 +234,7 @@
         width:400px !important;
     }
     .yugi-tutor-guide-container p{
+        font-size:16px;
         margin:0;
         width:80%;
     }
@@ -250,20 +251,40 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height:1200px;
+        height:1500px;
         width:100%;
     }  
     .yugi-tutor-email-signup{
         padding: 0;
         margin:0;
     }
-    
-.yugi-tutor-email-signup-form{
-    width:auto !important;
-    height:80px;
-}
+    .yugi-tutor-guide-container h1{
+        margin-top:30px;
+        padding:0;
+    } 
+    .yugi-tutor-guide-container img{
+        margin-bottom:30px;
+    }
+    .yugi-tutor-email-signup{
+        height:600px;
+    }
+    .yugi-tutor-email-signup-text{
+        max-width:80%;
+    }
+    .yugi-tutor-email-signup-form{
+        width:auto !important;
+        height:80px;
+    }
     .yugi-tutor-email-signup-form form{
         width:200px;
+    }
+    .yugi-tutor-social-links{
+        margin-top:80px !important;
+        width:60% !important;
+        font-size:25px;
+    }
+    .yugi-tutor-footer{
+        width:70% !important;
     }
   
 }

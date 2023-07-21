@@ -95,7 +95,7 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
                         Ready to take your dueling to the next level?
                     </h1>
                     <p>
-                        Grab my free guide to championship success
+                        Grab my free guide to championship success.
                     </p>
                     <div>
                         <a href="#" className='yugi-tutor-get-guide-button'>

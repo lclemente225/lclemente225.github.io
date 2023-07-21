@@ -11,7 +11,6 @@ const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
   return (
     <div className="kaiba-corp-body">
       <Navbar />
-      <div className='exodia-image'>
           <div className="kaiba-top-nav">
             <nav className="kaiba-nav-container1">		
                     <h2 className="kaiba-nav-logo">
@@ -20,7 +19,7 @@ const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
                         style={{
                               width:'50px',
                               height:'50px',
-                              paddingLeft:'20px',
+                              padding:'0 20px',
                               flexGrow:4
                               }} />
                         <a href="#">
@@ -59,30 +58,37 @@ const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
             </nav>
           </div>
           <div className='kaiba-welcome-message-container'>
+              <div className='exodia-image'/>
               <div className='kaiba-welcome-message'>
+                  <h2>
+                    Kaiba Corp Invites the 
+                  </h2>
                   <h1>
-                    Kaiba Corp Invites the World's Strongest Duelists
+                     World's Strongest Duelists
                   </h1>
                   <h3>
                     For the 2nd ever Duelist Kingdom
                   </h3>
               </div>
           </div>
-        </div>
 
-        <div className='kaiba-next-section'>
-          
+        <div>
+        
+        </div>                     
+
+        <div className='kaiba-intro-section'>
           <div className='kaiba-self-portrait'>
             <div style={{
                        border:'1px solid transparent', 
-                       padding:'0 32px',
-                       boxShadow:'inset 0 0 100px white',
-                       backdropFilter:'blur(10px)'
+                       backdropFilter:'blur(10px)',
+                       width:'100%',
+                       color:'white',
+                       backgroundColor:'rgba(10,21,51, 0.5)'
                        }}>
-              <h2 style={{textAlign:'center'}}>
-                I am Seto Kaiba. 
+              <h2 style={{textAlign:'center', fontSize:'40px',  margin:'30px 0 0 0'}}>
+                I am <span className='kaiba-fullname'>Seto Kaiba</span>. 
               </h2>
-              <h2 style={{textAlign:'center'}}>
+              <h2 style={{textAlign:'center',  margin:'20px 0 30px 0'}}>
               The World's Leading Duelist.
               <br/>
                 and CEO of KaibaCorp
@@ -90,11 +96,11 @@ const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
             </div>
               <div className='kaiba-self-portait-border' 
                   style={{
-                        width:'70%',
+                        width:'100%',
                         textAlign:'center',
                         borderBottom:'2px solid black',
                         boxShadow:'inset 0 0 5px white',
-                        backdropFilter:'blur(20px)'
+                        backgroundColor:'rgba(10,21,51, 0.5)'
                         }}>
                 <img src="/kaiba-corp-landing-images/seto-kaiba.png" 
                 style={{ 
@@ -106,25 +112,30 @@ const KaibaCorpLandingPage = ({PageState,isHomePage}) => {
 
           <div className='kaiba-email-form'>
               <h3 style={{
-                        width:'60%',
+                        width:'80%',
                         alignSelf:'center',
-                        textShadow:'0 0 10px rgba(56, 113, 199)'
+                        textAlign:'center',
+                        color:'white',
+                        marginTop:'50px',
+                        fontSize:'30px'
                         }}>
-                Come See if you have what it takes to take me on!
+                Come see if YOU have what it takes to take ME on!
               </h3>
-              <input type='email' placeholder='Enter your email if you dare' 
+              <input type='email' placeholder='Enter your email with your third rate deck' 
               style={{
-                    width:"50%",
+                    width:"60%",
+                    height:"50px",
                     alignSelf:"center"
                     }}/>
               <a href="" className='kaiba-email-form-button'
                 style={{
-                  color:'black',
+                  color:'rgb(251, 255, 0)',
                   border:'2px solid black',
                   borderRadius:'20px',
-                  padding:'5px 20px',
+                  padding:'10px 25px',
                   width:'105px',
                   alignSelf:'center',
+                  margin:'0 0 40px 0',
                   backgroundColor:'rgb(57, 57, 252)'
                   }}>
                 Sign up Today
