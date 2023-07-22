@@ -321,19 +321,27 @@ const FirstNewsletterEmail = ({PageState,isHomePage}) => {
                             <tr>
                               <td>
                                 <p>
-                                  You received this message because you're registered or accepted our invitation to receive emails from Fashion Nova, or you've made a purchase from fashionnova.com
+                                  You received this message because you're registered or accepted our invitation to receive emails from 
+                                  Fashion Nova, or you've made a purchase from fashionnova.com
                                 </p>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                SALUTE20 - Buy 2 items, get 20% off, SALUTE30 - Buy 3 items, get 30% off, SALUTE40 - Buy 4 items or more, get 40% off are valid sitewide with exclusions. See product descriptions on individual product pages for items excluded from this promotion. Offer valid while supplies last. Sale items are FINAL SALE. Fashion Nova, Inc. reserves the right to modify or cancel this promotion at any time without notice. Offer excludes gift cards. Offer not valid at Fashion Nova retail locations. Apply discount code at checkout. Taxes, shipping and handling fees are excluded from any discount. Cannot be combined with other discount codes and offers.
+                                SALUTE20 - Buy 2 items, get 20% off, SALUTE30 - Buy 3 items, get 30% off, SALUTE40 - Buy 4 items or more, 
+                                get 40% off are valid sitewide with exclusions. See product descriptions on individual product pages for 
+                                items excluded from this promotion. Offer valid while supplies last. Sale items are FINAL SALE. Fashion Mova, 
+                                Inc. reserves the right to modify or cancel this promotion at any time without notice. Offer excludes gift 
+                                cards. Offer not valid at Fashion Mova retail locations. Apply discount code at checkout. Taxes, shipping 
+                                and handling fees are excluded from any discount. Cannot be combined with other discount codes and offers.
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <p>
-                                  By signing up via text, you agree to receive recurring automated marketing text messages from Fashion Nova at the cell number used when signing up. Consent is not a condition of any purchase. Msg & data rates may apply. View{' '}
+                                  By signing up via text, you agree to receive recurring automated marketing text messages from Fashion Mova 
+                                  at the cell number used when signing up. Consent is not a condition of any purchase. Msg & data rates may 
+                                  apply. View{' '}
                                   <a href="#" style={{ fontWeight: 700, textDecoration: 'none', color: 'rgba(85, 85, 117, 0.733)' }}>
                                     Terms & Privacy.
                                   </a>
@@ -345,7 +353,7 @@ const FirstNewsletterEmail = ({PageState,isHomePage}) => {
                                 <p>
                                   Unsubscribe at any time by texting STOP. View{' '}
                                   <a href="#" style={{ fontWeight: 700, textDecoration: 'none', color: 'rgba(85, 85, 117, 0.733)' }}>
-                                    Fashion Nova's Privacy Policy.
+                                    Fashion Mova's Privacy Policy.
                                   </a>
                                 </p>
                               </td>
@@ -353,7 +361,7 @@ const FirstNewsletterEmail = ({PageState,isHomePage}) => {
                             <tr>
                               <td>
                                 <p>
-                                  Fashion Nova, 2801 East 46th St., Vernon, CA 90058
+                                  Fashion Mova, 0000 This Street St., California, CA 22222
                                 </p>
                               </td>
                             </tr>

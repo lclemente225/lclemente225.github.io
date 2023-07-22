@@ -117,7 +117,7 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
                                                         <td>
                                                             <p style={{lineHeight:1.5}}>
                                                                             Paid with Visa Ending in xxxx and/or credits
-                                                                            <br/>bb.q Chicken  
+                                                                            <br/>This great restaurant 
                                                                             <br/>
                                                                 <strong>Total: $34.80</strong>
                                                             </p>
@@ -165,7 +165,7 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
                                                                     fontSize:'14px',
                                                                     color:'rgba(31, 31, 31, 0.8)'
                                                                     }}>
-                                                                This restaurant pays a commission to DoorDash on this order
+                                                                This restaurant pays a commission to DoorBash on this order
                                                             </p>
                                                         </td>
                                                     </tr>
@@ -214,7 +214,7 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
                                                             </h4>
                                                             
                                                             <p style={{marginTop:'-20px'}}>
-                                                                Share your thoughts on your order with fellow customers and bb.q Chicken.
+                                                                Share your thoughts on your order with fellow customers and this restaurant.
                                                             </p>
                                                         </td>
                                                     </tr>
@@ -315,9 +315,9 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
                                                         <td style={{ margin:0 }}>
                                                             <p className="footer-text"
                                                             style={{ fontSize:'14px',color:'rgb(131, 131, 131)' }}>
-                                                                ©2023 DoorDash Inc.
-                                                                <br/>303 2nd Street, South Tower, Suite 800
-                                                                <br/>San Francisco, CA 94107
+                                                                ©2023 DoorBash Inc.
+                                                                <br/>222 Street St., My Place, Suite 111
+                                                                <br/>California, CA 94107
                                                                 <br/>
                                                                 <a href="#" 
                                                                 className="footer-text"
@@ -388,7 +388,7 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
                                                     <tr>
                                                         <td style={{ fontSize:'14px',color:'rgb(131, 131, 131)' }}>
                                                             <p className="footer-text">
-                                                                This restaurant pays a commission to DoorDash on this order
+                                                                This restaurant pays a commission to DoorBash on this order
                                                             </p>
                                                             <p className="footer-text">
                                                                 Prop 65 Restaurant <a href="#" className="footer-text"

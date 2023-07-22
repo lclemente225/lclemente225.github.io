@@ -1,0 +1,32 @@
+<table width="100%" cellPadding={0} cellSpacing={0} border={0}>
+
+paragraphStyle
+
+{/* Start Announcements Banner */}
+    <tbody>
+        <tr>
+        <td>
+            <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
+            <tbody>
+                 <tr>
+                <td>
+                    <p>
+                     Announcements
+                    </p>
+                </td>
+                 </tr>
+             </tbody>
+             </table>
+         </td>
+         </tr>
+    </tbody>
+{/* End Announcements Banner */}
+
+style={{backgroundColor:"#0055a2"}}
+style={{
+           color:"white", 
+           textAlign:"center",
+              fontSize:"20px",
+           margin:"0",
+          fontWeight:'700',
+          padding:'7px 0'}}
