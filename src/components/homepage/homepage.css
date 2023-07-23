@@ -10,6 +10,7 @@ a{
     color: rgb(56, 56, 56);
 }
 .home-page{
+    width: 100% !important;
     font-family: 'Ubuntu', sans-serif;
     font-size:25px;
 }
@@ -35,6 +36,7 @@ a{
     margin-bottom:15px;
 }
 .one-column-skills-section ul{
+    width:100%;
     list-style:circle !important;
 }
 .navbar-list a:hover,
@@ -64,7 +66,7 @@ a{
     margin:50px 0;
     padding: 10px 0 20px 0;
     height: auto;
-    width: 80vw;
+    width: 80%;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     gap: 30px 0;
@@ -130,18 +132,13 @@ a{
         font-size:20px;
         width:75%;
     }
-   .project-list ul{
-    grid-template-columns: 1fr;
-    align-items: center;
-    text-align: center;
-   }
    .skills-section{
     height:1000px;
     flex-direction: column;
     align-items: center;
     }
     .one-column-skills-section{
-        width:400px;
+        width:100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -155,5 +152,17 @@ a{
         width:50%;
         font-size:24px !important;
         align-self:self-start !important;
+   }
+   .project-list-heading{
+       font-size:30px;
+   }
+   .list{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   }
+   .project-list ul{
+        grid-template-columns: 1fr;
    }
 }

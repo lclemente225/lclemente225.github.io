@@ -15,6 +15,7 @@
     filter: grayscale(30%);
 }
 .yugi-tutor-top-banner>div{
+    background-color: rgba(0, 0, 0, 0.24);
     height:100%;
     width:100%;
     display:flex;
@@ -24,17 +25,14 @@
 }
 .yugi-tutor-top-banner>div :nth-child(n){
     font-weight:800;
-    color:black;
-    filter: drop-shadow(0 0 2px rgb(251, 255, 0)) grayscale(0%);
-    text-shadow: 0 0 5px rgb(251, 255, 0);
+    color:white;
+    filter: drop-shadow(0 0 2px black);
+    text-shadow: 0 0 5px black;
     padding:0;
     margin:5px 0;
 }
-.yugi-tutor-top-banner>div+p{
-    color:red !important;
-    font-size: 52px;
-}
 .yugi-tutor-top-banner h1{
+    text-align: center;
     font-size:50px;
 }
 .yugi-tutor-top-banner :nth-child(3){
@@ -251,6 +249,12 @@
     .yugi-tutor-top-banner{
         background-size:700px 500px;
         background-position: -105px 0px !important;
+    }
+    .yugi-tutor-top-banner h1{
+        font-size:35px; 
+    }
+    .yugi-tutor-top-banner-second-p{
+        font-size: 14px !important;
     }
     .yugi-tutor-info-row{
         background-color:rgb(136, 136, 250);

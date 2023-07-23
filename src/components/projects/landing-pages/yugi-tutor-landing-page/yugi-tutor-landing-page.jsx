@@ -13,9 +13,9 @@ const YugiTutorBusiness = ({PageState,isHomePage}) => {
     <div className='yugi-tutor-landing-page-body'>
         <div className='yugi-tutor-top-banner'>
             <div>
-                <p>Hello Duelist</p>
+                <p>Hello Duelist!</p>
                 <h1>I'm Yugi Mutou</h1>
-                <p>
+                <p className='yugi-tutor-top-banner-second-p'>
                     I'm a master duelist passionate about the greatest TCG. 
                     Let's work together to make you a stronger duelist so that you can win a championship!
                 </p>

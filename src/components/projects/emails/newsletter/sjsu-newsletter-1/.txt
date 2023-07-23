@@ -30,3 +30,6 @@ style={{
            margin:"0",
           fontWeight:'700',
           padding:'7px 0'}}
+
+images
+style={{width:'85%'}}

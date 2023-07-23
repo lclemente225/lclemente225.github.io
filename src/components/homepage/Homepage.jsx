@@ -73,7 +73,7 @@ const Homepage = ({PageState,isHomePage}) => {
            </div>         
         </div>
         <div className='project-list'>
-           <h1>Sample Emails</h1>
+           <h1 className='project-list-heading'>Sample Emails</h1>
             <div className="list email-list">
                 <ul>
                     <li>
@@ -105,7 +105,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     </li>
                 </ul>
             </div>
-            <h1>Sample Landing Pages</h1>
+            <h1 className='project-list-heading'>Sample Landing Pages</h1>
                 <div className="list landing-page-list">
                     <ul>
                         <li>
