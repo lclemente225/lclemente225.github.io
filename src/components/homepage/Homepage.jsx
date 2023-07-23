@@ -42,19 +42,22 @@ const Homepage = ({PageState,isHomePage}) => {
              </h2>
                 <ul>
                     <li>
+                        <i className="fa-brands fa-react" /> React JS
+                    </li>
+                    <li>
                         <i className="fa-solid fa-mobile-screen-button" /> Responsive Web Design
                     </li>
                     <li>
                         <i className="fa-brands fa-bootstrap" /> Bootstrap
                     </li>
                     <li>
-                        Flexbox | CSS Grid | Bootstrap Grid
+                        Flexbox 
+                    </li>
+                    <li>
+                        CSS Grid | Bootstrap Grid
                     </li>
                     <li>
                         <i className="fa-brands fa-node-js"/> Node.js
-                    </li>
-                    <li>
-                        <i className="fa-brands fa-react" /> React JS
                     </li>
                 </ul>
            </div>

@@ -44,6 +44,13 @@ a{
     text-shadow: 0 0 2px rgb(0, 218, 11);
     color: rgba(0, 0, 0, 0.322);
 }
+
+.list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .project-list{
     width: 100%;
     display: flex;
@@ -133,6 +140,7 @@ a{
         width:75%;
     }
    .skills-section{
+    border:2px solid red;
     height:1000px;
     flex-direction: column;
     align-items: center;
@@ -155,12 +163,6 @@ a{
    }
    .project-list-heading{
        font-size:30px;
-   }
-   .list{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
    }
    .project-list ul{
         grid-template-columns: 1fr;
