@@ -140,7 +140,6 @@ a{
         width:75%;
     }
    .skills-section{
-    border:2px solid red;
     height:1000px;
     flex-direction: column;
     align-items: center;
@@ -152,12 +151,12 @@ a{
         align-items: center;
     }
    .skills-section h2{
-    width:50%;
+        width:50%;
         font-size:24px !important;
         text-align: center;
    }
    .skills-section ul{
-        width:50%;
+        width:100%;
         font-size:24px !important;
         align-self:self-start !important;
    }
