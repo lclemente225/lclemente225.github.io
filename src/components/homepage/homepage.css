@@ -111,10 +111,6 @@ a{
     .intro-section h2{
         font-size:25px;
     }
-    .project-list ul{
-        grid-template-columns: 2fr 2fr;
-        gap: 30px 0;
-    }
     .skills-section{
         margin:0;
         height:1000px;
@@ -126,6 +122,10 @@ a{
     }
     .skills-section h2{
         font-size:35px !important;
+   }
+   .project-list ul{
+       grid-template-columns: 2fr 2fr;
+       gap: 30px 0;
    }
     }
 @media only screen and (max-width: 700px){
@@ -158,12 +158,19 @@ a{
         text-align: center;
    }
    .skills-section ul{
+        padding:0;
         width:100%;
         font-size:24px !important;
         align-self:self-start !important;
    }
+   .skills-section li{
+        list-style: circle !important;
+        display:block;
+        margin-left:25px;
+
+   }
    .project-list-heading{
-       font-size:30px;
+       font-size:25px;
    }
    .project-list ul{
         grid-template-columns: 1fr;

@@ -112,20 +112,20 @@ const Homepage = ({PageState,isHomePage}) => {
                 <div className="list landing-page-list">
                     <ul>
                         <li>
-                            <div className='project-list-individual-container'>
-                                <Link to="/sample-yugi-tutor-landingPage/">
-                                    <p>Personal Business Landing Page </p>
-                                    <img className="email-preview"
-                                        src="/homepage-images/yugi-tutor-preview.png"/>
-                                </Link>
-                            </div>
-                        </li>
-                        <li>
                            <div className='project-list-individual-container'>
                                 <Link to="/sample-apartment-landingPage/">
                                         <p>Apartment Landing Page</p>
                                         <img className="email-preview"
                                             src="/homepage-images/apartment-landing-page-preview.png"/>
+                                </Link>
+                            </div>
+                        </li>
+                        <li>
+                            <div className='project-list-individual-container'>
+                                <Link to="/sample-yugi-tutor-landingPage/">
+                                    <p>Personal Business Landing Page </p>
+                                    <img className="email-preview"
+                                        src="/homepage-images/yugi-tutor-preview.png"/>
                                 </Link>
                             </div>
                         </li>
