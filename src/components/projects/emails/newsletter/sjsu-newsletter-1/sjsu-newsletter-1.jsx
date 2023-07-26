@@ -1167,16 +1167,18 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                    {/* End Paragraph Table */}
 
                                                     {/* button table start */}
-                                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginTop:'30px'}}>
+                                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                                    style={{marginTop:'30px'}} className='sjsu-power-moms-button-table'>
                                                       <tbody>
                                                          <tr>
                                                            <td align='center'>
                                                             <a href="#" style={{
-                                                                   backgroundColor:'#0055a2', 
-                                                                   padding:'15px 20px',
-                                                                   textDecoration:'none',
-                                                                  textTransform:'uppercase',
-                                                                  color:'white'}}>
+                                                                              backgroundColor:'#0055a2', 
+                                                                              padding:'15px 20px',
+                                                                              textDecoration:'none',
+                                                                              textTransform:'uppercase',
+                                                                              color:'white'
+                                                                              }}>
                                                                  Learn more & register
                                                             </a>
                                                           </td>
