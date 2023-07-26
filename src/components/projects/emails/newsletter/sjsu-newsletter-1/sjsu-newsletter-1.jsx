@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../../../../navbar/Navbar';
+import "./sjsu-newsletter-1.css"
 
 const SjsuNewsletter1 = ({PageState,isHomePage}) => {
   React.useEffect(() => {
@@ -7,8 +8,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
      },[PageState])
 
 
-     const paragraphStyle = {padding:0,margin:0,textAlign:"center",fontSize:"14px"};
-     const paragraphNewsStyle = {padding:0,margin:0,textAlign:"left",fontSize:"14px"};
+     const paragraphStyle = {padding:0,margin:0,textAlign:"center",fontSize:"20px"};
+     const paragraphNewsStyle = {padding:0,margin:0,textAlign:"left",fontSize:"20px"};
      const paragraphTableStyle = {padding:'20px'}
      const dividerStyle = {width:"96%", textAlign:"center", color:"red", backgroundColor:"#e5a823",height:"2px",marginTop:"40px"}; 
   return (
@@ -88,7 +89,9 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <img src="/sjsu-newsletter1-images/football-schedule.png" alt="sjsu football season schedule"/>
+                                  <img src="/sjsu-newsletter1-images/football-schedule.png" 
+                                  alt="sjsu football season schedule" className='sjsu-football-season-image'
+                                  style={{width:'100%'}}/>
                                 </td>
                               </tr>
                             </tbody>
@@ -97,32 +100,33 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{padding:'20px'}}>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                  style={{padding:'20px'}} >
                                     <tbody>
                                       <tr>
-                                        <td>
-                                          <p style={paragraphStyle}>
-                                              Are you ready Spartans?
+                                        <td className='sjsu-table-hype-desc'>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
+                                              <b>Are you ready Spartans?</b>
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               This football season, the Alumni Association is hosting tailgate parties for a select amount
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               Mark your calendars and join us for food & drink with fellow Spartan alumni.
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               More details and ticket registration coming soon.
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               &nbsp;
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               Make your travel plans now! We kick off the season at USC on August 26!
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               Spartans are heading south where we will start the weekend with a Friday night party, and
                                           </p>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} className='paragraphStyle'>
                                               mingling with other Spartans before the game on Saturday!
                                           </p>
                                         </td>
@@ -161,7 +165,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0}  style={paragraphTableStyle}>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0}  
+                                  style={paragraphTableStyle}>
                                     <tbody>
                                       <tr>
                                         <td align='center'>
@@ -175,14 +180,20 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                       <tr>
                                         <td align='center'>
                                           <img src='/sjsu-newsletter1-images/four-student-gown.jpg' 
-                                          alt="four students in graduation gowns" style={{width:"600px"}}/>
+                                          alt="four students in graduation gowns" style={{width:"100%"}}
+                                          className='sjsu-four-student-gown-image'/>
                                         </td>
                                       </tr>
                                     </tbody>
                                     <tbody>
                                       <tr>
                                         <td>
-                                          <h4 style={{...paragraphStyle,textTransform:'uppercase', margin:'15px 0'}}>
+                                          <h4 className='sjsu-money-ranking-article-header paragraphStyle'
+                                            style={{
+                                                    ...paragraphStyle,
+                                                    textTransform:'uppercase', 
+                                                    margin:'15px 0'
+                                                    }}>
                                             Sjsu shines in money magazine's 2023 best colleges rankings
                                           </h4>
                                         </td>
@@ -190,8 +201,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     </tbody>
                                     <tbody>
                                       <tr>
-                                        <td style={{width:'80%'}}>
-                                          <p style={paragraphStyle}>
+                                        <td>
+                                          <p style={paragraphStyle} className='sjsu-money-ranking-article-text paragraphStyle'>
                                             “SJSU's high grade in Money's new rankings encapsulates our nationally 
                                             recognized world-class education and invaluable experiential learning that l
                                             eads to great careers. We firmly believe what happens in Silicon Valley changes 
@@ -210,7 +221,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td style={{padding:'30px 10px 20px 10px'}}>
-                                  <table width="100%" align='center' cellPadding={0} cellSpacing={0} border={0} style={{marginBottom:'20px'}}> 
+                                  <table width="100%" align='center' cellPadding={0} cellSpacing={0} border={0} 
+                                    style={{marginBottom:'20px'}}> 
                                      <tbody>
                                       <tr>
                                         <td align='center'>
@@ -234,17 +246,18 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0}
+                                    className='sjsu-announcements-banner'>
                                     <tbody>
                                       <tr>
                                         <td style={{backgroundColor:"#0055a2"}}>
                                           <p style={{
                                                   color:"white", 
                                                   textAlign:"center",
-                                                  fontSize:"20px",
+                                                  fontSize:"25px",
                                                   margin:"0",
                                                   fontWeight:'700',
-                                                  padding:'7px 0'}}>
+                                                  padding:'15px 0'}}>
                                             Announcements
                                           </p>
                                         </td>
@@ -259,7 +272,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <img src="/sjsu-newsletter1-images/mascot-business-call.png" alt="calling business owners" style={{width:"600px"}}/>
+                                  <img src="/sjsu-newsletter1-images/mascot-business-call.png" 
+                                    alt="calling business owners" style={{width:"100%"}}/>
                                 </td>
                               </tr>
                             </tbody>
@@ -268,11 +282,13 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
+                                <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                  style={paragraphTableStyle}>
                                     <tbody>
                                       <tr>
                                         <td>
-                                          <p style={paragraphStyle}>
+                                          <p style={paragraphStyle} 
+                                          className='sjsu-send-business-text paragraphStyle'>
                                             We want to know about you, Spartan Business Owners! Are you an 
                                             SJSU Alum who has a brick and mortar or online business? We have 
                                             lots of SJSU Alumni out there who would be happy to support their 
@@ -290,7 +306,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td style={{padding:'30px 10px 0px 10px'}}>
-                                  <table width="100%" align='center' cellPadding={0} cellSpacing={0} border={0}> 
+                                  <table width="100%" align='center' cellPadding={0} cellSpacing={0} border={0}
+                                    className='sjsu-submit-business-button'> 
                                      <tbody>
                                       <tr>
                                         <td align='center'>
@@ -328,7 +345,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                   </table>
                                   {/* End Divider Line */}
                                   {/* Start Articles */}
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0}
+                                    className='sjsu-school-articles-table' style={{marginBottom:'30px'}}>
                                     <tbody>
                                       <tr>
                                         <td>
@@ -354,12 +372,14 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                     <tbody>
                                                       <tr>
                                                         <td align='center'>
-                                                          <p style={{...paragraphStyle, marginBottom:'15px'}}>
+                                                          <p className='paragraphStyle' 
+                                                            style={{...paragraphStyle, marginBottom:'15px'}}>
                                                             <b>
                                                             Alumni Presenters Needed for Fall '23
                                                             </b>
                                                           </p>
-                                                          <p style={paragraphStyle}>
+                                                          <p className='paragraphStyle' 
+                                                            style={paragraphStyle}>
                                                             The Student Alumni Connection is in need of volunteers to join 
                                                             them in-person for the fall semester. As a member of the alumni 
                                                             community, you have the power to inspire current SJSU students 
@@ -374,7 +394,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                   </table>
                                                   {/* paragraph table end */}
                                                   {/* button table start */}
-                                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginTop:'45px'}}>
+                                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                                    style={{marginTop:'60px'}}>
                                                     <tbody>
                                                       <tr>
                                                         <td align='center'>
@@ -414,16 +435,22 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                   </table>
                                                   {/* image table end */}
                                                   {/* paragraph table start */}
-                                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
+                                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                                    style={paragraphTableStyle}>
                                                     <tbody>
                                                       <tr>
                                                         <td>
-                                                          <p style={{...paragraphStyle, marginBottom:'15px'}}>
+                                                          <p className='paragraphStyle'
+                                                            style={{
+                                                                  ...paragraphStyle, 
+                                                                  marginBottom:'15px'
+                                                                  }}>
                                                             <b>
                                                             SJSU Fall 2023 Program
                                                             </b>
                                                           </p>
-                                                          <p style={paragraphStyle}>
+                                                          <p className='paragraphStyle'
+                                                            style={paragraphStyle}>
                                                             Are you interested in engaging with and mentoring a current SJSU 
                                                             student? Join the semester long program (3 meetings minimum), and 
                                                             make an impact on a student today! Mentors are invited to apply until 
@@ -439,7 +466,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                   </table>
                                                   {/* paragraph table end */}
                                                   {/* button table start */}
-                                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginTop:'45px'}}>
+                                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                                    style={{marginTop:'85px'}} className='sjsu-mentor-signup-button-table'>
                                                     <tbody>
                                                       <tr>
                                                         <td align='center'>
@@ -488,7 +516,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                   </table>
                                   {/* End Divider Line */}
                                   {/* Start Article */}
-                                  <table width="100%" align='center' cellPadding={0} cellSpacing={0} border={0}>
+                                  <table width="100%" align='center' cellPadding={0} cellSpacing={0} border={0}
+                                    className='sjsu-naacp-congrats-article' style={{marginTop:'50px'}}>
                                     <tbody>
                                       <tr>
                                         <td>
@@ -497,18 +526,20 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                             <tbody>
                                               <tr>
                                                 <td align='center'>
-                                                  <img src="/sjsu-newsletter1-images/naacp-alumni.jpg" alt="The four NAACP SJSU alumni" style={{width:'600px'}}/>
+                                                  <img src="/sjsu-newsletter1-images/naacp-alumni.jpg" 
+                                                  alt="The four NAACP SJSU alumni" style={{width:'100%'}}/>
                                                 </td>
                                               </tr>
                                             </tbody>
                                           </table>
                                           {/* image table end */}
                                           {/* paragraph table start */}
-                                          <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
+                                          <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                            style={paragraphTableStyle} >
                                             <tbody>
                                               <tr>
                                                 <td>
-                                                  <p style={paragraphStyle}>
+                                                  <p style={paragraphStyle} className='sjsu-naacp-congrats-text paragraphStyle'>
                                                     Congratulations to Dr. Harry Edwards, '64 Sociology, '16 Honorary Doctorate; 
                                                     Ken Noel, '66 BA, '68 MA Social Science; Tommie Smith, '69 Social Science,
                                                     '05 Honorary Doctorate, and John Carlos, '05 Honorary Doctorate for their induction 
@@ -551,17 +582,18 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                                 <tr>
                                   <td>
-                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginTop:'20px'}}>
+                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                    style={{marginTop:'20px'}} className='sjsu-in-the-news-banner'>
                                       <tbody>
                                           <tr>
                                           <td style={{backgroundColor:"#0055a2"}}>
                                               <p style={{
                                                   color:"white", 
                                                   textAlign:"center",
-                                                  fontSize:"20px",
+                                                  fontSize:"25px",
                                                   margin:"0",
                                                   fontWeight:'700',
-                                                  padding:'7px 0'}}>
+                                                  padding:'15px 0'}}>
                                                 SJSU in the News
                                               </p>
                                           </td>
@@ -580,10 +612,12 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     <tbody>
                                       <tr>
                                         <td>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <b>Washington Post</b>
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <a href="#">
                                               A former SJSU dean wanted to pet dogs for his 100th birthday, and 200 dogs showed up. 
                                             </a>
@@ -591,10 +625,12 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                           <p style={paragraphStyle}>
                                             &nbsp;
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <b>NBC Bay Area</b>
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <a href="#">
                                               SJSU President Cynthia Tiente-Matson comments on how to improve student education rates 
                                               in regard to the just released Latino Education Report Card.      
@@ -603,10 +639,12 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                           <p style={paragraphStyle}>
                                             &nbsp;
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <b>San Francisco Chronicle</b>
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <a href="#">
                                               SJSU professor comments on wildfire risk remains high going into the 4th of July.     
                                             </a>
@@ -614,10 +652,12 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                           <p style={paragraphStyle}>
                                             &nbsp;
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <b>News-Medical.Net</b>
                                           </p>
-                                          <p style={paragraphNewsStyle}>
+                                          <p className='paragraphNewsStyle' 
+                                            style={paragraphNewsStyle}>
                                             <a href="#">
                                               SJSU researchers and others develop a new model that could speed up vaccine distribution 
                                               during a pandemic.
@@ -635,17 +675,18 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                              <tbody>
                                 <tr>
                                   <td>
-                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
+                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0}
+                                      className='sjsu-upcoming-events-banner'>
                                       <tbody>
                                           <tr>
                                           <td style={{backgroundColor:"#0055a2"}}>
                                               <p style={{
                                                   color:"white", 
                                                   textAlign:"center",
-                                                  fontSize:"20px",
+                                                  fontSize:"25px",
                                                   margin:"0",
                                                   fontWeight:'700',
-                                                  padding:'7px 0'}}>
+                                                  padding:'15px 0'}}>
                                                 Upcoming Events
                                               </p>
                                           </td>
@@ -660,7 +701,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <table width="100%" height="200px" cellPadding={0} cellSpacing={0} border="0">
+                                  <table width="100%" height="400px" cellPadding={0} cellSpacing={0} border="0"
+                                    className='sjsu-upcoming-event-table'>
                                     <tbody>
                                       <tr>
                                         <td>
@@ -669,28 +711,33 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                               <tr>
                                                 <td align='center' style={{height:"100%"}}>
                                                   <img src="/sjsu-newsletter1-images/google-interview-tips.jpg" 
-                                                  alt="google technical interview tips" style={{width:"90%", marginTop:'40px'}}/>
+                                                  alt="google technical interview tips" style={{width:"90%"}}/>
                                                 </td>
                                               </tr>
                                             </tbody>
                                           </table>
-                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
+                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0} 
+                                            style={paragraphTableStyle}>
                                             <tbody>
                                                 <tr>
                                                   <td>
-                                                    <p style={{textAlign:'center', fontSize:'16px'}}>
+                                                    <p style={{textAlign:'center', fontSize:'25px'}}
+                                                      className='sjsu-upcoming-events-heading'>
                                                       <b>
                                                       Google Technical Interview Tips
                                                       </b>
                                                     </p>
-                                                    <p style={paragraphStyle}>
+                                                    <p className='paragraphStyle' 
+                                                      style={paragraphStyle}>
                                                       Come learn the ins and outs of technical interviews so you can nail your next one!
                                                       Google software engineering, User Design, and Technical Program Management teams will 
                                                       pull back the curtains on the interview process and give awesome tips and practice 
                                                       questions too. You will also get a chance to engage and ask questions!
                                                     </p>
-                                                    <p style={{...paragraphStyle, paddingTop:'20px'}}>July 25 | 2PM</p>
-                                                    <p style={paragraphStyle}>
+                                                    <p className='paragraphStyle'
+                                                      style={{...paragraphStyle, paddingTop:'20px'}}>July 25 | 2PM</p>
+                                                    <p className='paragraphStyle'
+                                                      style={paragraphStyle}>
                                                       <a href="#">
                                                         Learn More & Register!
                                                       </a>
@@ -726,7 +773,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     </table>
                                       {/* End Divider Line */}
                                       {/* Start article */}
-                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} height="280px">
+                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} height="400px"
+                                      className='sjsu-upcoming-event-table'>
                                       <tbody>
                                         <tr>
                                           <td>
@@ -738,15 +786,19 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                           <tbody>
                                               <tr>
                                                 <td>
-                                                  <p style={{textAlign:'center', fontSize:'16px'}}>
+                                                  <p style={{textAlign:'center', fontSize:'25px'}}
+                                                    className='sjsu-upcoming-events-heading'>
                                                     <b>SJSU Casino Night</b>
                                                   </p>
-                                                  <p style={paragraphStyle}>
+                                                  <p className='paragraphStyle'
+                                                    style={paragraphStyle}>
                                                     Save the date! The division of Intercollegiate Athletics presents Casino Night 
                                                     at The Glasshouse in downtown San José. All proceeds will benefit SJSU Athletics.
                                                   </p>
-                                                  <p style={{...paragraphStyle, marginTop:"25px"}}>July 25 | 2PM</p>
-                                                  <p style={paragraphStyle}>
+                                                  <p className='paragraphStyle' 
+                                                    style={{...paragraphStyle, marginTop:"25px"}}>July 25 | 2PM</p>
+                                                  <p className='paragraphStyle'
+                                                    style={paragraphStyle}>
                                                     <a href="#">
                                                       Learn More & Register!
                                                     </a>
@@ -771,7 +823,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     </table>
                                     {/* End article */}
                                     {/* button table start */}
-                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{margin:'0 0 50px 0'}}>
+                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{margin:'25px 0 50px 0'}}>
                                       <tbody>
                                         <tr>
                                           <td align='center'>
@@ -796,17 +848,18 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                              <tbody>
                                 <tr>
                                   <td>
-                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginBottom:'20px'}}>
+                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                    style={{marginBottom:'20px'}} className='sjsu-online-programming-banner'>
                                       <tbody>
                                           <tr>
                                           <td style={{backgroundColor:"#0055a2"}}>
                                               <p style={{
                                                   color:"white", 
                                                   textAlign:"center",
-                                                  fontSize:"20px",
+                                                  fontSize:"25px",
                                                   margin:"0",
                                                   fontWeight:'700',
-                                                  padding:'7px 0'}}>
+                                                  padding:'15px 0'}}>
                                                 Online Programming
                                               </p>
                                           </td>
@@ -822,12 +875,14 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                               <tr>
                                 <td>
                                   {/* Start top table */}
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} className='sjsu-online-programming-table-container'>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                    className='sjsu-online-programming-table-container'>
                                     <tbody>
                                       <tr>
                                         <td>
                                           {/* Start Left column */}
-                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
+                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0} 
+                                            style={paragraphTableStyle}>
                                              <tbody>
                                                <tr>
                                                  <td>
@@ -848,10 +903,16 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                       <tbody>
                                                         <tr>
                                                           <td>
-                                                            <h3>
+                                                            <h3 style={{fontSize:"25px"}}>
                                                               Money Zen: The Secret to Beating the "Never Enough" Mindset - July 19
                                                             </h3>
-                                                            <p style={{...paragraphStyle,textAlign:'left',lineHeight:1.2,fontSize:'14px'}}>
+                                                            <p className='paragraphStyle'
+                                                              style={{
+                                                                    ...paragraphStyle,
+                                                                    textAlign:'left',
+                                                                    lineHeight:1.2,
+                                                                    fontSize:'18px'
+                                                                    }}>
                                                             It is a long established fact that a reader will be distracted by the readable 
                                                             content of a page when looking at its layout. The point of using Lorem Ipsum 
                                                             is that it has a more-or-less normal distribution of letters, as opposed to 
@@ -867,7 +928,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                    </table>
                                                    {/* End Paragraph Table */}
                                                    {/* button table start */}
-                                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{margin:"30px 0"}}>
+                                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{margin:"67px 0"}}>
                                                       <tbody>
                                                          <tr>
                                                            <td align='center'>
@@ -890,12 +951,12 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                            </table>   
                                           {/* End Left column */}
                                           {/* Start Right column */}
-                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0}>
+                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
                                              <tbody>
                                                <tr>
                                                  <td>
                                                    {/* Start Image Table  */}
-                                                   <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{paddingTop:'20px'}}>
+                                                   <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
                                                       <tbody>
                                                         <tr>
                                                           <td align='center'>
@@ -911,10 +972,17 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                       <tbody>
                                                         <tr>
                                                           <td>
-                                                            <h3>
+                                                            <h3 style={{fontSize:"25px"}}>
                                                               How to Gracefully Lead Through Change and Crisis - July 27
                                                             </h3>
-                                                            <p style={{...paragraphStyle,textAlign:'left',lineHeight:1.2,fontSize:'14px'}}>
+                                                            <p className='paragraphStyle sjsu-graceful-change-text' 
+                                                              style={{
+                                                                    ...paragraphStyle,
+                                                                    textAlign:'left',
+                                                                    lineHeight:1.2,
+                                                                    fontSize:'18px',
+                                                                    marginTop:'55px'
+                                                                    }}>
                                                             It is a long established fact that a reader will be distracted by the 
                                                             readable content of a page when looking at its layout. The point of 
                                                             using Lorem Ipsum is that it has a more-or-less normal distribution 
@@ -932,7 +1000,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                    {/* End Paragraph Table */}
 
                                                     {/* button table start */}
-                                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginTop:"67px"}}>
+                                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{margin:"67px 0"}}>
                                                       <tbody>
                                                          <tr>
                                                            <td align='center'>
@@ -940,8 +1008,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                                    backgroundColor:'#0055a2', 
                                                                    padding:'15px 20px',
                                                                    textDecoration:'none',
-                                                                  textTransform:'uppercase',
-                                                                  color:'white'}}>
+                                                                   textTransform:'uppercase',
+                                                                   color:'white'}}>
                                                                  Learn more & register
                                                             </a>
                                                           </td>
@@ -960,7 +1028,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                   </table>      
                                   {/* End Top Table */}     
                                    {/* Start Bottom table */}
-                                   <table width="100%" cellPadding={0} cellSpacing={0} border={0} className='sjsu-online-programming-table-container'>
+                                   <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                    className='sjsu-online-programming-table-container'>
                                     <tbody>
                                       <tr>
                                         <td>
@@ -986,11 +1055,19 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                       <tbody>
                                                         <tr>
                                                           <td>
-                                                            <h3 style={{textAlign:"left", margin:'0 0 30px'}}>
+                                                            <h3
+                                                              style={{textAlign:"left", margin:0, fontSize:"25px"}}>
                                                             The Microstress Effect: How Little Things Pile Up and 
                                                             Create Big Problems - August 1
                                                             </h3>
-                                                            <p style={{...paragraphStyle,textAlign:'left',lineHeight:1.2,fontSize:'14px'}}>
+                                                            <p className='paragraphStyle' 
+                                                              style={{
+                                                                      ...paragraphStyle,
+                                                                      marginTop:'30px',
+                                                                      textAlign:'left',
+                                                                      lineHeight:1.2,
+                                                                      fontSize:'18px'
+                                                                      }}>
                                                               Have you ever felt that you don't measure up? Far too many of us feel 
                                                               trapped in a 24/7 hamster wheel of hustle culture, no matter our age, 
                                                               income, or profession. In a world that increasingly tells us the answer 
@@ -1052,10 +1129,18 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                       <tbody>
                                                         <tr>
                                                           <td>
-                                                            <h3 style={{margin:'0 0 30px', padding:0}}>
+                                                            <h3 
+                                                              style={{margin:0,padding:0,fontSize:"25px"}}>
                                                               How Working Mothers Can Thrive And Not Just Survive - August 10
                                                             </h3>
-                                                            <p style={{...paragraphStyle,textAlign:'left',lineHeight:1.2,fontSize:'14px'}}>
+                                                            <p className='paragraphStyle sjsu-working-mothers-text' 
+                                                              style={{
+                                                                      ...paragraphStyle,
+                                                                      marginTop:'60px', 
+                                                                      textAlign:'left',
+                                                                      lineHeight:1.2,
+                                                                      fontSize:'18px'
+                                                                      }}>
                                                               Have you ever felt that you don't measure up? Far too many of us feel 
                                                               trapped in a 24/7 hamster wheel of hustle culture, no matter our age, 
                                                               income, or profession. In a world that increasingly tells us the answer 
@@ -1123,13 +1208,13 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                   {/* End Divider Line */}
                                    {/* Start Image Table  */}
                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
-                                    style={{margin:'15px 0 45px'}}>
+                                    style={{margin:'30px 0 55px'}}>
                                      <tbody>
                                        <tr>
                                         <td align='center'>
                                           <div style={{
-                                                       width:'200px',
-                                                       height:'200px',
+                                                       width:'150px',
+                                                       height:'150px',
                                                        backgroundColor:'black'   
                                                         }}/>
                                         </td>
@@ -1169,21 +1254,23 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                        <tr>
                                         <td align='center'>
                                           <img src="/sjsu-newsletter1-images/most-transformative-uni.png" 
-                                          alt="SJSU most transformative univ" style={{width:'339px', height:'105.72px'}} />
+                                          alt="SJSU most transformative univ" 
+                                          style={{width:'339px', height:'105.72px',marginTop:'30px'}} />
                                         </td>
                                        </tr>
                                      </tbody>
                                   </table>
                                   {/* End Image */}
                                   {/* button table start */}
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginTop:'20px'}}>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                  style={{marginTop:'30px'}}>
                                     <tbody>
                                        <tr>
                                           <td align='center'>
                                           <a href="#" style={{
                                                  backgroundColor:'#0055a2', 
                                                  padding:'15px 20px',
-                                                  textDecoration:'none',
+                                                textDecoration:'none',
                                                 textTransform:'uppercase',
                                                 color:'white'}}>
                                                 Update your contect information
@@ -1202,14 +1289,16 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                               <tr>
                                 <td align='center'>
                                   <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
-                                    style={{marginTop:'30px'}}>
+                                    style={{margin:'50px 0'}}>
                                     <tbody>
                                       <tr>
                                         <td align='center'>
-                                          <p style={{margin:0, padding:0, lineHeight:1, fontSize:'22px'}}>
+                                          <p className='sjsu-engage-with-us-text' 
+                                            style={{margin:0, padding:0, lineHeight:1, fontSize:'22px'}}>
                                             <b>Continue to engage with us - </b>
                                           </p>
-                                          <p style={{margin:0, padding:0, lineHeight:1,fontSize:'22px'}}>
+                                          <p className='sjsu-engage-with-us-text' 
+                                            style={{margin:0, padding:0, lineHeight:1,fontSize:'22px'}}>
                                             <b>in-person, online and with Pride!</b>
                                           </p>
                                         </td>
@@ -1235,7 +1324,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                 <td align="center">
                                                   <a href="#">
                                                     <img src='/sjsu-newsletter1-images/facebook-icon.png'
-                                                      alt='facebook icon' style={{width:'16px',height:'29.59px',margin:0}}/>
+                                                      alt='facebook icon' 
+                                                      style={{width:'16px',height:'29.59px',margin:0}}/>
                                                   </a>
                                                 </td>
                                               </tr>
@@ -1249,7 +1339,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                 <td align="center">
                                                   <a href="#">
                                                     <img src='/sjsu-newsletter1-images/linkedin-icon.png'
-                                                      alt='linkedin icon' style={{width:'27px',height:'28.34px',margin:0,padding:0}}/>
+                                                      alt='linkedin icon' 
+                                                      style={{width:'27px',height:'28.34px',margin:0,padding:0}}/>
                                                   </a>
                                                 </td>
                                               </tr>
@@ -1263,7 +1354,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                 <td align="center">
                                                   <a href="#">
                                                     <img src='/sjsu-newsletter1-images/twitter-icon.png'
-                                                      alt='twitter icon' style={{width:'36px',height:'29.14px',margin:0,padding:0}}/>
+                                                      alt='twitter icon' 
+                                                      style={{width:'36px',height:'29.14px',margin:0,padding:0}}/>
                                                   </a>
                                                 </td>
                                               </tr>
@@ -1277,7 +1369,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                 <td align="center">
                                                   <a href="#">
                                                     <img src='/sjsu-newsletter1-images/instagram-icon.png'
-                                                      alt='instagram icon' style={{width:'30px',height:'30px',margin:0,padding:0}}/>
+                                                      alt='instagram icon' 
+                                                      style={{width:'30px',height:'30px',margin:0,padding:0}}/>
                                                   </a>
                                                 </td>
                                               </tr>
@@ -1300,7 +1393,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     <tbody>
                                       <tr>
                                         <td align='center'>
-                                         <table width="100%" cellPadding="0 20px" cellSpacing={0} border={0}>
+                                         <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
                                             <tbody>
                                               <tr>
                                                 <td width='50%'align='right' style={{paddingRight:"5px"}}>
@@ -1349,9 +1442,9 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                                   color:"blue", 
                                                                   padding:"20px 0"
                                                                   }}>
-                                          <p style={{fontSize:"10px"}}>
+                                          <a href="#" style={{fontSize:"10px"}}>
                                             Unsubscribe
-                                          </p>
+                                          </a>
                                         </td>
                                       </tr>
                                     </tbody>

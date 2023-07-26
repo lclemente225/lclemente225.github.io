@@ -1,0 +1,48 @@
+@media only screen and (min-width: 960px){
+    .sjsu-newsletter-table-container{
+        width:960px;
+    }
+}
+/*midsizes*/
+@media only screen and (max-width: 960px){
+    .sjsu-newsletter-table-container{
+        width:600px;
+    }
+    .sjsu-announcements-banner p,
+    .sjsu-in-the-news-banner p,
+    .sjsu-upcoming-events-banner p,
+    .sjsu-online-programming-banner p{
+        padding:7px 0 !important;
+        font-size: 20px !important;
+    }
+    .paragraphStyle,
+    .paragraphStyle a,
+    .paragraphNewsStyle{
+        font-size: 14px !important;
+    }
+    .sjsu-mentor-signup-button-table{
+        margin-top: 45px !important;
+    }
+    .sjsu-naacp-congrats-article{
+        margin-top:0 !important;
+    }
+    .sjsu-upcoming-event-table{
+        height:300px;
+    }
+    .sjsu-upcoming-events-heading{
+        font-size:16px !important;
+    }
+    .sjsu-online-programming-table-container h3{
+        font-size:20px !important;
+    }
+    .sjsu-graceful-change-text{
+        margin-top: 10px !important;
+    }
+    .sjsu-working-mothers-text{
+        margin-top:57px !important;
+    }
+
+}
+/*mobile*/
+@media only screen and (max-width: 600px){
+    }
