@@ -81,6 +81,15 @@ const Homepage = ({PageState,isHomePage}) => {
                 <ul>
                     <li>
                         <div className='project-list-individual-container'>
+                            <Link to="/sample-sjsu-newsletter-1/">
+                                <p>School Newsletter Email</p>
+                                <img className="email-preview"
+                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />                        
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='project-list-individual-container'>
                             <Link to="/first-newsletter-sample/">
                                 <p>Fashion Nova Newsletter Email</p>
                                 <img className="email-preview"
@@ -91,7 +100,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <div className='project-list-individual-container'>
                             <Link to="/first-promotional-sample/">
-                                <p>Sample Promotional Email</p>
+                                <p>Promotional Email</p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
                             </Link>
