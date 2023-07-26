@@ -48,4 +48,55 @@
     .sjsu-newsletter-table-container{
         width:100%;
     }
+    .sjsu-mentor-sign-up-left-column{
+        width:100%;
+    }
+    .sjsu-mentor-sign-up-right-column{
+        width:100%;
+        margin-top: 80px;
+    }
+    .sjsu-upcoming-event-table{
+        height:700px;
+    }
+    .sjsu-google-interview-article-image-table{
+        width:100%;
+        height:auto;
+    }
+    .sjsu-google-interview-article-image-table img{
+        margin:0 !important;
+    }
+    .sjsu-google-interview-article-text-table{
+        width:100%;
+    }
+    .sjsu-casino-night-text-table{
+        width:100%;
+        margin-top:-100px;
+    }
+    .sjsu-casino-night-image-table{
+        text-align: center;
+        height:auto;
+        width:100%;
+    }
+    .sjsu-casino-night-button-table a{
+        font-size:9px;
+    }
+    .sjsu-money-zen-book-table{
+        width:100%;
+    }
+    .sjsu-grace-crisis-book-table{
+        width:100%;
+    }
+    .sjsu-microstress-book-table{
+        width:100%;
+    }
+    .sjsu-power-mom-book-table{
+        width:100%;
+        margin:50px 0;
+    }
+    .sjsu-alumni-membership-button-table a{
+        font-size:10px;
+    }
+    .sjsu-contact-update-button-table{
+        font-size:12px;
+    }
     }

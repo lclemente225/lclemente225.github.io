@@ -351,7 +351,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                       <tr>
                                         <td>
                                           {/* Left article start */}
-                                          <table width="50%" align="left" cellPadding={0} cellSpacing={0} border={0} className='sjsu-mentor-sign-up-left-column'>
+                                          <table width="50%" align="left" cellPadding={0} cellSpacing={0} border={0} 
+                                            className='sjsu-mentor-sign-up-left-column'>
                                             <tbody>
                                               <tr>
                                                 <td>
@@ -418,7 +419,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                           </table>
                                           {/* Left article end */}
                                           {/* Right article start */}
-                                          <table width="50%" align="right" cellPadding={0} cellSpacing={0} border={0} className='sjsu-mentor-sign-up-right-column'>
+                                          <table width="50%" align="right" cellPadding={0} cellSpacing={0} border={0} 
+                                            className='sjsu-mentor-sign-up-right-column'>
                                             <tbody>
                                               <tr>
                                                 <td>
@@ -706,18 +708,19 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     <tbody>
                                       <tr>
                                         <td>
-                                          <table width="50%" height="100%" align='left' cellPadding={0} cellSpacing={0} border={0}>
+                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0}
+                                            className='sjsu-google-interview-article-image-table'>
                                             <tbody>
                                               <tr>
                                                 <td align='center' style={{height:"100%"}}>
                                                   <img src="/sjsu-newsletter1-images/google-interview-tips.jpg" 
-                                                  alt="google technical interview tips" style={{width:"90%"}}/>
+                                                  alt="google technical interview tips" style={{width:"90%",marginTop:"40px"}}/>
                                                 </td>
                                               </tr>
                                             </tbody>
                                           </table>
                                           <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0} 
-                                            style={paragraphTableStyle}>
+                                            style={paragraphTableStyle} className='sjsu-google-interview-article-text-table'>
                                             <tbody>
                                                 <tr>
                                                   <td>
@@ -778,7 +781,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                       <tbody>
                                         <tr>
                                           <td>
-                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0} 
+                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0}
+                                          className='sjsu-casino-night-text-table' 
                                           style={{
                                             ...paragraphTableStyle,
                                             paddingBottom:0
@@ -807,12 +811,13 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                               </tr>
                                           </tbody>
                                         </table>         
-                                        <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0}>
+                                        <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0}
+                                          className='sjsu-casino-night-image-table'>
                                           <tbody>
                                             <tr>
                                               <td>
                                                 <img src="/sjsu-newsletter1-images/invite-casino-night.png" 
-                                                alt="sjsu casino night invite" style={{width:"90%",marginTop:"30px"}}/>
+                                                alt="sjsu casino night invite" style={{width:"90%",marginTop:"40px"}}/>
                                               </td>
                                             </tr>
                                           </tbody>
@@ -823,7 +828,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                     </table>
                                     {/* End article */}
                                     {/* button table start */}
-                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{margin:'25px 0 50px 0'}}>
+                                    <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                    style={{margin:'25px 0 50px 0'}} className='sjsu-casino-night-button-table'>
                                       <tbody>
                                         <tr>
                                           <td align='center'>
@@ -882,7 +888,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                         <td>
                                           {/* Start Left column */}
                                           <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0} 
-                                            style={paragraphTableStyle}>
+                                            style={paragraphTableStyle} className='sjsu-money-zen-book-table'>
                                              <tbody>
                                                <tr>
                                                  <td>
@@ -951,7 +957,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                            </table>   
                                           {/* End Left column */}
                                           {/* Start Right column */}
-                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0} style={paragraphTableStyle}>
+                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0} 
+                                            style={paragraphTableStyle} className='sjsu-grace-crisis-book-table'>
                                              <tbody>
                                                <tr>
                                                  <td>
@@ -1034,7 +1041,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                       <tr>
                                         <td>
                                           {/* Start Left column */}
-                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0}>
+                                          <table width="50%" align='left' cellPadding={0} cellSpacing={0} border={0}
+                                            className='sjsu-microstress-book-table'>
                                              <tbody>
                                                <tr>
                                                  <td>
@@ -1108,7 +1116,8 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                            </table>   
                                           {/* End Left column */}
                                           {/* Start Right column */}
-                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0}>
+                                          <table width="50%" align='right' cellPadding={0} cellSpacing={0} border={0}
+                                            className='sjsu-power-mom-book-table'>
                                              <tbody>
                                                <tr>
                                                  <td>
@@ -1223,16 +1232,17 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                   </table>
                                   {/* End Image */}
                                   {/* button table start */}
-                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} style={{marginBottom:'35px'}}>
+                                  <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
+                                    style={{marginBottom:'35px'}} className='sjsu-alumni-membership-button-table'>
                                     <tbody>
                                        <tr>
                                           <td align='center'>
                                           <a href="#" style={{
-                                                 backgroundColor:'#0055a2', 
-                                                 padding:'15px 20px',
-                                                  textDecoration:'none',
-                                                textTransform:'uppercase',
-                                                color:'white'}}>
+                                                            backgroundColor:'#0055a2', 
+                                                            padding:'15px 20px',
+                                                            textDecoration:'none',
+                                                            textTransform:'uppercase',
+                                                            color:'white'}}>
                                                 Learn about alumni association membership
                                            </a>
                                          </td>
@@ -1263,7 +1273,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                   {/* End Image */}
                                   {/* button table start */}
                                   <table width="100%" cellPadding={0} cellSpacing={0} border={0} 
-                                  style={{marginTop:'30px'}}>
+                                  style={{marginTop:'30px'}} className='sjsu-contact-update-button-table'>
                                     <tbody>
                                        <tr>
                                           <td align='center'>
@@ -1273,7 +1283,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
                                                 textDecoration:'none',
                                                 textTransform:'uppercase',
                                                 color:'white'}}>
-                                                Update your contect information
+                                                Update your contact information
                                            </a>
                                          </td>
                                       </tr>
