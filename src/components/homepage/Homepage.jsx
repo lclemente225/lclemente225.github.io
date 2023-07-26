@@ -82,25 +82,16 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <div className='project-list-individual-container'>
                             <Link to="/sample-sjsu-newsletter-1/">
-                                <p>School Newsletter Email</p>
+                                <p>School Newsletter</p>
                                 <img className="email-preview"
-                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />                        
-                            </Link>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='project-list-individual-container'>
-                            <Link to="/first-newsletter-sample/">
-                                <p>Fashion Nova Newsletter Email</p>
-                                <img className="email-preview"
-                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />                        
+                                src="/homepage-images/sjsu-newsletter-email-preview.png" />                        
                             </Link>
                         </div>
                     </li>
                     <li>
                         <div className='project-list-individual-container'>
                             <Link to="/first-promotional-sample/">
-                                <p>Promotional Email</p>
+                                <p>Promotional </p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
                             </Link>
@@ -109,9 +100,18 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <div className='project-list-individual-container'>
                             <Link to="/first-transactional-sample/">
-                                 <p>Doordash Order Transaction Email</p>
+                                 <p>Order Transaction </p>
                                  <img className="email-preview"
                                  src="/homepage-images/doordash-order-email.png"/>
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='project-list-individual-container'>
+                            <Link to="/first-newsletter-sample/">
+                                <p>Fashion Newsletter </p>
+                                <img className="email-preview"
+                                src="/homepage-images/fashion-nova-newsletter-email-preview.png" />                        
                             </Link>
                         </div>
                     </li>
@@ -123,7 +123,7 @@ const Homepage = ({PageState,isHomePage}) => {
                         <li>
                            <div className='project-list-individual-container'>
                                 <Link to="/sample-apartment-landingPage/">
-                                        <p>Apartment Landing Page</p>
+                                        <p>Apartment </p>
                                         <img className="email-preview"
                                             src="/homepage-images/apartment-landing-page-preview.png"/>
                                 </Link>
@@ -132,7 +132,7 @@ const Homepage = ({PageState,isHomePage}) => {
                         <li>
                             <div className='project-list-individual-container'>
                                 <Link to="/sample-yugi-tutor-landingPage/">
-                                    <p>Personal Business Landing Page </p>
+                                    <p>Personal Business</p>
                                     <img className="email-preview"
                                         src="/homepage-images/yugi-tutor-preview.png"/>
                                 </Link>

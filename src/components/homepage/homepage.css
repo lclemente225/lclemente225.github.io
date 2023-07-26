@@ -76,7 +76,7 @@ a{
     width: 98%;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    gap: 30px 0;
+    gap: 30px 80px;
 }
 .project-list-individual-container{
     width: 100%;
@@ -125,7 +125,7 @@ a{
    }
    .project-list ul{
        grid-template-columns: 2fr 2fr;
-       gap: 30px 0;
+       gap: 30px 50px;
    }
     }
 @media only screen and (max-width: 700px){
