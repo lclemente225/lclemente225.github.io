@@ -15,7 +15,7 @@ const SjsuNewsletter1 = ({PageState,isHomePage}) => {
   return (
     <>
       <Navbar/>
-        <div className='sjsu-newsletter' style={{backgroundColor:"black"}}>
+        <div className='sjsu-newsletter' style={{backgroundColor:"rgb(56, 56, 56)"}}>
           <table width="100%" cellPadding={0} cellSpacing={0} border={0}>
             <tbody>
                 <tr>

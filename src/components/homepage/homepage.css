@@ -107,6 +107,7 @@ a{
     .intro-section h1{
         font-size:45px;
         width:80%;
+        text-align: center;
     }
     .intro-section h2{
         font-size:25px;

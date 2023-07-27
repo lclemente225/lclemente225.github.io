@@ -10,7 +10,7 @@ const FirstNewsletterEmail = ({PageState,isHomePage}) => {
   return (
     <>
     <Navbar/>
-      <div className="first-newsletter-email-body" style={{ backgroundColor: 'rgb(92, 92, 92)' }}>
+      <div className="first-newsletter-email-body" style={{ backgroundColor: 'rgb(56, 56, 56)' }}>
         {/* Reference Email https://emailtuna.com/fashionnova.com/2284609 */}
         <table width="100%" cellSpacing={0} cellPadding={0}>
           <tbody>

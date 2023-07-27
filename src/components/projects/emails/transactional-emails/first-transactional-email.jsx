@@ -10,7 +10,7 @@ const FirstTransactionalEmail = ({PageState,isHomePage}) => {
   return (
     <>
     <Navbar />
-    <div className="first-transactional-email-body" style={{ backgroundColor: 'rgb(92, 92, 92)' }}>
+    <div className="first-transactional-email-body" style={{ backgroundColor: 'rgb(56, 56, 56)' }}>
         <table cellSpacing={0} cellPadding={0} width="100%" border={0} >
             <tbody>
                 <tr>

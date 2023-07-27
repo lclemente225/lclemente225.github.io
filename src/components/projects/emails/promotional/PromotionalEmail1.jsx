@@ -10,7 +10,7 @@ const PromotionalEmail1 = ({PageState,isHomePage}) => {
   return (
     <>
       <Navbar/>
-      <div className="first-promo-email-body" style={{backgroundColor: 'rgb(92, 92, 92)'}}>
+      <div className="first-promo-email-body" style={{backgroundColor: 'rgb(56, 56, 56)'}}>
           <div>
             <table cellSpacing={0} cellPadding={0} width="100%">
                 <tbody>
