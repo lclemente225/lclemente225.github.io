@@ -11,7 +11,7 @@
 ul.navbar-list{
     margin:0;
     height:100%;
-    background-color: rgb(255, 244, 230);
+    background-color: #f0f0f0;
     width: 100% !important;
     display:flex !important;
     justify-content: space-around !important;
@@ -20,9 +20,25 @@ ul.navbar-list{
 .arrow-icon{
     padding: 0 20px !important;
 }
+.law-designs-logo{
+    height: 400px;
+}
 @media only screen and (max-width:960px){
     ul.navbar-list{
         justify-content: center;
+
+    }
+    .logo-container{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        width:100%;
+        height:80%;
+    }
+    .law-designs-logo{
+        position:absolute;
+        height: 200px;
+        width:200px;
     }
     #navbar-project-page{
         margin-right:50px;

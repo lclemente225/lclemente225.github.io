@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Navbar from "../navbar/Navbar";
 import './homepage.css';
 import { Link } from 'react-router-dom';
@@ -6,7 +6,17 @@ import { Link } from 'react-router-dom';
 const Homepage = ({PageState,isHomePage}) => {
     React.useEffect(() => {
         isHomePage(true);
-        },[PageState])
+        },[PageState]);
+
+    const [hoverClass, setHoverClass] = React.useState('');
+
+    function hoverDetails(){
+        setHoverClass("hovering");
+    }
+
+    function removeHoverClass(){
+        setHoverClass("not-hovering");
+    }
 
   return (
     <div className='home-page'>
@@ -32,7 +42,7 @@ const Homepage = ({PageState,isHomePage}) => {
                         <i className="fa-brands fa-css3-alt"/> CSS
                     </li>
                     <li>
-                    <i className="fa-brands fa-js" /> Javascript
+                        <i className="fa-brands fa-js" /> Javascript
                     </li>
                 </ul>
            </div>
@@ -51,10 +61,10 @@ const Homepage = ({PageState,isHomePage}) => {
                         <i className="fa-brands fa-bootstrap" /> Bootstrap
                     </li>
                     <li>
-                        Flexbox 
+                        <i class="fa-solid fa-table-cells-large"/> Flexbox 
                     </li>
                     <li>
-                        CSS Grid | Bootstrap Grid
+                    <i class="fa-solid fa-table-cells"/> CSS Grid | Bootstrap Grid
                     </li>
                     <li>
                         <i className="fa-brands fa-node-js"/> Node.js
@@ -69,8 +79,9 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <i className="fa-brands fa-figma"/> Figma
                     </li>
-                    <li>
-                        Photoshop
+                    <li className='testing'>
+                        <img src='/homepage-images/Adobe-Photoshop-Symbol.png' alt="adobe photoshop symbol"
+                         className='photoshop-icon'/> Photoshop
                     </li>
                 </ul>
            </div>         
@@ -80,39 +91,75 @@ const Homepage = ({PageState,isHomePage}) => {
             <div className="list email-list">
                 <ul>
                     <li>
-                        <div className='project-list-individual-container'>
+                        <div onMouseEnter={hoverDetails} onMouseLeave={removeHoverClass}
+                            className={`project-list-individual-container ${hoverClass}`}>
                             <Link to="/sample-sjsu-newsletter-1/">
                                 <p>School Newsletter</p>
                                 <img className="email-preview"
                                 src="/homepage-images/sjsu-newsletter-email-preview.png" />                        
                             </Link>
+                            <div className='project-desc-text'>
+                                <p>
+                                    HTML
+                                </p>
+                                <p>
+                                    CSS
+                                </p>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div className='project-list-individual-container'>
+                        <div onMouseEnter={hoverDetails} onMouseLeave={removeHoverClass}
+                            className={`project-list-individual-container ${hoverClass}`}>
                             <Link to="/first-promotional-sample/">
                                 <p>Promotional </p>
                                 <img className='email-preview'
                                 src="/homepage-images/hero-watch-email-preview.png"/>
                             </Link>
+                            <div className='project-desc-text'>
+                                <p>
+                                    HTML
+                                </p>
+                                <p>
+                                    CSS
+                                </p>
+                            </div>
                          </div>
                     </li>
                     <li>
-                        <div className='project-list-individual-container'>
+                        <div onMouseEnter={hoverDetails} onMouseLeave={removeHoverClass}
+                            className={`project-list-individual-container ${hoverClass}`}>
                             <Link to="/first-transactional-sample/">
                                  <p>Order Transaction </p>
                                  <img className="email-preview"
                                  src="/homepage-images/doordash-order-email.png"/>
                             </Link>
+                            <div className='project-desc-text'>
+                                <p>
+                                    HTML
+                                </p>
+                                <p>
+                                    CSS
+                                </p>
+                            </div>
                         </div>
                     </li>
                     <li>
-                        <div className='project-list-individual-container'>
+                        <div onMouseEnter={hoverDetails} onMouseLeave={removeHoverClass}
+                            className={`project-list-individual-container ${hoverClass}`}>
                             <Link to="/first-newsletter-sample/">
                                 <p>Fashion Newsletter </p>
                                 <img className="email-preview"
                                 src="/homepage-images/fashion-nova-newsletter-email-preview.png" />                        
                             </Link>
+                            <div className='project-desc-text'>
+                                <p>
+                                    HTML
+                                </p>
+                                <p>
+                                    CSS
+                                </p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -140,10 +187,42 @@ const Homepage = ({PageState,isHomePage}) => {
                         </li>
                     </ul>
                 </div>
+                <h1 className='project-list-heading'>API Projects</h1>
+                <div className="list personal-projects-list">
+                    <ul>
+                        <li>
+                           <div className='project-list-individual-container'>
+                                <Link to="https://ornate-tarsier-3496dc.netlify.app">
+                                        <p>Trivia Quiz</p>
+                                        <img className="email-preview"
+                                            src="/homepage-images/quizzical-preview-img.png"/>
+                                </Link>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
         </div>
         <div id="homepage-footer">
-            <p>
-                This portfolio was created with <i className="fa-brands fa-react" /> React + Vite
+            <div className=''>
+                <h1>
+                    Lawrence Clemente
+                </h1>
+                <p>
+                    San Jose, California
+                </p>
+                <p>
+                    lawrenceclemente3@gmail.com
+                </p>
+                <Link to="https://www.linkedin.com/in/lawrence-clemente-41904157/" className='linkedin-logo'>
+                    <i className="fa-brands fa-linkedin"/>
+                    <span>
+                        Linkedin
+                    </span>
+                </Link>
+            </div>
+            <p className='created-by-react-footer'>
+                This portfolio was created with <i className="fa-brands fa-react" /> React + 
+                <img src="/homepage-images/vite-logo.png" alt="vite logo" className='vite-logo-footer'/>Vite
             </p>
         </div>
     </div>
