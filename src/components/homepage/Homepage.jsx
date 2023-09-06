@@ -26,7 +26,7 @@ const Homepage = ({PageState,isHomePage}) => {
                 Welcome to Lawrence's Portfolio
             </h1>
             <h2>
-                Front End Developer | HTML Email Developer
+                Front End Web Developer | HTML Email Developer
             </h2>
         </div>
         <div className='skills-section'>
@@ -187,20 +187,20 @@ const Homepage = ({PageState,isHomePage}) => {
                         </li>
                     </ul>
                 </div>
-                <h1 className='project-list-heading'>API Projects</h1>
-                <div className="list personal-projects-list">
-                    <ul>
-                        <li>
-                           <div className='project-list-individual-container'>
-                                <Link to="https://ornate-tarsier-3496dc.netlify.app">
-                                        <p>Trivia Quiz</p>
-                                        <img className="email-preview"
-                                            src="/homepage-images/quizzical-preview-img.png"/>
-                                </Link>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <h1 className='project-list-heading'>Web Dev Projects</h1>
+                    <div className="list personal-projects-list">
+                        <ul>
+                            <li>
+                            <div className='project-list-individual-container'>
+                                    <Link to="https://ornate-tarsier-3496dc.netlify.app">
+                                            <p>Trivia Quiz</p>
+                                            <img className="email-preview"
+                                                src="/homepage-images/quizzical-preview-img.png"/>
+                                    </Link>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
         </div>
         <div id="homepage-footer">
             <div className=''>
@@ -225,6 +225,9 @@ const Homepage = ({PageState,isHomePage}) => {
                 <img src="/homepage-images/vite-logo.png" alt="vite logo" className='vite-logo-footer'/>Vite
             </p>
         </div>
+        <a href='#' className='back-to-top'>
+            Back to top
+        </a>
     </div>
   )
 }

@@ -1,5 +1,11 @@
+:root{
+    --background-color: #FFF6DC;
+    --secondary-background-color: #C4C1A4;
+    --list-color: black;
+    --text-color: #ffd900;
+}
 body{
-    background-color: #F0F0F0;
+    background-color: var(--background-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul{ 
@@ -7,32 +13,33 @@ ul{
 }
 a{
     text-decoration: none;
-    color: rgb(56, 56, 56);
+    color: var(--list-color);
 }
 .home-page{
     width: 100% !important;
     font-family: 'Ubuntu', sans-serif;
-    font-size:25px;
+    font-size: 25px;
 }
 .intro-section{
-    margin:0;
-    height:400px;
-    color:#f0f0f0;
-    background-color: rgb(56, 56, 56);
-    display:flex;
+    margin: 0;
+    height: 400px;
+    color: var(--background-color);
+    background-color: var(--secondary-background-color);
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .skills-section{
-    width:100%;
-    margin:100px 0;
-    display:flex;
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
     justify-content: space-around;
 }
 .one-column-skills-section{
     padding: 0 30px;
-    height:430px;
+    color: var(--list-color);
+    height: 430px;
     border-radius: 20px;
     border: 2px solid rgba(0, 0, 0, 0.144);
 }
@@ -40,15 +47,15 @@ a{
     width:100%;
 }
 .one-column-skills-section li{
-    margin:0;
+    margin: 0;
     margin-bottom:15px;
 }
 .photoshop-icon{
-    width:35px; 
-    margin-left:-10px;
+    width: 35px; 
+    margin-left: -10px;
 }
 .testing{
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
@@ -59,7 +66,7 @@ a{
 }
 
 .list{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -72,19 +79,19 @@ a{
     align-items: center;
 }
 .project-list h1{
-    margin:0;
-    padding:20px 0;
-    width:100%;
-    height:20vh;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    height: 20vh;
     text-align: center;
-    background-color: rgb(56, 56, 56);
-    color:#F0F0F0;
+    background-color: var(--secondary-background-color);
+    color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .project-list ul{
-    margin:50px 0;
+    margin: 50px 0;
     padding: 10px 0 20px 0;
     height: auto;
     width: 98%;
@@ -106,7 +113,7 @@ a{
     filter:drop-shadow(0 0 5px rgb(0, 255, 0)) opacity(0.6) grayscale(50%);
 }
 .project-list-individual-container p{
-    font-weight:500;
+    font-weight: 500;
 }
 .email-preview{
     width: 350px;
@@ -116,17 +123,17 @@ a{
     margin: 200px 0 0;
     color:black;
     text-shadow:0 0 10px black;
-    display:none;
+    display: none;
 }/* 
 .hovering .project-desc-text{
     display:block;
 } */
 #homepage-footer{
-    height:250px;
-    font-size:12px;
-    background-color: rgb(56, 56, 56);
+    height: 250px;
+    font-size: 12px;
+    background-color: var(--secondary-background-color);
     color:white;
-    display:flex; 
+    display: flex; 
     justify-content: space-around;
     align-items: center;
 }
@@ -134,14 +141,23 @@ a{
     color:white;
 }
 .linkedin-logo i {
-    margin-right:5px;
+    margin-right: 5px;
 }
 .vite-logo-footer{
-    width:14px;
-    margin:0;
-    padding:0;
+    width: 14px;
+    margin: 0;
+    padding: 0;
 }
-
+.back-to-top{
+    position: fixed; 
+    width: 150px;
+    font-size: 20px;
+    bottom: 30px;
+    right: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
 @media only screen and (max-width: 1260px){
     .email-preview{
         width: 250px;
@@ -159,25 +175,25 @@ a{
 @media only screen and (min-width:700px) and (max-width: 1100px){
     
     .intro-section h1{
-        font-size:45px;
-        width:80%;
+        font-size: 45px;
+        width: 80%;
         text-align: center;
     }
     .intro-section h2{
-        font-size:25px;
+        font-size: 25px;
     }
     .skills-section{
-        margin:30px 0;
-        height:1000px;
+        margin: 30px 0;
+        height: 1000px;
         flex-direction: column;
         align-items: center;
     }
     .one-column-skills-section{
-        width:400px;
-        margin:20px 0;
+        width: 400px;
+        margin: 20px 0;
     }
     .skills-section h2{
-        font-size:35px !important;
+        font-size: 35px !important;
    }
    .project-list ul{
        grid-template-columns: 2fr 2fr;
@@ -186,47 +202,47 @@ a{
     }
 @media only screen and (max-width: 700px){
     .intro-section{
-        height:400px !important;
+        height: 400px !important;
     }
     .intro-section h1{
-        font-size:35px;
-        width:80%;
+        font-size: 35px;
+        width: 80%;
     }
     .intro-section h2{
-        font-size:20px;
-        width:75%;
+        font-size: 20px;
+        width: 75%;
     }
    .skills-section{
-    margin:0;
-    height:1000px;
+    margin: 0;
+    height: 1000px;
     flex-direction: column;
     align-items: center;
     }
     .one-column-skills-section{
-        width:100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
    .skills-section h2{
-        width:50%;
-        font-size:24px !important;
+        width: 50%;
+        font-size: 24px !important;
         text-align: center;
    }
    .skills-section ul{
-        padding:0;
-        width:100%;
-        font-size:24px !important;
-        align-self:self-start !important;
+        padding: 0;
+        width: 100%;
+        font-size: 24px !important;
+        align-self: self-start !important;
    }
    .skills-section li{
         list-style: circle !important;
-        display:block;
-        margin-left:25px;
+        display: block;
+        margin-left: 25px;
 
    }
    .project-list-heading{
-       font-size:25px;
+       font-size: 25px;
    }
    .project-list ul{
         grid-template-columns: 1fr;

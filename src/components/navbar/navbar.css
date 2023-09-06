@@ -11,7 +11,7 @@
 ul.navbar-list{
     margin:0;
     height:100%;
-    background-color: #f0f0f0;
+    background-color: var(--secondary-background-color);
     width: 100% !important;
     display:flex !important;
     justify-content: space-around !important;

@@ -15,8 +15,9 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
         })
     }
   return (
-    <div className='apartment-landing-page-body'>
+    <div className='apartment-landing-page-body' id="apartment-top">
         <Navbar />
+        
         <div className={`apartment-landing-page-nav-container 
             ${isMenuOpen ? 'apartment-landing-page-menu-open' : 'apartment-landing-page-not-open'}`}>
             <div className='apartment-landing-page-nav'>
@@ -36,7 +37,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                     <a href="#apartment-landing-page-experience">
                         Experience
                     </a>
-                    <a id="apartment-nav-inquire-button" href="#apartment-landing-page-form">
+                    <a id="apartment-nav-inquire-button" href="#apartment-landing-page-hero-section">
                         Inquire Now
                     </a>
                 </nav>
@@ -165,9 +166,9 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
         </div>
 
         <div className='apartment-landing-page-highlights'>
-            
-            <div className='highlights-image'></div>
+            <div className='highlights-image'/>
             <div className='highlights-container'>
+            <div className='highlights-background-square'/>
                 <div className='apartment-highlights-text'>
                     <h4>
                         Apartment Highlights
@@ -229,6 +230,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
 
         <div className='apartment-landing-page-experience' id='apartment-landing-page-experience'>
             <div>
+                <div className="experience-background-square" />
                 <h6 style={{
                             color:'white',
                             letterSpacing:1.5,
@@ -360,6 +362,11 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
             </div>
         </div>
 
+       
+        <a className="apartment-back-to-top" href="#apartment-top">
+                <i className="fa-solid fa-arrow-up "/>
+        </a>
+            
       
     </div>
   )
