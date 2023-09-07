@@ -1,17 +1,64 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React, {
+  useState,
+  useRef,
+  useCallback,
+  useLayoutEffect,
+  useEffect
+} from "react"
+import { useMotionValue, useSpring, motion } from "framer-motion"
+import ResizeObserver from "resize-observer-polyfill"
 
-export default function ScrollToTop() {
-  const { pathname } = useLocation();
+const ScrollContainer = ({ children }) => {
+  const [contentHeight, setContentHeight] = useState(window.innerHeight)
+  const scrollContainerRef = useRef(null)
+  const scrollYmotionValue = useMotionValue(
+    -window.pageYOffset || -window.scrollY
+  )
+  const springPhysics = { damping: 400, friction: 10 }
+  const scrollYspring = useSpring(scrollYmotionValue, springPhysics)
+
+  const getContentHeight = useCallback(entries => {
+    for (let entry of entries) {
+      const entryHeight = entry.contentRect.height
+      setContentHeight(entryHeight)
+    }
+  }, [])
+
+  useLayoutEffect(() => {
+    const scrollContainer = scrollContainerRef.current
+
+    let resizeObserver = new ResizeObserver(entries =>
+      getContentHeight(entries)
+    )
+
+    resizeObserver.observe(scrollContainer)
+
+    return () => resizeObserver.disconnect()
+  }, [getContentHeight])
 
   useEffect(() => {
-    // "document.documentElement.scrollTo" is the magic for React Router Dom v6
-    document.documentElement.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant", // Optional if you want to skip the scrolling animation
-    });
-  }, [pathname]);
+    const trackScroll = () => {
+      scrollYmotionValue.set(-window.pageYOffset || -window.scrollY)
+    }
 
-  return null;
+    window.addEventListener("scroll", trackScroll)
+
+    return () => window.removeEventListener("scroll", trackScroll)
+  }, [scrollYmotionValue])
+
+  return (
+    <>
+      <motion.div
+        ref={scrollContainerRef}
+        style={{ y: scrollYspring }}
+        className="scroll-container"
+      >
+        {children}
+      </motion.div>
+
+      <div style={{ height: contentHeight }} />
+    </>
+  )
 }
+
+export default ScrollContainer

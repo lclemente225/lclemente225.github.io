@@ -15,6 +15,17 @@ a{
     text-decoration: none;
     color: var(--list-color);
 }
+.nav-side-bar{
+    position: fixed;
+    top: 20%;
+    left: 1%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.nav-side-bar a:hover{
+    text-shadow: 0 0 2px black;
+}
 .home-page{
     width: 100% !important;
     font-family: 'Ubuntu', sans-serif;
@@ -23,7 +34,6 @@ a{
 .intro-section{
     margin: 0;
     height: 400px;
-    color: var(--background-color);
     background-color: var(--secondary-background-color);
     display: flex;
     flex-direction: column;
@@ -157,6 +167,7 @@ a{
     border: 1px solid black;
     text-align: center;
     padding: 10px 0;
+    background-color: #c4c1a48c;
 }
 @media only screen and (max-width: 1260px){
     .email-preview{
@@ -169,6 +180,9 @@ a{
         font-size: 28px !important;
         text-align: center;
         padding: 0 20px;
+    }
+    .nav-side-bar{
+        display: none;
     }
 }
 
