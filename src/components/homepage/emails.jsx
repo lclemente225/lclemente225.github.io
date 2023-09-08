@@ -20,7 +20,6 @@ const isInView = useInView(ref, {once: false});
 const mainControls = useAnimation();
 
 React.useEffect(() => {
-    console.log(isInView ? "in view whoohoo" : "not in view")
     if(isInView){
         mainControls.start("emailVisible")
     }
@@ -28,8 +27,8 @@ React.useEffect(() => {
 
   return (
     <>
-      <h1 className='project-list-heading'>Sample Emails</h1>
-            <div ref={ref} className="list email-list" id="email-list">
+      <h1 className='project-list-heading' id="email-list">Sample Emails</h1>
+            <div ref={ref} className="list email-list" >
                 <motion.ul
                 variants={{
                     emailHidden: {opacity: 0, x: -1000},

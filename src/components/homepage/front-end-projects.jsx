@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 export const FrontEndProjects = () => {
   return (
     <>
-    <h1 className='project-list-heading'>Web Dev Projects</h1>
-                    <div className="list personal-projects-list" id="web-dev-proj-list">
+    <h1 className='project-list-heading' id="web-dev-proj-list">Web Dev Projects</h1>
+                    <div className="list personal-projects-list">
                         <ul>
                             <li>
                             <div className='project-list-individual-container'>

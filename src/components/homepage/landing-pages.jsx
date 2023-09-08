@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 export const LandingPageProjects = () => {
   return (
     <>
-     <h1 className='project-list-heading'>Sample Landing Pages</h1>
-                <div className="list landing-page-list" id="landing-page-list">
+     <h1 className='project-list-heading' id="landing-page-list">Sample Landing Pages</h1>
+                <div className="list landing-page-list">
                     <ul>
                         <li>
                            <div className='project-list-individual-container'>

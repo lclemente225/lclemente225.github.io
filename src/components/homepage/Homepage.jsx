@@ -5,17 +5,18 @@ import Emails from './emails';
 import {LandingPageProjects as LandingPages} from './landing-pages';
 import { FrontEndProjects as FrontEnd } from './front-end-projects';
 import { HomepageFooter as Footer } from './footer';
+import { ScrollToTop } from '../scrollToTop/scrollToTop';
 import './homepage.css';
 import { motion } from "framer-motion";
 
 
 const Homepage = ({PageState,isHomePage}) => {
+
     React.useEffect(() => {
         isHomePage(true);
         },[PageState]);
 
-
-    const backToTop = () => window.scrollTo({ top: 0 })
+    
   return (
     <div className='home-page'>
         <Navbar PageState={PageState}/>
@@ -81,20 +82,8 @@ const Homepage = ({PageState,isHomePage}) => {
         </div>
         <div id="homepage-footer">
             <Footer />
-        <motion.div onClick={() => backToTop} className='back-to-top'
-                variants={{
-                    hidden: {opacity: 0, y: -1000},
-                    visible: {opacity: 1, y: 0}
-                }}
-                initial="hidden"
-                animate="visible"
-                transition={{
-                    duration: 2, 
-                    delay: 0.25
-                }}>
-            Back to top
-        </motion.div>
         </div>
+        <ScrollToTop />
     </div>
   )
 }

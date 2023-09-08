@@ -25,6 +25,7 @@ a{
 }
 .nav-side-bar a:hover{
     text-shadow: 0 0 2px black;
+    color: white;
 }
 .home-page{
     width: 100% !important;
@@ -39,6 +40,13 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.intro-section h1,
+.intro-section h2,
+.nav-side-bar h3{
+    color: var(--background-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 .skills-section{
     width: 100%;
@@ -165,6 +173,7 @@ a{
     bottom: 30px;
     right: 30px;
     border: 1px solid black;
+    color: black;
     text-align: center;
     padding: 10px 0;
     background-color: #c4c1a48c;
@@ -182,6 +191,9 @@ a{
         padding: 0 20px;
     }
     .nav-side-bar{
+        display: none;
+    }
+    .back-to-top{
         display: none;
     }
 }
