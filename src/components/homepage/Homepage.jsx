@@ -5,7 +5,7 @@ import Emails from './emails';
 import {LandingPageProjects as LandingPages} from './landing-pages';
 import { FrontEndProjects as FrontEnd } from './front-end-projects';
 import { HomepageFooter as Footer } from './footer';
-import { ScrollToTop } from '../scrollToTop/scrollToTop';
+import { ScrollToTop as HomeScrollTopButton } from '../scrollToTop/scrollToTop';
 import './homepage.css';
 import { motion } from "framer-motion";
 
@@ -83,7 +83,7 @@ const Homepage = ({PageState,isHomePage}) => {
         <div id="homepage-footer">
             <Footer />
         </div>
-        <ScrollToTop />
+        <HomeScrollTopButton />
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
+  //page goes to top when going to a different link from home
 
   useEffect(() => {
     // "document.documentElement.scrollTo" is the magic for React Router Dom v6
