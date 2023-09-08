@@ -21,7 +21,7 @@ const mainControls = useAnimation();
 
 React.useEffect(() => {
     if(isInView){
-        mainControls.start("emailVisible")
+        mainControls.start("emailVisible")  
     }
 }, [isInView])
 
@@ -31,7 +31,7 @@ React.useEffect(() => {
             <div ref={ref} className="list email-list" >
                 <motion.ul
                 variants={{
-                    emailHidden: {opacity: 0, x: -1000},
+                    emailHidden: {opacity: 0, x: -100},
                     emailVisible: {opacity: 1, x: 0}
                 }}
                 initial="emailHidden"

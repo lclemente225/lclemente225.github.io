@@ -21,7 +21,7 @@ React.useEffect(() => {
                     <div ref={ref} className="list personal-projects-list">
                         <motion.ul
                         variants={{
-                            WebProjHidden: {opacity: 0, x: -1000},
+                            WebProjHidden: {opacity: 0, x: -100},
                             WebProjVisible: {opacity: 1, x: 0}
                         }}
                         initial= "WebProjHidden"

@@ -21,8 +21,8 @@ React.useEffect(() => {
                 <div ref={ref} className="list landing-page-list">
                     <motion.ul
                         variants={{
-                            landingHidden: {opacity: 0, x: 1000},
-                            landingVisible: {opacity: 1, x: 0}
+                            landingHidden: {opacity: 0, x: 100, display:"none"},
+                            landingVisible: {opacity: 1, x: 0, display:"grid"}
                         }}
                         initial="landingHidden"
                         animate={mainControls}

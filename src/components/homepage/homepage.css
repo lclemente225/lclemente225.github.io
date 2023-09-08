@@ -4,6 +4,7 @@
     --list-color: black;
     --text-color: #ffd900;
 }
+/*#FFF6DC #C4C1A4 */
 body{
     background-color: var(--background-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,12 +42,11 @@ a{
     align-items: center;
     justify-content: center;
 }
-.intro-section h1,
+/* .intro-section h1, */
 .intro-section h2,
 .nav-side-bar h3{
     color: var(--background-color);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    text-shadow: 0 2px 2px black, 2px 0 2px black;
 }
 .skills-section{
     width: 100%;
@@ -150,13 +150,13 @@ a{
     height: 250px;
     font-size: 12px;
     background-color: var(--secondary-background-color);
-    color:white;
+    color: black;
     display: flex; 
     justify-content: space-around;
     align-items: center;
 }
 .linkedin-logo{
-    color:white;
+    color:black;
 }
 .linkedin-logo i {
     margin-right: 5px;
@@ -177,8 +177,14 @@ a{
     text-align: center;
     padding: 10px 0;
     background-color: #c4c1a48c;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1260px){
+    .intro-section h2{
+    -webkit-text-stroke-width: 0px;
+    color: black;
+    text-shadow: 0 3px 3px white, 3px 0 3px white;
+    }
     .email-preview{
         width: 250px;
     }
@@ -249,6 +255,8 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-radius: 0;
+        border: 0 0 2px 0;
     }
    .skills-section h2{
         width: 50%;

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import Navbar from "../navbar/Navbar";
 import Skills from './skills';
 import Emails from './emails';
@@ -7,7 +7,7 @@ import { FrontEndProjects as FrontEnd } from './front-end-projects';
 import { HomepageFooter as Footer } from './footer';
 import { ScrollToTop as HomeScrollTopButton } from '../scrollToTop/scrollToTop';
 import './homepage.css';
-import { motion } from "framer-motion";
+import { motion, useAnimation, useTime } from "framer-motion";
 
 
 const Homepage = ({PageState,isHomePage}) => {
@@ -15,15 +15,16 @@ const Homepage = ({PageState,isHomePage}) => {
     React.useEffect(() => {
         isHomePage(true);
         },[PageState]);
-
     
+
   return (
     <div className='home-page'>
         <Navbar PageState={PageState}/>
         <motion.div className='nav-side-bar'
                 variants={{
                     hidden: {opacity: 0, x: -1000},
-                    visible: {opacity: 1, x: 0}
+                    visible: {opacity: 1, x: 0},
+                    blink: {opacity: 1,textShadow: '0 3px 3px green', transition: 0.2} 
                 }}
                 initial="hidden"
                 animate="visible"
