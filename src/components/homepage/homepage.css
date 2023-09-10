@@ -1,8 +1,8 @@
 :root{
     --background-color: #FFF6DC;
-    --secondary-background-color: #C4C1A4;
+    --secondary-background-color: rgb(23, 180, 44);
     --list-color: black;
-    --text-color: #ffd900;
+    --text-color: white;
 }
 /*#FFF6DC #C4C1A4 */
 body{
@@ -42,7 +42,7 @@ a{
     align-items: center;
     justify-content: center;
 }
-/* .intro-section h1, */
+.intro-section h1,
 .intro-section h2,
 .nav-side-bar h3{
     color: var(--background-color);
@@ -104,6 +104,7 @@ a{
     text-align: center;
     background-color: var(--secondary-background-color);
     color: var(--background-color);
+    text-shadow: 0 2px 2px black, 2px 0 2px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +127,10 @@ a{
     align-items: center;
     text-align: center;
 }
+.landing-page-list,
+.personal-projects-list{
+    min-height: 50vh;
+}
 .project-list-individual-container img:hover{
 
     filter:drop-shadow(0 0 5px rgb(0, 255, 0)) opacity(0.6) grayscale(50%);
@@ -139,8 +144,8 @@ a{
 .project-desc-text{
     position:absolute;
     margin: 200px 0 0;
-    color:black;
-    text-shadow:0 0 10px black;
+    color:var(--list-color);
+    text-shadow:0 0 10px var(--list-color);
     display: none;
 }/* 
 .hovering .project-desc-text{

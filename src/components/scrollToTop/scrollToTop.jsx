@@ -22,6 +22,7 @@ export const ScrollToTop = () => {
     }, [window.pageYOffset])
     
     function backToTop(){
+        useAnimation("hidden")
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
@@ -31,13 +32,13 @@ export const ScrollToTop = () => {
         
         <motion.div onClick={backToTop} className='back-to-top'
                 variants={{
-                    hidden: {opacity: 0, y: -1000},
-                    visible: {opacity: 1, y: 0}
+                    hidden: {opacity: 0, y: -700, x: -2000},
+                    visible: {opacity: 1, y: 0, x: 0}
                 }}
                 initial="hidden"
                 animate="visible"
                 transition={{
-                    duration: 1
+                    duration: 5
                 }}>
             Back to top
         </motion.div>
