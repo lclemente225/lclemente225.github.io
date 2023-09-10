@@ -1,6 +1,6 @@
 import React from 'react';
 import '../homepage/homepage.css';
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 export const ScrollToTop = () => {
     
@@ -21,8 +21,9 @@ export const ScrollToTop = () => {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, [window.pageYOffset])
     
+    let hidingButton = useAnimation("hidden").start
+
     function backToTop(){
-        useAnimation("hidden")
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
@@ -36,7 +37,7 @@ export const ScrollToTop = () => {
                     visible: {opacity: 1, y: 0, x: 0}
                 }}
                 initial="hidden"
-                animate="visible"
+                animate={`visible, ${hidingButton}`}
                 transition={{
                     duration: 5
                 }}>

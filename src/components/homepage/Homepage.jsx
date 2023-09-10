@@ -1,9 +1,7 @@
 import React from 'react';
 import Navbar from "../navbar/Navbar";
 import Skills from './skills';
-import Emails from './emails';
-import {LandingPageProjects as LandingPages} from './landing-pages';
-import { FrontEndProjects as FrontEnd } from './front-end-projects';
+import ProjectList from './projectCarousel/projectList';
 import { HomepageFooter as Footer } from './footer';
 import { ScrollToTop as HomeScrollTopButton } from '../scrollToTop/scrollToTop';
 import './homepage.css';
@@ -11,6 +9,7 @@ import { motion, useAnimation, useTime } from "framer-motion";
 
 
 const Homepage = ({PageState,isHomePage}) => {
+    const [isSidebarOpen, openSidebar] = React.useState(false);
 
     React.useEffect(() => {
         isHomePage(true);
@@ -20,33 +19,7 @@ const Homepage = ({PageState,isHomePage}) => {
   return (
     <div className='home-page'>
         <Navbar PageState={PageState}/>
-        <motion.div className='nav-side-bar'
-                variants={{
-                    hidden: {opacity: 0, x: -1000},
-                    visible: {opacity: 1, x: 0},
-                    blink: {opacity: 1,textShadow: '0 3px 3px green', transition: 0.2} 
-                }}
-                initial="hidden"
-                animate="visible"
-                transition={{
-                    duration: 2, 
-                    delay: 0.25
-                }}>
-            <h3>
-                Project List
-            </h3>
-            <a href="#email-list">
-                Emails
-            </a>
-            <a href="#landing-page-list">
-                Landing Pages
-            </a>
-            <a href="#web-dev-proj-list">
-                Front End Dev 
-            </a>
-        </motion.div>
-        <div className='intro-section'
-                >
+        <div className='intro-section'>
             <motion.h1
                 variants={{
                     hidden: {opacity: 0, x: -1000},
@@ -77,9 +50,8 @@ const Homepage = ({PageState,isHomePage}) => {
         </div>
         <Skills/>
         <div className='project-list'>
-            <Emails />
-            <LandingPages />
-            <FrontEnd />
+            <h1>Projects</h1>
+            <ProjectList />
         </div>
         <div id="homepage-footer">
             <Footer />
