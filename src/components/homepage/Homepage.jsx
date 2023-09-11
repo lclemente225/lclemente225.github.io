@@ -55,7 +55,6 @@ const Homepage = ({PageState,isHomePage}) => {
         <div id="homepage-footer">
             <Footer />
         </div>
-        <HomeScrollTopButton />
     </div>
   )
 }
