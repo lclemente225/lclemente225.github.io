@@ -79,13 +79,13 @@ React.useEffect(() => {
                 <li>
                     <div className={`project-list-individual-container`}>
                         <Link to="/sample-sjsu-newsletter-1/" className='email-project-link' 
-                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchEnd={hoverReset} onTouchStart={hoverFirst}>
+                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                             <p>School Newsletter</p>
                             <img className="email-preview"
                             src="/homepage-images/sjsu-newsletter-email-preview.png" />    
                             {
                             hoverClass.emailFirst && 
-                            <div className='project-desc-text '>
+                            <div className='project-desc-text email-desc-text '>
                                 <p>
                                     HTML CSS
                                 </p>
@@ -101,13 +101,13 @@ React.useEffect(() => {
                 <li>
                     <div className={`project-list-individual-container`}>
                         <Link to="/first-promotional-sample/" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchEnd={hoverReset} onTouchStart={hoverSecond}>
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
                             <p>Promotional </p>
                             <img className='email-preview'
                             src="/homepage-images/hero-watch-email-preview.png"/>
                              {
                             hoverClass.emailSecond && 
-                            <div className='project-desc-text '>
+                            <div className='project-desc-text email-desc-text '>
                                 <p>
                                     HTML | CSS
                                 </p>
@@ -122,13 +122,13 @@ React.useEffect(() => {
                 <li>
                     <div className={`project-list-individual-container`}>
                         <Link to="/first-transactional-sample/" className='email-project-link' 
-                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchEnd={hoverReset} onTouchStart={hoverThird}>
+                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
                              <p>Order Transaction </p>
                              <img className="email-preview"
                              src="/homepage-images/doordash-order-email.png"/>
                               {
                             hoverClass.emailThird && 
-                            <div className='project-desc-text'>
+                            <div className='project-desc-text email-desc-text'>
                                 <p>
                                     HTML | CSS
                                 </p>
@@ -143,13 +143,13 @@ React.useEffect(() => {
                 <li>
                     <div className={`project-list-individual-container`}>
                         <Link to="/first-newsletter-sample/" className='email-project-link' 
-                        onMouseEnter={hoverFourth} onMouseLeave={hoverReset} onTouchEnd={hoverReset} onTouchStart={hoverFourth}>
+                        onMouseEnter={hoverFourth} onMouseLeave={hoverReset} onTouchStart={hoverFourth}>
                             <p>Fashion Newsletter </p>
                             <img className="email-preview"
                             src="/homepage-images/fashion-nova-newsletter-email-preview.png" />   
                              {
                             hoverClass.emailFourth && 
-                            <div className='project-desc-text'>
+                            <div className='project-desc-text email-desc-text'>
                                 <p>
                                     HTML | CSS
                                 </p>

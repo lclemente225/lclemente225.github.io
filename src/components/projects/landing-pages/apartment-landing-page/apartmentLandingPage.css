@@ -389,6 +389,7 @@
     color:white !important;
     border-color:black;
 }
+/* scroll to top button */
 .apartment-back-to-top{
     position: fixed;
     font-size: 30px;
@@ -406,7 +407,7 @@
 .apartment-back-to-top i:hover{
     text-shadow: 0 0 2px white;
     box-shadow: 0 0 2px white;
-    background-color: rgb(199, 162, 119);
+    filter: opacity(0.8)
 }
 @media only screen and (min-width: 960px) and (max-width: 1440px){
     .apartment-landing-page-nav nav{   

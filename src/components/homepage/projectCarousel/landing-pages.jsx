@@ -55,7 +55,7 @@ React.useEffect(() => {
                 <li>
                    <div className='project-list-individual-container'>
                         <Link to="/sample-apartment-landingPage/" className='email-project-link' 
-                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst} onTouchEnd={hoverReset}>
+                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst} >
                                 <p>Apartment </p>
                                 <img className="email-preview"
                                     src="/homepage-images/apartment-landing-page-preview.png"/>
@@ -76,7 +76,7 @@ React.useEffect(() => {
                 <li>
                     <div className='project-list-individual-container'>
                         <Link to="/sample-yugi-tutor-landingPage/" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond} onTouchEnd={hoverReset}>
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond} >
                             <p>Personal Business</p>
                             <img className="email-preview"
                                 src="/homepage-images/yugi-tutor-preview.png"/>

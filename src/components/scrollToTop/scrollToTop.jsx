@@ -31,17 +31,18 @@ export const ScrollToTop = () => {
     <>
       {isVisible && 
         
-        <motion.div onClick={backToTop} className='back-to-top'
+        <motion.div onClick={backToTop} className='apartment-back-to-top'
                 variants={{
-                    hidden: {opacity: 0, y: -700, x: -2000},
-                    visible: {opacity: 1, y: 0, x: 0}
+                    hidden: {opacity: 0, y: -700},
+                    visible: {opacity: 1, y: 0}
                 }}
                 initial="hidden"
-                animate={`visible, ${hidingButton}`}
+                animate="visible"
+                hide="hidden"
                 transition={{
-                    duration: 5
+                    duration: 2
                 }}>
-            Back to top
+            <i className='fa-solid fa-arrow-up'/>
         </motion.div>
             }
     </>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../../navbar/Navbar';
 import './apartmentLandingPage.css';
+import { ScrollToTop } from '../../../scrollToTop/scrollToTop';
 
 const ApartmentLandingPage = ({PageState,isHomePage}) => {
     const [isMenuOpen, toggleOpenMenu] = React.useState(false);
@@ -361,13 +362,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                 </a>
             </div>
         </div>
-
-       
-        <a className="apartment-back-to-top" href="#apartment-top">
-                <i className="fa-solid fa-arrow-up "/>
-        </a>
-            
-      
+        <ScrollToTop />
     </div>
   )
 }
