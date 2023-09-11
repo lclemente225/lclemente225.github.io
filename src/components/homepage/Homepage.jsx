@@ -3,7 +3,6 @@ import Navbar from "../navbar/Navbar";
 import Skills from './skills';
 import ProjectList from './projectCarousel/projectList';
 import { HomepageFooter as Footer } from './footer';
-import { ScrollToTop as HomeScrollTopButton } from '../scrollToTop/scrollToTop';
 import './homepage.css';
 import { motion } from "framer-motion";
 

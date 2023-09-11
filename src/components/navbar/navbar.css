@@ -18,8 +18,14 @@ ul.navbar-list{
     align-items: center !important;
 }
 #navbar-home-blog,
-#navbar-home-about{
-    color: var(--footer-color)
+#navbar-home-about,
+#navbar-project-page{
+    color: var(--footer-color);
+}
+#navbar-home-blog:hover,
+#navbar-home-about:hover,
+#navbar-project-page:hover{
+    color: white;
 }
 .arrow-icon{
     padding: 0 20px !important;

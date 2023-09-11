@@ -65,7 +65,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML | CSS | ReactJS
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     Luxury Apartment Landing Page
                                 </p>
                             </div>
@@ -86,7 +86,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML | CSS | ReactJS
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     I love Yu-Gi-Oh
                                 </p>
                             </div>

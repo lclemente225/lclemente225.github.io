@@ -89,7 +89,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML CSS
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     Sample design taken from SJSU
                                 </p>
                             </div>
@@ -111,7 +111,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML | CSS
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     Sample Promotional Product Email
                                 </p>
                             </div>
@@ -132,7 +132,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML | CSS
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     I ordered chicken once. I replicated the transactional email I received. 
                                 </p>
                             </div>
@@ -153,7 +153,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML | CSS
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     Fashion Nova email design that I copied.
                                 </p>
                             </div>

@@ -6,12 +6,13 @@
     cursor: pointer;
 }
 .project-selection:hover{
-    box-shadow: 0 0 3px black;
+    box-shadow: 0 5px 3px black;
     background-color: #e4e4e4;
 }
 .selected{
     color: var(--project-carousel);
-    text-shadow: 0 2px 5px black;
+    box-shadow: 0 4px 3px black;
+    text-shadow: 0 5px 5px black;
     background-color: var(--secondary-background-color) !important;
     padding: 10px 20px;
     border-radius: 50px;
@@ -27,6 +28,7 @@
 .project-carousel-selections{
     padding: 10px 20px;
     border: 2px solid black;
+    box-shadow: 0 5px 3px black;
     border-radius: 50px;
     background-color: var(--project-carousel);
     width: 50%;
@@ -41,6 +43,7 @@
     min-height: 20vh;
     width: 80%;
     border: 2px solid black;
+    box-shadow: 0 10px 10px black;
     border-radius: 50px;
     margin: 50px 0;
     background-color: var(--box-color);
@@ -107,6 +110,9 @@
     top: 28.5%;
     height: 70%;
 }
+.desc-text{
+    font-size: 1.2rem;
+}
 .project-desc-text p{
     width: 90%;
 }
@@ -125,7 +131,6 @@
     }
     .project-carousel-selections{
         width: 70%;
-        box-shadow: 0 5px 3px black;
     }
     .email-desc-text{
         top: 23%;

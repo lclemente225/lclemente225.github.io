@@ -65,9 +65,9 @@ React.useEffect(() => {
                             hoverClass.frontEndFirst && 
                             <div className='project-desc-text front-end-desc-text'>
                                 <p>
-                                    HTML | CSS | ReactJS 
+                                    HTML | CSS | ReactJS | REST API
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     All the questions are sourced from OpenTrivia DB API
                                 </p>
                             </div>
@@ -89,7 +89,7 @@ React.useEffect(() => {
                                 <p>
                                     HTML | CSS | ReactJS 
                                 </p>
-                                <p>
+                                <p className='desc-text'>
                                     You're looking at it. I am very proud of it. 
                                 </p>
                             </div>
