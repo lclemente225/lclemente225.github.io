@@ -1,8 +1,11 @@
 :root{
-    --background-color: #FFF6DC;
-    --secondary-background-color: rgb(23, 180, 44);
+    --background-color: #918450;
+    --secondary-background-color: #A41623;
     --list-color: black;
+    --footer-color: #FFB563;
     --text-color: white;
+    --box-color: #FFB563;
+    --project-carousel: #FFD29D;
 }
 /*#FFF6DC #C4C1A4 */
 body{
@@ -14,7 +17,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: var(--list-color);
+    color: var(--link-color);
 }
 .nav-sidebar-container{
     position: fixed;
@@ -53,7 +56,7 @@ a{
 .intro-section h1,
 .intro-section h2,
 .nav-side-bar h3{
-    color: var(--background-color);
+    color: var(--box-color);
     text-shadow: 0 2px 2px black, 2px 0 2px black;
 }
 .skills-section{
@@ -63,10 +66,11 @@ a{
     justify-content: space-around;
 }
 .one-column-skills-section{
-    padding: 0 30px;
+    padding: 0 70px;
     color: var(--list-color);
+    background-color: var(--box-color);
     height: 430px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.144);
 }
 .one-column-skills-section ul{
@@ -81,13 +85,13 @@ a{
     margin-left: -10px;
 }
 .project-list h1{
-    margin: 0 0 20px;
+    margin: 0 0 100px;
     padding: 20px 0;
     width: 100%;
     height: 20vh;
     text-align: center;
     background-color: var(--secondary-background-color);
-    color: var(--background-color);
+    color: var(--box-color);
     text-shadow: 0 2px 2px black, 2px 0 2px black;
     display: flex;
     justify-content: center;
@@ -103,13 +107,13 @@ a{
     height: 250px;
     font-size: 12px;
     background-color: var(--secondary-background-color);
-    color: black;
+    color: var(--footer-color);
     display: flex; 
     justify-content: space-around;
     align-items: center;
 }
 .linkedin-logo{
-    color:black;
+    color:var(--footer-color);
 }
 .linkedin-logo i {
     margin-right: 5px;

@@ -5,11 +5,10 @@ import ProjectList from './projectCarousel/projectList';
 import { HomepageFooter as Footer } from './footer';
 import { ScrollToTop as HomeScrollTopButton } from '../scrollToTop/scrollToTop';
 import './homepage.css';
-import { motion, useAnimation, useTime } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const Homepage = ({PageState,isHomePage}) => {
-    const [isSidebarOpen, openSidebar] = React.useState(false);
 
     React.useEffect(() => {
         isHomePage(true);

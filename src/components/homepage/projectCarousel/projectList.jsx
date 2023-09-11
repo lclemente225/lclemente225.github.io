@@ -42,7 +42,7 @@ webProj: true
       <div className='project-carousel-selections'>
           <div onClick={selectEmail} 
               className={`project-selection ${stateValues.email ? "selected" : ""}`}>
-                Email
+                Emails
             </div>
             <div onClick={selectLanding} 
                 className={`project-selection ${stateValues.landingPage ? "selected" : ""}`}>
@@ -50,7 +50,7 @@ webProj: true
             </div>
             <div onClick={selectWeb} 
                 className={`project-selection ${stateValues.webProj ? "selected" : ""}`}>
-                  Web Projects
+                  Front End Projects
           </div>
        </div>
       { stateValues.email && <Emails /> }

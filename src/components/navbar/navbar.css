@@ -17,6 +17,10 @@ ul.navbar-list{
     justify-content: space-around !important;
     align-items: center !important;
 }
+#navbar-home-blog,
+#navbar-home-about{
+    color: var(--footer-color)
+}
 .arrow-icon{
     padding: 0 20px !important;
 }

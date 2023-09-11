@@ -2,7 +2,7 @@
     border: 2px solid black;
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: var(--background-color);
+    background-color: var(--box-color);
     cursor: pointer;
 }
 .project-selection:hover{
@@ -10,15 +10,15 @@
     background-color: #e4e4e4;
 }
 .selected{
-    color: white;
+    color: var(--project-carousel);
     text-shadow: 0 2px 5px black;
-    background-color: var(--secondary-background-color);
+    background-color: var(--secondary-background-color) !important;
     padding: 10px 20px;
     border-radius: 50px;
 }
 .project-carousel-container{
     min-height: 80vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@
     padding: 10px 20px;
     border: 2px solid black;
     border-radius: 50px;
-    background-color: rgb(255, 153, 0);
+    background-color: var(--project-carousel);
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -42,7 +42,8 @@
     width: 80%;
     border: 2px solid black;
     border-radius: 50px;
-    margin: 20px 0;
+    margin: 50px 0;
+    background-color: var(--box-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,32 +79,62 @@
 .project-list-individual-container p{
     font-weight: 500;
 }
+.email-project-link{
+    position: relative;
+}
 .email-preview{
     width: 350px;
 }
 .project-desc-text{
-    position:absolute;
-    margin: 200px 0 0;
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    height: 80%;
     color:var(--list-color);
-    text-shadow:0 0 10px var(--list-color);
-    display: none;
-}/* 
-.hovering .project-desc-text{
-    display:block;
-} */
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing-desc-text{
+    top:27%;
+    height: 71%;
+}
+.front-end-desc-text{
+    top: 29%;
+    height: 69%;
+}
+.project-desc-text p{
+    width: 90%;
+}
+.trivia-desc{
+    position: absolute;
+    border: 2px solid red;
+
+}
 
 @media only screen and (max-width: 1260px){
     .email-preview{
         width: 250px;
     }
-}
-@media only screen and (max-width: 1100px){
     .project-selection{
         font-size: 15px;
     }
+    .project-carousel-selections{
+        width: 70%;
+        box-shadow: 0 5px 3px black;
+    }
+}
+@media only screen and (max-width: 1600px){
+    
     .project-list ul{
         grid-template-columns: 2fr 2fr;
         gap: 30px 50px;
+    }
+    .project-desc-text p{
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 700px){
@@ -124,5 +155,9 @@
     }
     .project-list ul{
          grid-template-columns: 1fr;
+    }
+    .front-end-desc-text{
+        top: 35%;
+        height: 62%;
     }
 }
