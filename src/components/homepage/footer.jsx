@@ -15,10 +15,16 @@ export const HomepageFooter = () => {
                 <p>
                     lawrenceclemente3@gmail.com
                 </p>
-                <Link to="https://www.linkedin.com/in/lawrence-clemente-41904157/" className='linkedin-logo'>
+                <Link to="https://www.linkedin.com/in/lawrence-clemente/" className='linkedin-logo'>
                     <i className="fa-brands fa-linkedin"/>
                     <span>
                         Linkedin
+                    </span>
+                </Link>
+                <Link to="https://github.com/lclemente225" className='github-logo'>
+                    <i className="fa-brands fa-square-github"/>
+                    <span>
+                        Github
                     </span>
                 </Link>
             </div>

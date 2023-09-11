@@ -15,10 +15,16 @@ export const FrontEndProjects = () => {
             frontEndSecond: false
         });
     }
+    function hoverSecond(){
+        setHoverClass({
+            frontEndFirst: false,
+            frontEndSecond: true
+        });
+    }
     function hoverReset(){
         setHoverClass({
-            landingFirst: false,
-            landingSecond: false
+            frontEndFirst: false,
+            frontEndSecond: false
         });
     }
 
@@ -63,6 +69,28 @@ React.useEffect(() => {
                                 </p>
                                 <p>
                                     All the questions are sourced from OpenTrivia DB API
+                                </p>
+                            </div>
+                            }
+                        </Link>
+                       
+                    </div>
+                </li>
+                <li>
+                    <div className='project-list-individual-container'>
+                        <Link to="https://lclemente225.github.io/" className='email-project-link' 
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
+                                <p>Personal Portfolio</p>
+                                <img className="email-preview"
+                                src="/homepage-images/portfolio-9-11-23.png"/>
+                                {
+                            hoverClass.frontEndSecond && 
+                            <div className='project-desc-text front-end-desc-text'>
+                                <p>
+                                    HTML | CSS | ReactJS 
+                                </p>
+                                <p>
+                                    You're looking at it. I am very proud of it. 
                                 </p>
                             </div>
                             }

@@ -19,26 +19,6 @@ a{
     text-decoration: none;
     color: var(--link-color);
 }
-.nav-sidebar-container{
-    position: fixed;
-    top: 20%;
-    left: 1%;
-    padding: 0;
-}
-.nav-side-bar{
-    display: flex;
-    flex-direction: column;
-}
-.nav-side-bar h3{
-    padding: 0 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    box-shadow: 0 6px 4px -4px black;
-}
-.nav-side-bar a:hover{
-    text-shadow: 0 0 2px black;
-    color: white;
-}
 .home-page{
     width: 100% !important;
     font-family: 'Ubuntu', sans-serif;
@@ -100,7 +80,7 @@ a{
 .navbar-list a:hover,
 .project-list a:hover{
     text-shadow: 0 0 2px rgb(0, 218, 11);
-    color: rgba(0, 0, 0, 0.322);
+    color: rgba(0, 0, 0, 0.699);
 }
 
 #homepage-footer{
@@ -112,10 +92,18 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-.linkedin-logo{
+.linkedin-logo,
+.github-logo{
     color:var(--footer-color);
+    display: inline-block;
+    margin-left: 10px;
 }
-.linkedin-logo i {
+.linkedin-logo:hover,
+.github-logo:hover{
+    color: white;
+}
+.linkedin-logo i,
+.github-logo i{
     margin-right: 5px;
 }
 .vite-logo-footer{
