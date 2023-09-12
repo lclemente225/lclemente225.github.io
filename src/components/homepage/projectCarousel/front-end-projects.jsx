@@ -28,37 +28,44 @@ export const FrontEndProjects = () => {
         });
     }
 
-const ref = React.useRef(null);
-const isInView = useInView(ref, {once: false});
-const mainControls = useAnimation();
+const ref1 = React.useRef(null);
+const ref2 = React.useRef(null);
+const isInView1 = useInView(ref1, {once: false});
+const isInView2 = useInView(ref2, {once: false});
+const mainControls1 = useAnimation();
+const mainControls2 = useAnimation();
 
 React.useEffect(() => {
-    if(isInView){
-        mainControls.start("WebProjVisible")
+    if(isInView1){
+        mainControls1.start("WebProjVisible")
     }
-}, [isInView])
-
+}, [isInView1])
+React.useEffect(() => {
+    if(isInView2){
+        mainControls2.start("WebProjVisible")
+    }
+}, [isInView2])
   return (
     <>
-        <div ref={ref} className="list personal-projects-list">
-            <motion.ul
-            variants={{
-                WebProjHidden: {opacity: 0, x: -100},
-                WebProjVisible: {opacity: 1, x: 0},
-                WebProjEscape: {opacity: 0, x: 100}
-            }}
-            initial= "WebProjHidden"
-            animate={mainControls}
-            hide="WebProjEscape"
-            transition={{
-                duration: 1, 
-                delay: 0.25
-            }}>
-                <li>
+        <div className="list personal-projects-list">
+            <ul>
+                <motion.li
+                variants={{
+                    WebProjHidden: {opacity: 0, x: -100},
+                    WebProjVisible: {opacity: 1, x: 0},
+                    WebProjEscape: {opacity: 0, x: 100}
+                }}
+                initial= "WebProjHidden"
+                animate={mainControls1}
+                exit="WebProjEscape"
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://ornate-tarsier-3496dc.netlify.app" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
-                                <p>Trivia Quiz</p>
+                                <p ref={ref1} >Trivia Quiz</p>
                                 <img className="email-preview"
                                 src="/homepage-images/quizzical-preview-img.png"/>
                                 {
@@ -75,12 +82,24 @@ React.useEffect(() => {
                         </Link>
                        
                     </div>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                variants={{
+                    WebProjHidden: {opacity: 0, x: -100},
+                    WebProjVisible: {opacity: 1, x: 0},
+                    WebProjEscape: {opacity: 0, x: 100}
+                }}
+                initial= "WebProjHidden"
+                animate={mainControls2}
+                hide="WebProjEscape"
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://lclemente225.github.io/" className='email-project-link' 
                         onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
-                                <p>Personal Portfolio</p>
+                                <p ref={ref2} >Personal Portfolio</p>
                                 <img className="email-preview"
                                 src="/homepage-images/portfolio-9-11-23.png"/>
                                 {
@@ -97,8 +116,8 @@ React.useEffect(() => {
                         </Link>
                        
                     </div>
-                </li>
-            </motion.ul>
+                </motion.li>
+            </ul>
         </div> 
     </>
   )

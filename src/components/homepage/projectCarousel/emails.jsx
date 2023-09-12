@@ -52,35 +52,59 @@ const Emails = () => {
             emailFourth: false
         });
     }
-const ref = React.useRef(null);
-const isInView = useInView(ref, {once: false});
-const mainControls = useAnimation();
+const ref1 = React.useRef(null);
+const ref2 = React.useRef(null);
+const ref3 = React.useRef(null);
+const ref4 = React.useRef(null);
+const isInView1 = useInView(ref1, {once: false});
+const isInView2 = useInView(ref2, {once: false});
+const isInView3 = useInView(ref3, {once: false});
+const isInView4 = useInView(ref4, {once: false});
+const mainControls1 = useAnimation();
+const mainControls2 = useAnimation();
+const mainControls3 = useAnimation();
+const mainControls4 = useAnimation();
 
 React.useEffect(() => {
-    if(isInView){
-        mainControls.start("emailVisible")  
+    if(isInView1){
+        mainControls1.start("emailVisible")  
     }
-}, [isInView])
+}, [isInView1])
+React.useEffect(() => {
+    if(isInView2){
+        mainControls2.start("emailVisible")  
+    }
+}, [isInView2])
+React.useEffect(() => {
+    if(isInView3){
+        mainControls3.start("emailVisible")  
+    }
+}, [isInView3])
+React.useEffect(() => {
+    if(isInView4){
+        mainControls4.start("emailVisible")  
+    }
+}, [isInView4])
 
   return (
     <>
-        <div ref={ref} className="list email-list" >
-            <motion.ul
-            variants={{
-                emailHidden: {opacity: 0, x: -100},
-                emailVisible: {opacity: 1, x: 0}
-            }}
-            initial="emailHidden"
-            animate={mainControls}
-            transition={{
-                duration: 1, 
-                delay: 0.25
-            }}>
-                <li>
+        <div className="list email-list" >
+            <ul>
+                <motion.li
+                variants={{
+                    emailHidden: {opacity: 0, x: -100},
+                    emailVisible: {opacity: 1, x: 0}
+                }}
+                initial="emailHidden"
+                animate={mainControls1}
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
                     <div className={`project-list-individual-container`}>
                         <Link to="/sample-sjsu-newsletter-1/" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
-                            <p>School Newsletter</p>
+                            <p  ref={ref1}>School Newsletter</p>
                             <img className="email-preview"
                             src="/homepage-images/sjsu-newsletter-email-preview.png" />    
                             {
@@ -97,12 +121,22 @@ React.useEffect(() => {
                         </Link>
                          
                     </div>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                variants={{
+                    emailHidden: {opacity: 0, x: -100},
+                    emailVisible: {opacity: 1, x: 0}
+                }}
+                initial="emailHidden"
+                animate={mainControls2}
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
                     <div className={`project-list-individual-container`}>
                         <Link to="/first-promotional-sample/" className='email-project-link' 
                         onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
-                            <p>Promotional </p>
+                            <p ref={ref2}>Promotional </p>
                             <img className='email-preview'
                             src="/homepage-images/hero-watch-email-preview.png"/>
                              {
@@ -118,12 +152,22 @@ React.useEffect(() => {
                             }  
                         </Link>   
                      </div>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                variants={{
+                    emailHidden: {opacity: 0, x: -100},
+                    emailVisible: {opacity: 1, x: 0}
+                }}
+                initial="emailHidden"
+                animate={mainControls3}
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
                     <div className={`project-list-individual-container`}>
                         <Link to="/first-transactional-sample/" className='email-project-link' 
                         onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
-                             <p>Order Transaction </p>
+                             <p ref={ref3}>Order Transaction </p>
                              <img className="email-preview"
                              src="/homepage-images/doordash-order-email.png"/>
                               {
@@ -139,12 +183,22 @@ React.useEffect(() => {
                             }  
                         </Link>
                     </div>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                variants={{
+                    emailHidden: {opacity: 0, x: -100},
+                    emailVisible: {opacity: 1, x: 0}
+                }}
+                initial="emailHidden"
+                animate={mainControls4}
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
                     <div className={`project-list-individual-container`}>
                         <Link to="/first-newsletter-sample/" className='email-project-link' 
                         onMouseEnter={hoverFourth} onMouseLeave={hoverReset} onTouchStart={hoverFourth}>
-                            <p>Fashion Newsletter </p>
+                            <p ref={ref4}>Fashion Newsletter </p>
                             <img className="email-preview"
                             src="/homepage-images/fashion-nova-newsletter-email-preview.png" />   
                              {
@@ -160,8 +214,8 @@ React.useEffect(() => {
                             }                       
                         </Link>
                     </div>
-                </li>
-            </motion.ul>
+                </motion.li>
+            </ul>
         </div>
     </>
   )
