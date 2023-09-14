@@ -28,35 +28,44 @@ export const LandingPageProjects = () => {
         });
     }
 
-const ref = React.useRef(null);
-const isInView = useInView(ref, {once: false});
-const mainControls = useAnimation();
+const ref1 = React.useRef(null);
+const ref2 = React.useRef(null);
+const isInView1 = useInView(ref1, {once: false});
+const isInView2 = useInView(ref2, {once: false});
+const mainControls1 = useAnimation();
+const mainControls2 = useAnimation();
 
 React.useEffect(() => {
-    if(isInView){
-        mainControls.start("landingVisible")
+    if(isInView1){
+        mainControls1.start("landingVisible")
     }
-}, [isInView])
+}, [isInView1])
+
+React.useEffect(() => {
+    if(isInView2){
+        mainControls2.start("landingVisible")
+    }
+}, [isInView2])
 
   return (
     <>
-        <div ref={ref} className="list landing-page-list">
-            <motion.ul
-                variants={{
-                    landingHidden: {opacity: 0, x: -100},
-                    landingVisible: {opacity: 1, x: 0}
-                }}
-                initial="landingHidden"
-                animate={mainControls}
-                transition={{
-                    duration: 1, 
-                    delay: 0.25
-                }}>
-                <li>
+        <div className="list landing-page-list">
+            <ul>
+                <motion.li
+                    variants={{
+                        landingHidden: {opacity: 0, x: -100},
+                        landingVisible: {opacity: 1, x: 0}
+                    }}
+                    initial="landingHidden"
+                    animate={mainControls1}
+                    transition={{
+                        duration: 1, 
+                        delay: 0.25
+                    }}>
                    <div className='project-list-individual-container'>
                         <Link to="/sample-apartment-landingPage/" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst} >
-                                <p>Apartment </p>
+                                <p ref={ref1} >Apartment </p>
                                 <img className="email-preview"
                                     src="/homepage-images/apartment-landing-page-preview.png"/>
                                 {
@@ -72,12 +81,22 @@ React.useEffect(() => {
                             }
                         </Link>
                     </div>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                    variants={{
+                        landingHidden: {opacity: 0, x: -100},
+                        landingVisible: {opacity: 1, x: 0}
+                    }}
+                    initial="landingHidden"
+                    animate={mainControls2}
+                    transition={{
+                        duration: 1, 
+                        delay: 0.25
+                    }}>
                     <div className='project-list-individual-container'>
                         <Link to="/sample-yugi-tutor-landingPage/" className='email-project-link' 
                         onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond} >
-                            <p>Personal Business</p>
+                            <p ref={ref2}>Personal Business</p>
                             <img className="email-preview"
                                 src="/homepage-images/yugi-tutor-preview.png"/>
                                 {
@@ -93,8 +112,8 @@ React.useEffect(() => {
                             }
                         </Link>
                     </div>
-                </li>
-            </motion.ul>
+                </motion.li>
+            </ul>
         </div>
       
     </>

@@ -5,6 +5,7 @@ import ProjectList from './projectCarousel/projectList';
 import { HomepageFooter as Footer } from './footer';
 import './homepage.css';
 import { motion } from "framer-motion";
+import { contactMe as ContactMe } from './contactMe';
 
 
 const Homepage = ({PageState,isHomePage}) => {
@@ -51,6 +52,7 @@ const Homepage = ({PageState,isHomePage}) => {
             <h1>Projects</h1>
             <ProjectList />
         </div>
+        <ContactMe />
         <div id="homepage-footer">
             <Footer />
         </div>
