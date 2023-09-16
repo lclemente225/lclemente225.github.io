@@ -63,7 +63,7 @@ React.useEffect(() => {
                     delay: 0.25
                 }}>
                     <div className='project-list-individual-container'>
-                        <Link to="https://ornate-tarsier-3496dc.netlify.app" className='email-project-link' 
+                        <Link to="https://lawrence-riddlemediddle.netlify.app/" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                                 <p ref={ref1} >Trivia Quiz</p>
                                 <img className="email-preview"

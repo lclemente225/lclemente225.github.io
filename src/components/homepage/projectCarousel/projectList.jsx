@@ -50,7 +50,7 @@ webProj: true
             </div>
             <div onClick={selectWeb} 
                 className={`project-selection ${stateValues.webProj ? "selected" : ""}`}>
-                  Front End Projects
+                  Web App Projects
           </div>
        </div>
       { stateValues.email && <Emails /> }

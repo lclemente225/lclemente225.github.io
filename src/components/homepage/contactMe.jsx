@@ -37,25 +37,29 @@ export const contactMe = () => {
                         width:'50%',
                         height: '50px',
                         minWidth: '200px',
-                        margin: '20px',
+                        margin: '20px 0',
                         borderRadius: '20px',
+                        border: 0,
+                        borderBottom: '3px solid black' ,
                         textAlign: 'center'
                     };
     const textInputStyling = {
                         width:'50%',
                         height: '200px',
-                        maxWidth: '100%',
-                        margin: '20px',
-                        borderRadius: '5px',
+                        minHeight: '15%',
+                        maxWidth: '90%',
+                        margin: '20px 0',
+                        borderRadius: '5px'
                     };
     const contactButtonStyling = {
                                 backgroundColor: isHover ?  '#FFB563' : '#A41623',
                                 color: isHover ? '#A41623' : '#FFB563',
-                                padding: '20px 0',
+                                padding: '10px 0',
                                 width: '90%',
                                 borderRadius: '40px',
-                                fontSize: '1.5rem',
-                                margin: '60px 0 0',
+                                fontSize: '1.2rem',
+                                fontWeight: 700,
+                                margin: '30px 0 0',
                                 justifySelf: 'flex-end', 
                                 cursor: 'pointer'
                     };
@@ -79,10 +83,11 @@ export const contactMe = () => {
                 flexDirection:'column',
                 justifyContent:'center',
                 alignItems: 'center',
-                width: '80%',
+                width: '70%',
                 height: '90%',
                 borderRadius: '40px',
                 border: '2px solid black',
+                padding: '50px 0',
                 boxShadow: '0 0 10px 2px black, 0 0 20px 10px black',
                 backgroundColor: 'var(--box-color)'
                 
@@ -99,7 +104,7 @@ export const contactMe = () => {
                         Please let me know your intent
                     </label>
                     <textarea required name="message" style={textInputStyling}/>
-                    <input type="submit" value="Send" style={contactButtonStyling} 
+                    <input type="submit" value="Send to Lawrence" style={contactButtonStyling} 
                     onMouseEnter={handleButtonHover} onMouseLeave={handleButtonUnhovered}/>
 
  { isFormSubmitted &&
