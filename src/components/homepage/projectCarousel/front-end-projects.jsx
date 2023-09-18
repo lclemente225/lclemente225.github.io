@@ -30,10 +30,13 @@ export const FrontEndProjects = () => {
 
 const ref1 = React.useRef(null);
 const ref2 = React.useRef(null);
+const ref3 = React.useRef(null);
 const isInView1 = useInView(ref1, {once: false});
 const isInView2 = useInView(ref2, {once: false});
+const isInView3 = useInView(ref3, {once: false});
 const mainControls1 = useAnimation();
 const mainControls2 = useAnimation();
+const mainControls3 = useAnimation();
 
 React.useEffect(() => {
     if(isInView1){
@@ -45,6 +48,11 @@ React.useEffect(() => {
         mainControls2.start("WebProjVisible")
     }
 }, [isInView2])
+React.useEffect(() => {
+    if(isInView3){
+        mainControls3.start("WebProjVisible")
+    }
+}, [isInView3])
   return (
     <>
         <div className="list personal-projects-list">
@@ -110,6 +118,40 @@ React.useEffect(() => {
                                 </p>
                                 <p className='desc-text'>
                                     You're looking at it. I am very proud of it. 
+                                </p>
+                            </div>
+                            }
+                        </Link>
+                       
+                    </div>
+                </motion.li>
+                <motion.li
+                variants={{
+                    WebProjHidden: {opacity: 0, x: -100},
+                    WebProjVisible: {opacity: 1, x: 0},
+                    WebProjEscape: {opacity: 0, x: 100}
+                }}
+                initial= "WebProjHidden"
+                animate={mainControls3}
+                hide="WebProjEscape"
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
+                    <div className='project-list-individual-container'>
+                        <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
+                                <p ref={ref3} >Yugioh Card Price Checker</p>
+                                <img className="email-preview"
+                                src="/homepage-images/portfolio-9-11-23.png"/>
+                                {
+                            hoverClass.frontEndSecond && 
+                            <div className='project-desc-text front-end-desc-text'>
+                                <p>
+                                    ReactJS | SQL | Express 
+                                </p>
+                                <p className='desc-text'>
+                                    A full stack project that filters through a database of cards
                                 </p>
                             </div>
                             }
