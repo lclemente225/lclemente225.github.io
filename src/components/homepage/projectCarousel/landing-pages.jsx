@@ -1,7 +1,12 @@
 import React from 'react';
 import '../homepage.css';
 import { Link } from 'react-router-dom';
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion, useInView, useAnimation} from "framer-motion";
+const motionVariantsLanding = {
+    landingHidden: {opacity: 0, x: -100},
+    landingVisible: {opacity: 1, x: 0},
+    landingExit:{opacity: 0, x: 100}
+};
 
 export const LandingPageProjects = () => {
     const [hoverClass, setHoverClass] = React.useState({
@@ -48,16 +53,14 @@ React.useEffect(() => {
 }, [isInView2])
 
   return (
-    <>
         <div className="list landing-page-list">
             <ul>
                 <motion.li
-                    variants={{
-                        landingHidden: {opacity: 0, x: -100},
-                        landingVisible: {opacity: 1, x: 0}
-                    }}
+                    key="landing1"
+                    variants={motionVariantsLanding}
                     initial="landingHidden"
                     animate={mainControls1}
+                    exit={{opacity: 0, x: 100}}
                     transition={{
                         duration: 1, 
                         delay: 0.25
@@ -83,12 +86,11 @@ React.useEffect(() => {
                     </div>
                 </motion.li>
                 <motion.li
-                    variants={{
-                        landingHidden: {opacity: 0, x: -100},
-                        landingVisible: {opacity: 1, x: 0}
-                    }}
+                    key="landing2"
+                    variants={motionVariantsLanding}
                     initial="landingHidden"
                     animate={mainControls2}
+                    exit="landingExit"
                     transition={{
                         duration: 1, 
                         delay: 0.25
@@ -115,8 +117,6 @@ React.useEffect(() => {
                 </motion.li>
             </ul>
         </div>
-      
-    </>
   )
 }
 

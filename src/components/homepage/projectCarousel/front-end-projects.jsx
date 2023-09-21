@@ -3,6 +3,12 @@ import '../homepage.css';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useAnimation } from "framer-motion";
 
+const motionVariantsWebProj = {
+    WebProjHidden: {opacity: 0, x: -100},
+    WebProjVisible: {opacity: 1, x: 0},
+    WebProjEscape: {opacity: 0, x: 100}
+};
+
 export const FrontEndProjects = () => {
     const [hoverClass, setHoverClass] = React.useState({
         frontEndFirst: false,
@@ -65,18 +71,12 @@ React.useEffect(() => {
     }
 }, [isInView3])
   return (
-    <>
         <div className="list personal-projects-list">
             <ul>
                 <motion.li
-                variants={{
-                    WebProjHidden: {opacity: 0, x: -100},
-                    WebProjVisible: {opacity: 1, x: 0},
-                    WebProjEscape: {opacity: 0, x: 100}
-                }}
+                variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls3}
-                hide="WebProjEscape"
                 transition={{
                     duration: 1, 
                     delay: 0.25
@@ -103,14 +103,9 @@ React.useEffect(() => {
                     </div>
                 </motion.li>
                 <motion.li
-                variants={{
-                    WebProjHidden: {opacity: 0, x: -100},
-                    WebProjVisible: {opacity: 1, x: 0},
-                    WebProjEscape: {opacity: 0, x: 100}
-                }}
+                variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls1}
-                exit="WebProjEscape"
                 transition={{
                     duration: 1, 
                     delay: 0.25
@@ -137,14 +132,9 @@ React.useEffect(() => {
                     </div>
                 </motion.li>
                 <motion.li
-                variants={{
-                    WebProjHidden: {opacity: 0, x: -100},
-                    WebProjVisible: {opacity: 1, x: 0},
-                    WebProjEscape: {opacity: 0, x: 100}
-                }}
+                variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls2}
-                hide="WebProjEscape"
                 transition={{
                     duration: 1, 
                     delay: 0.25
@@ -173,7 +163,6 @@ React.useEffect(() => {
                 
             </ul>
         </div> 
-    </>
   )
 }
 

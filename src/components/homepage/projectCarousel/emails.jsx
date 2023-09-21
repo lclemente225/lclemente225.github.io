@@ -87,137 +87,135 @@ React.useEffect(() => {
 }, [isInView4])
 
   return (
-    <>
-        <div className="list email-list" >
-            <ul>
-                <motion.li
-                variants={{
-                    emailHidden: {opacity: 0, x: -100},
-                    emailVisible: {opacity: 1, x: 0}
-                }}
-                initial="emailHidden"
-                animate={mainControls1}
-                transition={{
-                    duration: 1, 
-                    delay: 0.25
-                }}>
-                    <div className={`project-list-individual-container`}>
-                        <Link to="/sample-sjsu-newsletter-1/" className='email-project-link' 
-                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
-                            <p  ref={ref1}>School Newsletter</p>
-                            <img className="email-preview"
-                            src="/homepage-images/sjsu-newsletter-email-preview.png" />    
-                            {
-                            hoverClass.emailFirst && 
-                            <div className='project-desc-text email-desc-text '>
-                                <p>
-                                    HTML CSS
-                                </p>
-                                <p className='desc-text'>
-                                    Sample design taken from SJSU
-                                </p>
-                            </div>
-                            }                      
-                        </Link>
-                         
-                    </div>
-                </motion.li>
-                <motion.li
-                variants={{
-                    emailHidden: {opacity: 0, x: -100},
-                    emailVisible: {opacity: 1, x: 0}
-                }}
-                initial="emailHidden"
-                animate={mainControls2}
-                transition={{
-                    duration: 1, 
-                    delay: 0.25
-                }}>
-                    <div className={`project-list-individual-container`}>
-                        <Link to="/first-promotional-sample/" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
-                            <p ref={ref2}>Promotional </p>
-                            <img className='email-preview'
-                            src="/homepage-images/hero-watch-email-preview.png"/>
-                             {
-                            hoverClass.emailSecond && 
-                            <div className='project-desc-text email-desc-text '>
-                                <p>
-                                    HTML | CSS
-                                </p>
-                                <p className='desc-text'>
-                                    Sample Promotional Product Email
-                                </p>
-                            </div>
-                            }  
-                        </Link>   
-                     </div>
-                </motion.li>
-                <motion.li
-                variants={{
-                    emailHidden: {opacity: 0, x: -100},
-                    emailVisible: {opacity: 1, x: 0}
-                }}
-                initial="emailHidden"
-                animate={mainControls3}
-                transition={{
-                    duration: 1, 
-                    delay: 0.25
-                }}>
-                    <div className={`project-list-individual-container`}>
-                        <Link to="/first-transactional-sample/" className='email-project-link' 
-                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
-                             <p ref={ref3}>Order Transaction </p>
-                             <img className="email-preview"
-                             src="/homepage-images/doordash-order-email.png"/>
-                              {
-                            hoverClass.emailThird && 
-                            <div className='project-desc-text email-desc-text'>
-                                <p>
-                                    HTML | CSS
-                                </p>
-                                <p className='desc-text'>
-                                    I ordered chicken once. I replicated the transactional email I received. 
-                                </p>
-                            </div>
-                            }  
-                        </Link>
-                    </div>
-                </motion.li>
-                <motion.li
-                variants={{
-                    emailHidden: {opacity: 0, x: -100},
-                    emailVisible: {opacity: 1, x: 0}
-                }}
-                initial="emailHidden"
-                animate={mainControls4}
-                transition={{
-                    duration: 1, 
-                    delay: 0.25
-                }}>
-                    <div className={`project-list-individual-container`}>
-                        <Link to="/first-newsletter-sample/" className='email-project-link' 
-                        onMouseEnter={hoverFourth} onMouseLeave={hoverReset} onTouchStart={hoverFourth}>
-                            <p ref={ref4}>Fashion Newsletter </p>
-                            <img className="email-preview"
-                            src="/homepage-images/fashion-nova-newsletter-email-preview.png" />   
-                             {
-                            hoverClass.emailFourth && 
-                            <div className='project-desc-text email-desc-text'>
-                                <p>
-                                    HTML | CSS
-                                </p>
-                                <p className='desc-text'>
-                                    Fashion Nova email design that I copied.
-                                </p>
-                            </div>
-                            }                       
-                        </Link>
-                    </div>
-                </motion.li>
-            </ul>
-        </div>
-    </>
+         <div className="list email-list" >
+         <ul>
+             <motion.li
+             variants={{
+                 emailHidden: {opacity: 0, x: -100},
+                 emailVisible: {opacity: 1, x: 0}
+             }}
+             initial="emailHidden"
+             animate={mainControls1}
+             transition={{
+                 duration: 1, 
+                 delay: 0.25
+             }}>
+                 <div className={`project-list-individual-container`}>
+                     <Link to="/sample-sjsu-newsletter-1/" className='email-project-link' 
+                     onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
+                         <p  ref={ref1}>School Newsletter</p>
+                         <img className="email-preview"
+                         src="/homepage-images/sjsu-newsletter-email-preview.png" />    
+                         {
+                         hoverClass.emailFirst && 
+                         <div className='project-desc-text email-desc-text '>
+                             <p>
+                                 HTML CSS
+                             </p>
+                             <p className='desc-text'>
+                                 Sample design taken from SJSU
+                             </p>
+                         </div>
+                         }                      
+                     </Link>
+                      
+                 </div>
+             </motion.li>
+             <motion.li
+             variants={{
+                 emailHidden: {opacity: 0, x: -100},
+                 emailVisible: {opacity: 1, x: 0}
+             }}
+             initial="emailHidden"
+             animate={mainControls2}
+             transition={{
+                 duration: 1, 
+                 delay: 0.25
+             }}>
+                 <div className={`project-list-individual-container`}>
+                     <Link to="/first-promotional-sample/" className='email-project-link' 
+                     onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
+                         <p ref={ref2}>Promotional </p>
+                         <img className='email-preview'
+                         src="/homepage-images/hero-watch-email-preview.png"/>
+                          {
+                         hoverClass.emailSecond && 
+                         <div className='project-desc-text email-desc-text '>
+                             <p>
+                                 HTML | CSS
+                             </p>
+                             <p className='desc-text'>
+                                 Sample Promotional Product Email
+                             </p>
+                         </div>
+                         }  
+                     </Link>   
+                  </div>
+             </motion.li>
+             <motion.li
+             variants={{
+                 emailHidden: {opacity: 0, x: -100},
+                 emailVisible: {opacity: 1, x: 0}
+             }}
+             initial="emailHidden"
+             animate={mainControls3}
+             transition={{
+                 duration: 1, 
+                 delay: 0.25
+             }}>
+                 <div className={`project-list-individual-container`}>
+                     <Link to="/first-transactional-sample/" className='email-project-link' 
+                     onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
+                          <p ref={ref3}>Order Transaction </p>
+                          <img className="email-preview"
+                          src="/homepage-images/doordash-order-email.png"/>
+                           {
+                         hoverClass.emailThird && 
+                         <div className='project-desc-text email-desc-text'>
+                             <p>
+                                 HTML | CSS
+                             </p>
+                             <p className='desc-text'>
+                                 I ordered chicken once. I replicated the transactional email I received. 
+                             </p>
+                         </div>
+                         }  
+                     </Link>
+                 </div>
+             </motion.li>
+             <motion.li
+             variants={{
+                 emailHidden: {opacity: 0, x: -100},
+                 emailVisible: {opacity: 1, x: 0}
+             }}
+             initial="emailHidden"
+             animate={mainControls4}
+             transition={{
+                 duration: 1, 
+                 delay: 0.25
+             }}>
+                 <div className={`project-list-individual-container`}>
+                     <Link to="/first-newsletter-sample/" className='email-project-link' 
+                     onMouseEnter={hoverFourth} onMouseLeave={hoverReset} onTouchStart={hoverFourth}>
+                         <p ref={ref4}>Fashion Newsletter </p>
+                         <img className="email-preview"
+                         src="/homepage-images/fashion-nova-newsletter-email-preview.png" />   
+                          {
+                         hoverClass.emailFourth && 
+                         <div className='project-desc-text email-desc-text'>
+                             <p>
+                                 HTML | CSS
+                             </p>
+                             <p className='desc-text'>
+                                 Fashion Nova email design that I copied.
+                             </p>
+                         </div>
+                         }                       
+                     </Link>
+                 </div>
+             </motion.li>
+         </ul>
+     </div>
   )
 }
 

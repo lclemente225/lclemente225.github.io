@@ -3,6 +3,7 @@ import Emails from './emails';
 import {LandingPageProjects as LandingPages} from './landing-pages';
 import { FrontEndProjects as FrontEnd } from './front-end-projects';
 import './projectCarousel.css';
+import { AnimatePresence } from "framer-motion";
 
 const ProjectList = () => {
     const [stateValues, selectValue] = React.useState({
@@ -12,30 +13,32 @@ const ProjectList = () => {
        });
 
 function selectEmail(){
-selectValue(() => {
-return {
-email: true,
-landingPage: false,
-webProj: false
-}})
+  selectValue(() => {
+  return {
+  email: true,
+  landingPage: false,
+  webProj: false
+  }})
 }                                
 
 function selectLanding(){
-selectValue(() => {
-return {
-email: false,
-landingPage: true,
-webProj: false
-}})
+
+ selectValue(() => {
+  return {
+  email: false,
+  landingPage: true,
+  webProj: false
+  }})
+
 }     
 
 function selectWeb(){
-selectValue(() => {
-return {
-email: false,
-landingPage: false,
-webProj: true
-}})
+  selectValue(() => {
+  return {
+  email: false,
+  landingPage: false,
+  webProj: true
+  }})
 }     
   return (
     <div className='project-carousel-container'>
@@ -53,9 +56,11 @@ webProj: true
                   Web App Projects
           </div>
        </div>
+       <AnimatePresence>
       { stateValues.email && <Emails /> }
       { stateValues.landingPage && <LandingPages /> }
       { stateValues.webProj && <FrontEnd /> }
+      </AnimatePresence>
       
     </div>
   )
