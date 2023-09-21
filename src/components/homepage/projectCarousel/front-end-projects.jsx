@@ -6,25 +6,36 @@ import { motion, useInView, useAnimation } from "framer-motion";
 export const FrontEndProjects = () => {
     const [hoverClass, setHoverClass] = React.useState({
         frontEndFirst: false,
-        frontEndSecond: false
+        frontEndSecond: false,
+        frontEndThird: false
     });
 
     function hoverFirst(){
         setHoverClass({
             frontEndFirst: true,
-            frontEndSecond: false
+            frontEndSecond: false,
+            frontEndThird: false
         });
     }
     function hoverSecond(){
         setHoverClass({
             frontEndFirst: false,
-            frontEndSecond: true
+            frontEndSecond: true,
+            frontEndThird: false
+        });
+    }
+    function hoverThird(){
+        setHoverClass({
+            frontEndFirst: false,
+            frontEndSecond: false,
+            frontEndThird: true
         });
     }
     function hoverReset(){
         setHoverClass({
             frontEndFirst: false,
-            frontEndSecond: false
+            frontEndSecond: false,
+            frontEndThird: false
         });
     }
 
@@ -57,6 +68,40 @@ React.useEffect(() => {
     <>
         <div className="list personal-projects-list">
             <ul>
+                <motion.li
+                variants={{
+                    WebProjHidden: {opacity: 0, x: -100},
+                    WebProjVisible: {opacity: 1, x: 0},
+                    WebProjEscape: {opacity: 0, x: 100}
+                }}
+                initial= "WebProjHidden"
+                animate={mainControls3}
+                hide="WebProjEscape"
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
+                    <div className='project-list-individual-container'>
+                        <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
+                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
+                                <p ref={ref3} >Yugioh Card Price Checker</p>
+                                <img className="email-preview"
+                                src="/homepage-images/ygo-price-checker-preview.png"/>
+                                {
+                            hoverClass.frontEndThird && 
+                            <div className='project-desc-text front-end-desc-text'>
+                                <p>
+                                    ReactJS | SQL | Express 
+                                </p>
+                                <p className='desc-text'>
+                                    A full stack project that filters through a database of cards
+                                </p>
+                            </div>
+                            }
+                        </Link>
+                       
+                    </div>
+                </motion.li>
                 <motion.li
                 variants={{
                     WebProjHidden: {opacity: 0, x: -100},
@@ -125,40 +170,7 @@ React.useEffect(() => {
                        
                     </div>
                 </motion.li>
-                <motion.li
-                variants={{
-                    WebProjHidden: {opacity: 0, x: -100},
-                    WebProjVisible: {opacity: 1, x: 0},
-                    WebProjEscape: {opacity: 0, x: 100}
-                }}
-                initial= "WebProjHidden"
-                animate={mainControls3}
-                hide="WebProjEscape"
-                transition={{
-                    duration: 1, 
-                    delay: 0.25
-                }}>
-                    <div className='project-list-individual-container'>
-                        <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
-                                <p ref={ref3} >Yugioh Card Price Checker</p>
-                                <img className="email-preview"
-                                src="/homepage-images/portfolio-9-11-23.png"/>
-                                {
-                            hoverClass.frontEndSecond && 
-                            <div className='project-desc-text front-end-desc-text'>
-                                <p>
-                                    ReactJS | SQL | Express 
-                                </p>
-                                <p className='desc-text'>
-                                    A full stack project that filters through a database of cards
-                                </p>
-                            </div>
-                            }
-                        </Link>
-                       
-                    </div>
-                </motion.li>
+                
             </ul>
         </div> 
     </>

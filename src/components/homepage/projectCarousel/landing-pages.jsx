@@ -106,7 +106,7 @@ React.useEffect(() => {
                                     HTML | CSS | ReactJS
                                 </p>
                                 <p className='desc-text'>
-                                    I love Yu-Gi-Oh
+                                    If Yugi taught dueling. This could be any business.
                                 </p>
                             </div>
                             }
