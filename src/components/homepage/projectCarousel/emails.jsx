@@ -3,6 +3,11 @@ import '../homepage.css';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useAnimation } from "framer-motion";
 
+const motionVariantsEmail = {
+    emailHidden: {opacity: 0, x: -100},
+    emailVisible: {opacity: 1, x: 0}
+};
+
 const Emails = () => {
     
     const [hoverClass, setHoverClass] = React.useState({
@@ -87,15 +92,12 @@ React.useEffect(() => {
 }, [isInView4])
 
   return (
-         <div className="list email-list" >
-         <ul>
+    <>
              <motion.li
-             variants={{
-                 emailHidden: {opacity: 0, x: -100},
-                 emailVisible: {opacity: 1, x: 0}
-             }}
+             variants={motionVariantsEmail}
              initial="emailHidden"
              animate={mainControls1}
+             exit="emailHidden"
              transition={{
                  duration: 1, 
                  delay: 0.25
@@ -122,10 +124,7 @@ React.useEffect(() => {
                  </div>
              </motion.li>
              <motion.li
-             variants={{
-                 emailHidden: {opacity: 0, x: -100},
-                 emailVisible: {opacity: 1, x: 0}
-             }}
+             variants={motionVariantsEmail}
              initial="emailHidden"
              animate={mainControls2}
              transition={{
@@ -153,10 +152,7 @@ React.useEffect(() => {
                   </div>
              </motion.li>
              <motion.li
-             variants={{
-                 emailHidden: {opacity: 0, x: -100},
-                 emailVisible: {opacity: 1, x: 0}
-             }}
+             variants={motionVariantsEmail}
              initial="emailHidden"
              animate={mainControls3}
              transition={{
@@ -184,10 +180,7 @@ React.useEffect(() => {
                  </div>
              </motion.li>
              <motion.li
-             variants={{
-                 emailHidden: {opacity: 0, x: -100},
-                 emailVisible: {opacity: 1, x: 0}
-             }}
+             variants={motionVariantsEmail}
              initial="emailHidden"
              animate={mainControls4}
              transition={{
@@ -214,8 +207,7 @@ React.useEffect(() => {
                      </Link>
                  </div>
              </motion.li>
-         </ul>
-     </div>
+        </>
   )
 }
 

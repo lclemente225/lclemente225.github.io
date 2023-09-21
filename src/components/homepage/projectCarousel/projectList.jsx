@@ -3,6 +3,7 @@ import Emails from './emails';
 import {LandingPageProjects as LandingPages} from './landing-pages';
 import { FrontEndProjects as FrontEnd } from './front-end-projects';
 import './projectCarousel.css';
+import '../homepage.css';
 import { AnimatePresence } from "framer-motion";
 
 const ProjectList = () => {
@@ -56,11 +57,16 @@ function selectWeb(){
                   Web App Projects
           </div>
        </div>
-       <AnimatePresence>
-      { stateValues.email && <Emails /> }
-      { stateValues.landingPage && <LandingPages /> }
-      { stateValues.webProj && <FrontEnd /> }
-      </AnimatePresence>
+       
+        <div className="list">
+          <ul>
+          <AnimatePresence>
+              { stateValues.email && <Emails /> }
+              { stateValues.landingPage && <LandingPages /> }
+              { stateValues.webProj && <FrontEnd /> }
+          </AnimatePresence>
+          </ul>
+        </div>
       
     </div>
   )

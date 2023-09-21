@@ -71,12 +71,12 @@ React.useEffect(() => {
     }
 }, [isInView3])
   return (
-        <div className="list personal-projects-list">
-            <ul>
+        <>
                 <motion.li
                 variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls3}
+                exit="WebProjHidden"
                 transition={{
                     duration: 1, 
                     delay: 0.25
@@ -106,6 +106,7 @@ React.useEffect(() => {
                 variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls1}
+                exit="WebProjHidden"
                 transition={{
                     duration: 1, 
                     delay: 0.25
@@ -135,6 +136,7 @@ React.useEffect(() => {
                 variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls2}
+                exit="WebProjHidden"
                 transition={{
                     duration: 1, 
                     delay: 0.25
@@ -160,9 +162,7 @@ React.useEffect(() => {
                        
                     </div>
                 </motion.li>
-                
-            </ul>
-        </div> 
+        </>
   )
 }
 

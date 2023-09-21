@@ -53,8 +53,7 @@ React.useEffect(() => {
 }, [isInView2])
 
   return (
-        <div className="list landing-page-list">
-            <ul>
+        <>
                 <motion.li
                     key="landing1"
                     variants={motionVariantsLanding}
@@ -115,8 +114,7 @@ React.useEffect(() => {
                         </Link>
                     </div>
                 </motion.li>
-            </ul>
-        </div>
+            </>
   )
 }
 
