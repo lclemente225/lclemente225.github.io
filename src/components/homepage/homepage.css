@@ -82,8 +82,8 @@ a{
 } 
 .navbar-list a:hover,
 .project-list a:hover{
-    text-shadow: 0 0 2px rgb(0, 218, 11);
-    color: rgba(0, 0, 0, 0.699);
+    text-shadow: 0 0 2px white;
+    color: var(--secondary-background-color);
 }
 
 #homepage-footer{
