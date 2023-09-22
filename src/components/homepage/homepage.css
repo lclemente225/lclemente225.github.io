@@ -27,6 +27,7 @@ a{
 .intro-section{
     margin: 0;
     height: 400px;
+    width: 100%;
     background-color: var(--secondary-background-color);
     display: flex;
     flex-direction: column;
@@ -67,6 +68,9 @@ a{
     width: 35px; 
     margin-left: -10px;
 }
+.project-list{
+    width: 100%;
+}
 .project-list h1{
     margin: 0 0 100px;
     padding: 20px 0;
@@ -82,7 +86,7 @@ a{
 } 
 .navbar-list a:hover,
 .project-list a:hover{
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 2px black;
     color: var(--secondary-background-color);
 }
 
@@ -114,19 +118,6 @@ a{
     margin: 0;
     padding: 0;
 }
-.back-to-top{
-    position: fixed; 
-    width: 150px;
-    font-size: 20px;
-    bottom: 30px;
-    right: 30px;
-    border: 1px solid black;
-    color: black;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #c4c1a48c;
-    cursor: pointer;
-}
 @media only screen and (max-width: 1260px){
     .intro-section h2{
     -webkit-text-stroke-width: 0px;
@@ -154,6 +145,7 @@ a{
         font-size: 25px;
     }
     .skills-section{
+        width: 100%;
         margin: 30px 0;
         height: 1000px;
         flex-direction: column;
@@ -170,6 +162,7 @@ a{
 @media only screen and (max-width: 700px){
     .intro-section{
         height: 400px !important;
+        width: 100%;
     }
     .intro-section h1{
         font-size: 35px;
@@ -180,18 +173,20 @@ a{
         width: 75%;
     }
    .skills-section{
+        width: 100%;
         margin: 0;
         height: 1000px;
         flex-direction: column;
         align-items: center;
     }
     .one-column-skills-section{
-        width: 100%;
+        width: 99%;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 0;
-        border: 0 0 2px 0;
+        margin: 0;
+        padding: 0;
     }
    .skills-section h2{
         width: 50%;

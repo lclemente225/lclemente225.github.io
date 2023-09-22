@@ -84,6 +84,7 @@ export const contactMe = () => {
                 justifyContent:'center',
                 alignItems: 'center',
                 width: '70%',
+                minWidth: '270px',
                 height: '90%',
                 borderRadius: '40px',
                 border: '2px solid black',

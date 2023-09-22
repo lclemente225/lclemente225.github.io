@@ -154,7 +154,7 @@ React.useEffect(() => {
                                     HTML | CSS | ReactJS 
                                 </p>
                                 <p className='desc-text'>
-                                    You're looking at it. I am very proud of it. 
+                                    You're looking at it. I am very proud of it.
                                 </p>
                             </div>
                             }
