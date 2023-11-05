@@ -108,7 +108,7 @@ export const contactMe = () => {
                     <input type="submit" value="Send to Lawrence" style={contactButtonStyling} 
                     onMouseEnter={handleButtonHover} onMouseLeave={handleButtonUnhovered}/>
 
- { isFormSubmitted &&
+                { isFormSubmitted &&
                 <div style={{
                             position:'absolute',
                             width: '100%',
