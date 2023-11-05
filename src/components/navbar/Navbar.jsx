@@ -15,7 +15,7 @@ const Navbar = ({PageState}) => {
             </a>
           </li>
           <li>
-            <a href="https://lawrenceclemente.wordpress.com/"
+            <a href="https://lawrenceclemente.wordpress.com/about-me/"
             id="navbar-home-about">
               About
             </a>
