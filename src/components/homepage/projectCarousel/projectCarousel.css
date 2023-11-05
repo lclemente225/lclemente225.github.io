@@ -102,12 +102,16 @@
     justify-content: center;
     align-items: center;
 }
+.email-desc-text{
+    top: 16%;
+    height: 83%;
+}
 .landing-desc-text{
     top:27%;
     height: 71%;
 }
 .front-end-desc-text{
-    top: 28.5%;
+    top: 26.5%;
     height: 71%;
 }
 .desc-text{
@@ -122,6 +126,20 @@
 
 }
 
+@media only screen and (max-width: 1760px){
+
+    .email-preview{
+        width: 350px;
+    }
+    
+    .email-desc-text{
+        top: 18%;
+        height: 81%;
+    }
+    .front-end-desc-text{
+        top: 28%;
+    }
+}
 @media only screen and (max-width: 1260px){
     .email-preview{
         width: 250px;
