@@ -83,13 +83,13 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
+                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                                 <p ref={ref3} >Yugioh Card Price Checker</p>
                                 <img className="email-preview"
                                 src="/homepage-images/ygo-price-checker-preview.png"/>
                                 {
-                            hoverClass.frontEndThird && 
-                            <div className='project-desc-text front-end-desc-text'>
+                            hoverClass.frontEndFirst && 
+                            <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
                                 <p>
                                     ReactJS | SQL | Express 
                                 </p>
@@ -113,12 +113,12 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://lawrence-riddlemediddle.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
                                 <p ref={ref1} >Trivia Quiz</p>
                                 <img className="email-preview"
                                 src="/homepage-images/quizzical-preview-img.png"/>
                                 {
-                            hoverClass.frontEndFirst && 
+                            hoverClass.frontEndSecond && 
                             <div className='project-desc-text front-end-desc-text'>
                                 <p>
                                     HTML | CSS | ReactJS | REST API
@@ -143,12 +143,12 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://lclemente225.github.io/" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
+                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
                                 <p ref={ref2} >Personal Portfolio</p>
                                 <img className="email-preview"
                                 src="/homepage-images/portfolio-9-11-23.png"/>
                                 {
-                            hoverClass.frontEndSecond && 
+                            hoverClass.frontEndThird && 
                             <div className='project-desc-text front-end-desc-text'>
                                 <p>
                                     HTML | CSS | ReactJS 

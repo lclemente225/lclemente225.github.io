@@ -69,7 +69,7 @@
     flex-wrap:nowrap;
     flex-flow: column;
     align-items: center;
-    text-align: center;
+    text-align: center
 }
 .landing-page-list,
 .personal-projects-list{
@@ -84,6 +84,7 @@
 }
 .email-project-link{
     position: relative;
+    width: min-content;
 }
 .email-preview{
     width: 400px;
@@ -126,6 +127,7 @@
 
 }
 
+
 @media only screen and (max-width: 1760px){
 
     .email-preview{
@@ -161,6 +163,7 @@
     .front-end-desc-text{
         top: 35%;
         height: 63%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1600px){
@@ -195,5 +198,9 @@
     .front-end-desc-text{
         top: 35%;
         height: 62%;
+    }
+    .first-front-end-proj-text{
+        top: 42%;
+        height: 56%;
     }
 }
