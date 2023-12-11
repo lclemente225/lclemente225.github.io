@@ -33,10 +33,37 @@ export const contactMe = () => {
         setIsHover(false)
     }
 
+    const containerStyling = {
+        display: 'flex', 
+        flexDirection:'column',
+        justifyContent:'center',
+        alignItems: 'center',
+        height: '100vh', 
+        width: '100%',
+        margin: '200px 0'
+        };
+
+    const outerBoxStyling = {
+        position:'relative',
+        display: 'flex', 
+        flexDirection:'column',
+        justifyContent:'center',
+        alignItems: 'center',
+        width: '70%',
+        minWidth: '270px',
+        height: '90%',
+        borderRadius: '40px',
+        border: '2px solid black',
+        padding: '50px 0',
+        boxShadow: '0 0 10px 2px black, 0 0 20px 10px black',
+        backgroundColor: 'var(--box-color)'
+        
+        };
+
     const inputStyling = {
                         width:'50%',
                         height: '50px',
-                        minWidth: '200px',
+                        minWidth: '240px',
                         margin: '20px 0',
                         borderRadius: '20px',
                         border: 0,
@@ -47,7 +74,7 @@ export const contactMe = () => {
                         width:'50%',
                         height: '200px',
                         minHeight: '15%',
-                        maxWidth: '90%',
+                        maxWidth: '100%',
                         margin: '20px 0',
                         borderRadius: '5px'
                     };
@@ -66,33 +93,10 @@ export const contactMe = () => {
   
   return (
     <div className='email-form' 
-    style={{
-        display: 'flex', 
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems: 'center',
-        height: '100vh', 
-        width: '100%',
-        margin: '200px 0'
-        }}>
+    style={containerStyling}>
             <h1 className='email-form-header'>Contact me</h1>
             <form ref={form} onSubmit={sendEmail} 
-            style={{
-                position:'relative',
-                display: 'flex', 
-                flexDirection:'column',
-                justifyContent:'center',
-                alignItems: 'center',
-                width: '70%',
-                minWidth: '270px',
-                height: '90%',
-                borderRadius: '40px',
-                border: '2px solid black',
-                padding: '50px 0',
-                boxShadow: '0 0 10px 2px black, 0 0 20px 10px black',
-                backgroundColor: 'var(--box-color)'
-                
-                }}>
+            style={outerBoxStyling}>
                     <label>Name</label>
                     <input required type="text" name="user_name" style={inputStyling}/>
                     <label>Email</label>

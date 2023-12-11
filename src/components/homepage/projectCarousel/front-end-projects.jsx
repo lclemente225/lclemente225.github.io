@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const motionVariantsWebProj = {
-    WebProjHidden: {opacity: 0, x: -100},
-    WebProjVisible: {opacity: 1, x: 0},
-    WebProjEscape: {opacity: 0, x: 100}
+    WebProjHidden: {opacity: 0, x: 40},
+    WebProjVisible: {opacity: 1, x: -0},
+    WebProjEscape: {opacity: 0, x: -40}
 };
 
 export const FrontEndProjects = () => {

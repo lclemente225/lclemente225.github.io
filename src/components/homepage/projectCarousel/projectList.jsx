@@ -7,63 +7,34 @@ import '../homepage.css';
 import { AnimatePresence } from "framer-motion";
 
 const ProjectList = () => {
-    const [stateValues, selectValue] = React.useState({
-        email: true,
-        landingPage: false,
-        webProj: false
-       });
 
-function selectEmail(){
-  selectValue(() => {
-  return {
-  email: true,
-  landingPage: false,
-  webProj: false
-  }})
-}                                
+const [stateValues, selectValue] = React.useState("email");
 
-function selectLanding(){
-
- selectValue(() => {
-  return {
-  email: false,
-  landingPage: true,
-  webProj: false
-  }})
-
-}     
-
-function selectWeb(){
-  selectValue(() => {
-  return {
-  email: false,
-  landingPage: false,
-  webProj: true
-  }})
-}     
   return (
     <div className='project-carousel-container'>
       <div className='project-carousel-selections'>
-          <div onClick={selectEmail} 
-              className={`project-selection ${stateValues.email ? "selected" : ""}`}>
+          {/* <div onClick={(e) => selectValue(e.target.__reactProps$so2tgrhx5b.name)} 
+              className={`project-selection ${stateValues.email ? "selected" : ""}`}
+              name="email">
                 Emails
-            </div>
-            <div onClick={selectLanding} 
-                className={`project-selection ${stateValues.landingPage ? "selected" : ""}`}>
+            </div> */}
+            <div onClick={(e) => selectValue(e.target.__reactProps$so2tgrhx5b.name)} 
+                className={`project-selection ${stateValues.landingPage ? "selected" : ""}`}
+                name="landingPage">
                   Landing Pages
             </div>
-            <div onClick={selectWeb} 
-                className={`project-selection ${stateValues.webProj ? "selected" : ""}`}>
+            <div onClick={(e) => selectValue(e.target.__reactProps$so2tgrhx5b.name)} 
+                className={`project-selection ${stateValues.webProj ? "selected" : ""}`}
+                name="webProj">
                   Web App Projects
           </div>
        </div>
        
         <div className="list">
           <ul>
-          <AnimatePresence>
-              { stateValues.email && <Emails /> }
-              { stateValues.landingPage && <LandingPages /> }
-              { stateValues.webProj && <FrontEnd /> }
+          <AnimatePresence>   
+              { stateValues === "landingPage" && <LandingPages /> }
+              { stateValues === "webProj" && <FrontEnd /> }
           </AnimatePresence>
           </ul>
         </div>
