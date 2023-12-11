@@ -52,8 +52,7 @@ export const contactMe = () => {
         width: '70%',
         minWidth: '270px',
         height: '90%',
-        borderRadius: '40px',
-        border: '2px solid black',
+        borderRadius: '30px',
         padding: '50px 0',
         boxShadow: '0 0 10px 2px black, 0 0 20px 10px black',
         backgroundColor: 'var(--box-color)'
@@ -65,7 +64,7 @@ export const contactMe = () => {
                         height: '50px',
                         minWidth: '240px',
                         margin: '20px 0',
-                        borderRadius: '20px',
+                        borderRadius: '5px',
                         border: 0,
                         borderBottom: '3px solid black' ,
                         textAlign: 'center'
@@ -83,7 +82,7 @@ export const contactMe = () => {
                                 color: isHover ? '#A41623' : '#FFB563',
                                 padding: '10px 0',
                                 width: '90%',
-                                borderRadius: '40px',
+                                borderRadius: '10px',
                                 fontSize: '1.2rem',
                                 fontWeight: 700,
                                 margin: '30px 0 0',

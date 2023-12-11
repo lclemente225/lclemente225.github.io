@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 
 const ProjectList = () => {
 
-const [stateValues, selectValue] = React.useState("email");
+const [stateValues, selectValue] = React.useState("landingPage");
 
   return (
     <div className='project-carousel-container'>
