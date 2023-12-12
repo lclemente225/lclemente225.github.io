@@ -20,12 +20,12 @@ const [stateValues, selectValue] = React.useState("landingPage");
                 Emails
             </div> */}
             <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
-                className={`project-selection ${stateValues.landingPage ? "selected" : ""}`}
+                className={`project-selection ${stateValues === "landingPage" ? "selected" : ""}`}
                 name="landingPage">
                   Landing Pages
             </div>
             <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
-                className={`project-selection ${stateValues.webProj ? "selected" : ""}`}
+                className={`project-selection ${ stateValues === "webProj" ? "selected" : ""}`}
                 name="webProj">
                   Web App Projects
           </div>

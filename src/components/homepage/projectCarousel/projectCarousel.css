@@ -1,3 +1,14 @@
+.project-carousel-selections{
+    padding: 10px 20px;
+    border: 2px solid black;
+    box-shadow: 0 5px 3px black;
+    border-radius: 8px;
+    background-color: var(--project-carousel);
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .project-selection{
     border: 2px solid black;
     padding: 10px 20px;
@@ -25,17 +36,6 @@
     justify-content: center;
     align-items: center;
 }
-.project-carousel-selections{
-    padding: 10px 20px;
-    border: 2px solid black;
-    box-shadow: 0 5px 3px black;
-    border-radius: 50px;
-    background-color: var(--project-carousel);
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .project-list{
     width: 100%;
 }
@@ -44,7 +44,7 @@
     width: 80%;
     border: 2px solid black;
     box-shadow: 0 10px 10px black;
-    border-radius: 50px;
+    border-radius: 8px;
     margin: 50px 0;
     background-color: var(--box-color);
     display: flex;
