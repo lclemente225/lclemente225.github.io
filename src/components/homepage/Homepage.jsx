@@ -52,6 +52,30 @@ const Homepage = ({PageState,isHomePage}) => {
             <h1>Projects</h1>
             <ProjectList />
         </div>
+        <div className='github-links-wrapper'>
+            <div className='github-links-container'>
+                <h2>
+                    Github Links
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/lclemente225/yugioh-price-checker-project">
+                            Yugioh Card Price Checker
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lclemente225/quizzical">
+                            Lawrence's Riddle me Diddle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lclemente225/lclemente225.github.io">
+                            This portfolio
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <ContactMe />
         <div id="homepage-footer">
             <Footer />

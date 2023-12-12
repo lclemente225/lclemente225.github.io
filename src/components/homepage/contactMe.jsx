@@ -54,7 +54,7 @@ export const contactMe = () => {
         height: '90%',
         borderRadius: '8px',
         padding: '50px 0',
-        boxShadow: '0 0 10px 2px black, 0 0 20px 10px black',
+        boxShadow: '0 0 50px 5px rgba(0,0,0,0.1)',
         backgroundColor: 'var(--box-color)'
         
         };
