@@ -106,7 +106,6 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-
 .github-links-container li {
     margin-bottom: 20px ;
 }
@@ -228,6 +227,13 @@ a{
         margin-left: 25px;
 
    }
+   .github-links-container{
+        width: 90%;
+    }
+
+    .github-links-container li {
+        font-size: 1.2rem;
+    }
    #homepage-footer{
         flex-direction: column;
    }
