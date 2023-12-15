@@ -60,8 +60,7 @@
     min-height: 80vh;
     width: 98%;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    gap: 30px 80px;
+    grid-template-columns: 4fr 4fr 4fr;
 }
 .project-list-individual-container{
     width: 100%;
@@ -77,24 +76,35 @@
     min-height: 50vh;
 }
 .project-list-individual-container img:hover{
-
     filter:drop-shadow(0 0 5px rgb(0, 255, 0)) opacity(0.6) grayscale(50%);
 }
 .project-list-individual-container p{
     font-weight: 500;
 }
 .email-project-link{
-    position: relative;
     width: min-content;
+    height: min-content;
 }
 .email-preview{
     width: 400px;
+}
+.proj-img-container{
+    width: 400px;
+    height: 220px;
+    position: relative;
+}
+
+.proj-img-container img{
+    width: 100%;
+    height: 100%;
 }
 .project-desc-text{
     position: absolute;
     top: 18%;
     width: 100%;
     height: 80%;
+    top: 0%;
+    height: 100%;
     color:var(--list-color);
     background-color: rgba(255, 255, 255, 0.6);
     text-shadow: 0 0 0 ;
@@ -103,68 +113,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 .email-desc-text{
     top: 16%;
     height: 83%;
 }
-.landing-desc-text{
-    top:27%;
-    height: 71%;
-}
-.front-end-desc-text{
-    top: 26.5%;
-    height: 71%;
-}
 .desc-text{
     font-size: 1.2rem;
 }
-.project-desc-text p{
+.project-desc-text span{
+    font-weight: 500;
     width: 90%;
 }
 .trivia-desc{
     position: absolute;
-    border: 2px solid red;
 
 }
 
 
 @media only screen and (max-width: 1760px){
-
-    .email-preview{
-        width: 350px;
+    .proj-img-container{
+        width: 250px;
+        height: 150px;
     }
     
-    .email-desc-text{
-        top: 18%;
-        height: 81%;
-    }
-    .front-end-desc-text{
-        top: 28%;
-    }
 }
 @media only screen and (max-width: 1260px){
-    .email-preview{
-        width: 250px;
-    }
     .project-selection{
         font-size: 15px;
     }
     .project-carousel-selections{
         width: 70%;
-    }
-    .email-desc-text{
-        top: 23%;
-        height: 75.5%;
-    }
-    .landing-desc-text{
-        top:33%;
-        height: 65%;
-    }
-    .front-end-desc-text{
-        top: 35%;
-        height: 63%;
-        width: 100%;
     }
 }
 @media only screen and (max-width: 1600px){
@@ -173,7 +153,7 @@
         grid-template-columns: 2fr 2fr;
         gap: 30px 50px;
     }
-    .project-desc-text p{
+    .project-desc-text span{
         font-size: 15px;
     }
 }
@@ -197,13 +177,5 @@
     }
     .project-list ul{
          grid-template-columns: 1fr;
-    }
-    .front-end-desc-text{
-        top: 35%;
-        height: 62%;
-    }
-    .first-front-end-proj-text{
-        top: 42%;
-        height: 56%;
     }
 }

@@ -33,7 +33,8 @@ const [stateValues, selectValue] = React.useState("landingPage");
        
         <div className="list">
           <ul>
-          <AnimatePresence>   
+          <AnimatePresence
+          mode="wait">   
               { stateValues === "landingPage" && <LandingPages /> }
               { stateValues === "webProj" && <FrontEnd /> }
           </AnimatePresence>

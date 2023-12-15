@@ -1,5 +1,4 @@
 import React from 'react';
-import '../homepage.css';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useAnimation } from "framer-motion";
 
@@ -85,19 +84,24 @@ React.useEffect(() => {
                         <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                                 <p ref={ref3} >Yugioh Card Price Checker</p>
-                                <img className="email-preview"
-                                src="/homepage-images/ygo-price-checker-preview.png"/>
-                                {
-                            hoverClass.frontEndFirst && 
-                            <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
-                                <p>
-                                    ReactJS | SQL | Express 
-                                </p>
-                                <p className='desc-text'>
-                                    A full stack project that filters through a database of cards
-                                </p>
-                            </div>
-                            }
+                                <div className='proj-img-container'>
+                                    <img className="email-preview"
+                                    src="/homepage-images/ygo-price-checker-preview.png"/>
+                                    {
+                                    hoverClass.frontEndFirst && 
+                                    <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
+                                        <span className='demo-title'>
+                                            View Live Demo
+                                        </span>
+                                        <span>
+                                            ReactJS | SQL | Express 
+                                        </span>
+                                        <span className='desc-text'>
+                                            A full stack project that filters through a database of cards
+                                        </span>
+                                    </div>
+                                    }
+                                </div>
                         </Link>
                        
                     </div>
@@ -115,19 +119,24 @@ React.useEffect(() => {
                         <Link to="https://lawrence-riddlemediddle.netlify.app/" className='email-project-link' 
                         onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
                                 <p ref={ref1} >Trivia Quiz</p>
-                                <img className="email-preview"
-                                src="/homepage-images/quizzical-preview-img.png"/>
-                                {
-                            hoverClass.frontEndSecond && 
-                            <div className='project-desc-text front-end-desc-text'>
-                                <p>
-                                    HTML | CSS | ReactJS | REST API
-                                </p>
-                                <p className='desc-text'>
-                                    All the questions are sourced from OpenTrivia DB API
-                                </p>
-                            </div>
-                            }
+                                <div className='proj-img-container'>
+                                    <img className="email-preview"
+                                    src="/homepage-images/quizzical-preview-img.png"/>
+                                    {
+                                    hoverClass.frontEndSecond && 
+                                    <div className='project-desc-text front-end-desc-text'>
+                                        <span className='desc-title'>
+                                            View Live Demo
+                                        </span>
+                                        <span>
+                                            HTML | CSS | ReactJS | REST API
+                                        </span>
+                                        <span className='desc-text'>
+                                            All the questions are sourced from OpenTrivia DB API
+                                        </span>
+                                    </div>
+                                    }
+                                </div>
                         </Link>
                        
                     </div>
@@ -145,19 +154,24 @@ React.useEffect(() => {
                         <Link to="https://lclemente225.github.io/" className='email-project-link' 
                         onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
                                 <p ref={ref2} >Personal Portfolio</p>
-                                <img className="email-preview"
-                                src="/homepage-images/portfolio-9-11-23.png"/>
-                                {
-                            hoverClass.frontEndThird && 
-                            <div className='project-desc-text front-end-desc-text'>
-                                <p>
-                                    HTML | CSS | ReactJS 
-                                </p>
-                                <p className='desc-text'>
-                                    You're looking at it. I am very proud of it.
-                                </p>
-                            </div>
-                            }
+                                <div className='proj-img-container'>
+                                    <img className="email-preview"
+                                    src="/homepage-images/portfolio-9-11-23.png"/>
+                                    {
+                                    hoverClass.frontEndThird && 
+                                    <div className='project-desc-text front-end-desc-text'>
+                                        <span className='demo-title'>
+                                            View Live Demo
+                                        </span>
+                                        <span>
+                                            HTML | CSS | ReactJS 
+                                        </span>
+                                        <span className='desc-text'>
+                                            You're looking at it. I am very proud of it.
+                                        </span>
+                                    </div>
+                                    }
+                                </div>
                         </Link>
                        
                     </div>

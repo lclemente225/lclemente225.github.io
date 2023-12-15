@@ -64,23 +64,28 @@ React.useEffect(() => {
                         duration: 1, 
                         delay: 0.25
                     }}>
-                   <div className='project-list-individual-container'>
+                   <div className='project-list-individual-container' >
                         <Link to="/sample-apartment-landingPage/" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst} >
                                 <p ref={ref1} >Apartment </p>
-                                <img className="email-preview"
+                                <div className='proj-img-container'>
+                                    <img className="email-preview"
                                     src="/homepage-images/apartment-landing-page-preview.png"/>
-                                {
-                            hoverClass.landingFirst && 
-                            <div className='project-desc-text landing-desc-text'>
-                                <p>
-                                    HTML | CSS | ReactJS
-                                </p>
-                                <p className='desc-text'>
-                                    Luxury Apartment Landing Page
-                                </p>
-                            </div>
-                            }
+                                    {
+                                    hoverClass.landingFirst && 
+                                    <div className='project-desc-text landing-desc-text'>
+                                        <span>
+                                            View Live Demo
+                                        </span>
+                                        <span>
+                                            HTML | CSS | ReactJS
+                                        </span>
+                                        <span className='desc-text'>
+                                            Luxury Apartment Landing Page
+                                        </span>
+                                    </div>
+                                    }
+                                </div>
                         </Link>
                     </div>
                 </motion.li>
@@ -98,19 +103,24 @@ React.useEffect(() => {
                         <Link to="/sample-yugi-tutor-landingPage/" className='email-project-link' 
                         onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond} >
                             <p ref={ref2}>Personal Business</p>
-                            <img className="email-preview"
-                                src="/homepage-images/yugi-tutor-preview.png"/>
-                                {
-                            hoverClass.landingSecond && 
-                            <div className='project-desc-text landing-desc-text'>
-                                <p>
-                                    HTML | CSS | ReactJS
-                                </p>
-                                <p className='desc-text'>
-                                    If Yugi taught dueling. This could be any business.
-                                </p>
-                            </div>
-                            }
+                                <div className='proj-img-container'>
+                                    <img className="email-preview"
+                                    src="/homepage-images/yugi-tutor-preview.png"/>
+                                    {
+                                    hoverClass.landingSecond && 
+                                    <div className='project-desc-text landing-desc-text'>
+                                        <span>
+                                            View Live Demo
+                                        </span>
+                                        <span>
+                                            HTML | CSS | ReactJS
+                                        </span>
+                                        <span className='desc-text'>
+                                            If Yugi taught dueling. This could be any business.
+                                        </span>
+                                    </div>
+                                    }
+                                </div>
                         </Link>
                     </div>
                 </motion.li>
