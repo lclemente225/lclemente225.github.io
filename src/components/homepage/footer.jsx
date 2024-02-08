@@ -29,8 +29,7 @@ export const HomepageFooter = () => {
                 </Link>
             </div>
             <p className='created-by-react-footer'>
-                This portfolio was created with <i className="fa-brands fa-react" /> React + 
-                <img src="/homepage-images/vite-logo.png" alt="vite logo" className='vite-logo-footer'/>Vite
+                This portfolio was created with <i className="fa-brands fa-react" /> React 
             </p>
     </>
   )
