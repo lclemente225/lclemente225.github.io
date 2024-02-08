@@ -29,7 +29,7 @@ export const HomepageFooter = () => {
                 </Link>
             </div>
             <p className='created-by-react-footer'>
-                This portfolio was created with <i className="fa-brands fa-react" /> React 
+                This portfolio was created with <i className="fa-brands fa-react fa-lg" /> React 
             </p>
     </>
   )

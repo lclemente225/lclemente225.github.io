@@ -49,16 +49,16 @@ export const contactMe = () => {
         flexDirection:'column',
         justifyContent:'center',
         alignItems: 'center',
-        width: '70%',
+        width: `70%`,
         minWidth: '270px',
         height: '90%',
         borderRadius: '8px',
         padding: '50px 0',
         boxShadow: '0 0 50px 5px rgba(0,0,0,0.1)',
-        backgroundColor: 'var(--box-color)'
-        
+        backgroundColor: 'var(--box-color)',
+        border: '2px solid red'
         };
-
+        
     const inputStyling = {
                         width:'50%',
                         height: '50px',
@@ -69,6 +69,7 @@ export const contactMe = () => {
                         borderBottom: '3px solid black' ,
                         textAlign: 'center'
                     };
+
     const textInputStyling = {
                         width:'50%',
                         height: '200px',
@@ -95,7 +96,7 @@ export const contactMe = () => {
     style={containerStyling}>
             <h1 className='email-form-header'>Contact me</h1>
             <form ref={form} onSubmit={sendEmail} 
-            style={outerBoxStyling}>
+            style={outerBoxStyling} className='email-form-container'>
                     <label>Name</label>
                     <input required type="text" name="user_name" style={inputStyling}/>
                     <label>Email</label>
