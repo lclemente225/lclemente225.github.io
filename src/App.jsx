@@ -28,7 +28,7 @@ function App() {
           <Route path="/sample-apartment-landingPage/" element={<ApartmentLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-service-it-landingPage/" element={<ItServiceLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-sjsu-newsletter-1/" element={<SjsuNewsletter1 isHomePage={isHomePage} PageState={PageState}/>}/>
-          <Route path="/about" element={<About isHomePage={isHomePage} PageState={PageState}/>}></Route>
+          <Route path="/about" element={<About isHomePage={isHomePage} PageState={PageState}/>}/>
         </Routes>
     </div>
   )
