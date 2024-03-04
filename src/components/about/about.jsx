@@ -16,7 +16,7 @@ const About = ({isHomePage, PageState}) => {
         <section className='about-container'>
             <img src="/about-images/Linkedin Pic2.png" alt="Lawrence self portrait" className='linkedin-self-portrait'/>
             <div className='about-desc'>
-                Hi I'm Lawrence! A self-taught software developer that learned from online courses and Bay Valley Tech.
+                Hi I'm Lawrence! A self-taught software developer that learned from Scrimba and Bay Valley Tech.
             </div>
         </section>
             <a className='about-contact-msg' href='/?#email-form'>
