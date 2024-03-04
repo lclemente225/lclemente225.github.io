@@ -9,6 +9,7 @@
     font-size:20px;
 }
 ul.navbar-list{
+    padding: 0;
     margin:0;
     height:100%;
     background-color: var(--secondary-background-color);
@@ -17,14 +18,10 @@ ul.navbar-list{
     justify-content: space-around !important;
     align-items: center !important;
 }
-#navbar-home-blog,
-#navbar-home-about,
-#navbar-project-page{
+.navbar-item{
     color: var(--footer-color);
 }
-#navbar-home-blog:hover,
-#navbar-home-about:hover,
-#navbar-project-page:hover{
+.navbar-item:hover{
     color: white;
 }
 .arrow-icon{
@@ -38,13 +35,6 @@ ul.navbar-list{
         justify-content: center;
 
     }
-    .logo-container{
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        width:100%;
-        height:80%;
-    }
     .law-designs-logo{
         position:absolute;
         height: 200px;
@@ -55,5 +45,8 @@ ul.navbar-list{
     }
     #navbar-home-about{
         margin-right:40px;
+    }
+    .navbar-item-home {
+        font-size: 1rem;
     }
 }

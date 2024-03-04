@@ -77,7 +77,7 @@ const Homepage = ({PageState,isHomePage}) => {
             </div>
         </div>
         <ContactMe />
-        <div id="homepage-footer">
+        <div className="homepage-footer">
             <Footer />
         </div>
     </div>

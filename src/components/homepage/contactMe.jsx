@@ -91,7 +91,7 @@ export const contactMe = () => {
                     };
   
   return (
-    <div className='email-form' 
+    <div className='email-form' id='email-form'
     style={containerStyling}>
             <h1 className='email-form-header'>Contact me</h1>
             <form ref={form} onSubmit={sendEmail} 
