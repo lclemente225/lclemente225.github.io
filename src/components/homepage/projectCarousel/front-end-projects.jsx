@@ -11,48 +11,34 @@ const motionVariantsWebProj = {
 export const FrontEndProjects = () => {
     const [hoverClass, setHoverClass] = React.useState({
         frontEndFirst: false,
-        frontEndSecond: false,
-        frontEndThird: false
+        frontEndSecond: false
     });
 
     function hoverFirst(){
         setHoverClass({
             frontEndFirst: true,
-            frontEndSecond: false,
-            frontEndThird: false
+            frontEndSecond: false
         });
     }
     function hoverSecond(){
         setHoverClass({
             frontEndFirst: false,
-            frontEndSecond: true,
-            frontEndThird: false
-        });
-    }
-    function hoverThird(){
-        setHoverClass({
-            frontEndFirst: false,
-            frontEndSecond: false,
-            frontEndThird: true
+            frontEndSecond: true
         });
     }
     function hoverReset(){
         setHoverClass({
             frontEndFirst: false,
-            frontEndSecond: false,
-            frontEndThird: false
+            frontEndSecond: false
         });
     }
 
 const ref1 = React.useRef(null);
 const ref2 = React.useRef(null);
-const ref3 = React.useRef(null);
 const isInView1 = useInView(ref1, {once: false});
 const isInView2 = useInView(ref2, {once: false});
-const isInView3 = useInView(ref3, {once: false});
 const mainControls1 = useAnimation();
 const mainControls2 = useAnimation();
-const mainControls3 = useAnimation();
 
 React.useEffect(() => {
     if(isInView1){
@@ -64,17 +50,12 @@ React.useEffect(() => {
         mainControls2.start("WebProjVisible")
     }
 }, [isInView2])
-React.useEffect(() => {
-    if(isInView3){
-        mainControls3.start("WebProjVisible")
-    }
-}, [isInView3])
   return (
         <>
                 <motion.li
                 variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
-                animate={mainControls3}
+                animate={mainControls2}
                 exit="WebProjHidden"
                 transition={{
                     duration: 1, 
@@ -83,7 +64,7 @@ React.useEffect(() => {
                     <div className='project-list-individual-container'>
                         <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
-                                <p ref={ref3} >Yugioh Card Price Checker</p>
+                                <p ref={ref2} >Yugioh Card Price Checker</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
                                     src="/homepage-images/ygo-price-checker-preview.png"/>

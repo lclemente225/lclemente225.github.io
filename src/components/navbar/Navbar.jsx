@@ -9,13 +9,19 @@ const Navbar = ({PageState}) => {
         {PageState ? 
         <>
           <li>
+            <a href="/"
+            id="navbar-home-blog">
+              Skills & Projects
+            </a>
+          </li>
+          <li>
             <a href="https://lawrenceclemente.wordpress.com/list-of-posts/"
             id="navbar-home-blog">
               My Blog
             </a>
           </li>
           <li>
-            <a href="https://lawrenceclemente.wordpress.com/about-me/"
+            <a href="/about"
             id="navbar-home-about">
               About
             </a>
