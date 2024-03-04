@@ -3,7 +3,7 @@ const EmailUpload = ({width}) => {
   return (
 	<>
 	  	<svg className="email-svg" width={width} fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve">
-			<g id="SVGRepo_bgCarrier" stroke-width="0">
+			<g id="SVGRepo_bgCarrier" strokeWidth="0">
 			</g>
 			<g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round">
 			</g>
