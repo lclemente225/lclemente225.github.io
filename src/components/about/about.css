@@ -36,9 +36,11 @@ a.about-contact-msg {
     
 }
 
-a.about-contact-msg:hover,
-a.about-contact-msg>svg:hover {
+a.about-contact-msg:hover {
     color: var(--box-color);
+}
+.email-svg:hover {
+    border-color: var(--box-color);
 }
 
 @media screen and (max-width: 1000px) {

@@ -76,7 +76,7 @@ const Homepage = ({PageState,isHomePage}) => {
                 </ul>
             </div>
         </div>
-        <ContactMe />
+        <ContactMe componentID='email-form' />
         <div className="homepage-footer">
             <Footer />
         </div>

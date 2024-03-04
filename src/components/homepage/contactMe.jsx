@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const contactMe = () => {
+export const contactMe = ({componentID}) => {
     const form = useRef();
     const [isHover, setIsHover] = React.useState(false);
     const [isFormSubmitted, formSubmit] = React.useState(false);
@@ -91,7 +91,7 @@ export const contactMe = () => {
                     };
   
   return (
-    <div className='email-form' id='email-form'
+    <div className='email-form' id={componentID}
     style={containerStyling}>
             <h1 className='email-form-header'>Contact me</h1>
             <form ref={form} onSubmit={sendEmail} 
