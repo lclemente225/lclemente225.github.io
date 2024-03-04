@@ -55,8 +55,7 @@ export const contactMe = () => {
         borderRadius: '8px',
         padding: '50px 0',
         boxShadow: '0 0 50px 5px rgba(0,0,0,0.1)',
-        backgroundColor: 'var(--box-color)',
-        border: '2px solid red'
+        backgroundColor: 'var(--box-color)'
         };
         
     const inputStyling = {
