@@ -39,8 +39,8 @@ a.about-contact-msg {
 a.about-contact-msg:hover {
     color: var(--box-color);
 }
-.email-svg:hover {
-    border-color: var(--box-color);
+a.about-contact-msg:hover svg.email-svg:hover {
+    fill: var(--box-color); 
 }
 
 @media screen and (max-width: 1000px) {
