@@ -141,7 +141,7 @@ React.useEffect(() => {
                        
                     </div>
                 </motion.li>
-                <motion.li
+               {/*  <motion.li
                 variants={motionVariantsWebProj}
                 initial= "WebProjHidden"
                 animate={mainControls2}
@@ -175,7 +175,7 @@ React.useEffect(() => {
                         </Link>
                        
                     </div>
-                </motion.li>
+                </motion.li> */}
         </>
   )
 }
