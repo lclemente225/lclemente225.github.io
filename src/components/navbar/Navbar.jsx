@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({PageState}) => {
 
@@ -9,16 +10,16 @@ const Navbar = ({PageState}) => {
         {PageState ? 
         <>
           <li>
-            <a href="/"
+            <Link to="/"
             id="navbar-home-blog" className='navbar-item navbar-item-home'>
               Skills & Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about"
+            <Link to="/about"
             id="navbar-home-about" className='navbar-item navbar-item-home'>
               About
-            </a>
+            </Link>
           </li>
           <li>
             <a href="https://lawrenceclemente.wordpress.com/list-of-posts/"

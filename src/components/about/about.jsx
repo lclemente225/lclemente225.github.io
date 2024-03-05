@@ -3,6 +3,7 @@ import './about.css'
 import Navbar from '../navbar/Navbar';
 import { HomepageFooter } from '../homepage/footer';
 import EmailUpload from '../../../public/about-images/email-upload';
+import { Link } from 'react-router-dom';
         
 
 const About = ({isHomePage, PageState}) => {
@@ -19,10 +20,10 @@ const About = ({isHomePage, PageState}) => {
                 Hi I'm Lawrence! A self-taught software developer that learned from Scrimba and Bay Valley Tech.
             </div>
         </section>
-            <a className='about-contact-msg' href='/?#email-form'>
+            <Link className='about-contact-msg' to='/#email-form'>
                 <EmailUpload width={30}/>
                 Feel free to email me
-            </a>
+            </Link>
         <div className="homepage-footer">
             <HomepageFooter/>
         </div>
