@@ -59,17 +59,20 @@ const Homepage = ({PageState,isHomePage}) => {
                 </h2>
                 <ul>
                     <li>
-                        <a href="https://github.com/lclemente225/yugioh-price-checker-project">
+                        <a href="https://github.com/lclemente225/yugioh-price-checker-project"
+                        target='_blank'>
                             Yugioh Card Price Checker
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/lclemente225/quizzical">
+                        <a href="https://github.com/lclemente225/quizzical"
+                        target='_blank'>
                             Lawrence's Riddle me Diddle
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/lclemente225/lclemente225.github.io">
+                        <a href="https://github.com/lclemente225/lclemente225.github.io"
+                        target='_blank'>
                             This portfolio
                         </a>
                     </li>

@@ -84,7 +84,6 @@ a{
     justify-content: center;
     align-items: center;
 } 
-.navbar-list a:hover,
 .project-list a:hover{
     text-shadow: 0 0 2px black;
     color: var(--secondary-background-color);

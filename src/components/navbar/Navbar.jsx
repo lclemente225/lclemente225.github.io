@@ -22,7 +22,8 @@ const Navbar = ({PageState}) => {
           </li>
           <li>
             <a href="https://lawrenceclemente.wordpress.com/list-of-posts/"
-            id="navbar-home-blog" className='navbar-item navbar-item-home'>
+            id="navbar-home-blog" className='navbar-item navbar-item-home'
+            target='_blank'>
               My Blog
             </a>
           </li>

@@ -35,10 +35,10 @@ const Skills = () => {
                     <i className="fa-brands fa-bootstrap" /> Bootstrap
                 </li>
                 <li>
-                    <i class="fa-solid fa-table-cells-large"/> Flexbox 
+                    <i className="fa-solid fa-table-cells-large"/> Flexbox 
                 </li>
                 <li>
-                <i class="fa-solid fa-table-cells"/> CSS Grid | Bootstrap Grid
+                <i className="fa-solid fa-table-cells"/> CSS Grid | Bootstrap Grid
                 </li>
                 <li>
                     <i className="fa-brands fa-node-js"/> Node.js
