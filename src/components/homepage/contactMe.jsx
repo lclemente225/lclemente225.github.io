@@ -14,7 +14,7 @@ export const contactMe = ({componentID}) => {
             e.target[0].value = "";
             e.target[1].value = "";
             e.target[2].value = "";
-            console.log("works",result.text);
+            //console.log("works",result.text);
         }, (error) => {
             console.log("failed",error.text);
         });
@@ -63,7 +63,7 @@ export const contactMe = ({componentID}) => {
                         height: '50px',
                         minWidth: '240px',
                         margin: '20px 0',
-                        borderRadius: '20px',
+                        borderRadius: '15px',
                         border: 0,
                         borderBottom: '3px solid black' ,
                         textAlign: 'center'
@@ -82,16 +82,15 @@ export const contactMe = ({componentID}) => {
                                 color: isHover ? '#A41623' : '#FFB563',
                                 padding: '10px 0',
                                 width: '90%',
-                                borderRadius: '50px',
+                                borderRadius: '15px',
                                 fontSize: '1.2rem',
                                 fontWeight: 700,
                                 margin: '30px 0 0',
-                                justifySelf: 'flex-end', 
                                 cursor: 'pointer'
                     };
   
   return (
-    <div className='email-form' id={componentID}
+    <div className='email-form' id='email-form'
     style={containerStyling}>
             <h1 className='email-form-header'>Contact me</h1>
             <form ref={form} onSubmit={sendEmail} 
@@ -103,7 +102,7 @@ export const contactMe = ({componentID}) => {
                     <label style={{
                                     width: '80%',
                                     textAlign: 'center',
-                                    fontSize: '1em'
+                                    fontSize: '1rem'
                                     }}>
                         Please let me know your intent
                     </label>

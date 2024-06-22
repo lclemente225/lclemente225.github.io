@@ -14,11 +14,11 @@ const [stateValues, selectValue] = React.useState("landingPage");
   return (
     <div className='project-carousel-container'>
       <div className='project-carousel-selections'>
-          {/* <div onClick={(e) => selectValue(e.target.__reactProps$so2tgrhx5b.name)} 
-              className={`project-selection ${stateValues.email ? "selected" : ""}`}
+          <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
+              className={`project-selection ${stateValues === "email" ? "selected" : ""}`}
               name="email">
                 Emails
-            </div> */}
+            </div>
             <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
                 className={`project-selection ${stateValues === "landingPage" ? "selected" : ""}`}
                 name="landingPage">
@@ -35,9 +35,15 @@ const [stateValues, selectValue] = React.useState("landingPage");
           <ul>
           <AnimatePresence
           mode="wait">   
+              { stateValues === "email" && <Emails /> }
               { stateValues === "landingPage" && <LandingPages /> }
               { stateValues === "webProj" && <FrontEnd /> }
           </AnimatePresence>
+          { stateValues === "email" && 
+          <span className='email-note'>
+            *Note: I replicated these designs to show my HTML and CSS skills in Email Development
+          </span>
+          }
           </ul>
         </div>
       

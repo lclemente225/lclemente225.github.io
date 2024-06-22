@@ -3,7 +3,7 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({PageState}) => {
-
+  
   return (
     <div className="navbar">
         <ul className="navbar-list">

@@ -39,7 +39,7 @@ a.about-contact-msg {
 a.about-contact-msg:hover {
     color: var(--box-color);
 }
-a.about-contact-msg:hover svg.email-svg:hover {
+a.about-contact-msg:hover svg.email-svg{
     fill: var(--box-color); 
 }
 

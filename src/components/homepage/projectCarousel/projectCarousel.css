@@ -52,6 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .project-list ul{
@@ -71,10 +72,7 @@
     align-items: center;
     text-align: center
 }
-.landing-page-list,
-.personal-projects-list{
-    min-height: 50vh;
-}
+
 .project-list-individual-container img:hover{
     filter:drop-shadow(0 0 5px rgb(0, 255, 0)) opacity(0.6) grayscale(50%);
 }
@@ -85,9 +83,6 @@
     width: min-content;
     height: min-content;
 }
-.email-preview{
-    width: 400px;
-}
 .proj-img-container{
     width: 400px;
     height: 220px;
@@ -95,6 +90,17 @@
 }
 
 .proj-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.email-proj-img-container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.email-proj-img-container img{
     width: 100%;
     height: 100%;
 }
@@ -115,30 +121,28 @@
     align-items: center;
     gap: 15px;
 }
-.email-desc-text{
-    top: 16%;
-    height: 83%;
-}
+
 .desc-text{
     font-size: 1.2rem;
 }
+
 .project-desc-text span{
     font-weight: 500;
     width: 90%;
 }
+
 .trivia-desc{
     position: absolute;
+}
 
+.email-note{
+    position: absolute;
+    bottom: 10px;
+    padding: 0 10px;
+    font-size: 1.2rem;
 }
 
 
-@media only screen and (max-width: 1760px){
-    .proj-img-container{
-        width: 250px;
-        height: 150px;
-    }
-    
-}
 @media only screen and (max-width: 1260px){
     .project-selection{
         font-size: 15px;
@@ -148,7 +152,14 @@
     }
 }
 @media only screen and (max-width: 1600px){
-    
+    .proj-img-container{
+        width: 250px;
+        height: 150px;
+    }
+    .email-proj-img-container{
+        width: 250px;
+        height: 250px;
+    }
     .project-list ul{
         grid-template-columns: 2fr 2fr;
         gap: 30px 50px;

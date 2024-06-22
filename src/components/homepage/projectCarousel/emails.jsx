@@ -106,19 +106,21 @@ React.useEffect(() => {
                      <Link to="/sample-sjsu-newsletter-1/" className='email-project-link' 
                      onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                          <p  ref={ref1}>School Newsletter</p>
+                        <div className='email-proj-img-container'> 
                          <img className="email-preview"
                          src="/homepage-images/sjsu-newsletter-email-preview.png" />    
                          {
                          hoverClass.emailFirst && 
                          <div className='project-desc-text email-desc-text '>
-                             <p>
+                             <span>
                                  HTML CSS
-                             </p>
-                             <p className='desc-text'>
+                             </span>
+                             <span className='desc-text'>
                                  Sample design taken from SJSU
-                             </p>
+                             </span>
                          </div>
-                         }                      
+                         }       
+                         </div>               
                      </Link>
                       
                  </div>
@@ -134,20 +136,22 @@ React.useEffect(() => {
                  <div className={`project-list-individual-container`}>
                      <Link to="/first-promotional-sample/" className='email-project-link' 
                      onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
-                         <p ref={ref2}>Promotional </p>
+                        <p ref={ref2}>Promotional </p>
+                        <div className='email-proj-img-container'> 
                          <img className='email-preview'
                          src="/homepage-images/hero-watch-email-preview.png"/>
                           {
                          hoverClass.emailSecond && 
                          <div className='project-desc-text email-desc-text '>
-                             <p>
+                             <span>
                                  HTML | CSS
-                             </p>
-                             <p className='desc-text'>
+                             </span>
+                             <span className='desc-text'>
                                  Sample Promotional Product Email
-                             </p>
+                             </span>
                          </div>
                          }  
+                         </div>
                      </Link>   
                   </div>
              </motion.li>
@@ -163,19 +167,21 @@ React.useEffect(() => {
                      <Link to="/first-transactional-sample/" className='email-project-link' 
                      onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
                           <p ref={ref3}>Order Transaction </p>
+                        <div className='email-proj-img-container'>    
                           <img className="email-preview"
                           src="/homepage-images/doordash-order-email.png"/>
                            {
                          hoverClass.emailThird && 
                          <div className='project-desc-text email-desc-text'>
-                             <p>
+                             <span>
                                  HTML | CSS
-                             </p>
-                             <p className='desc-text'>
+                             </span>
+                             <span className='desc-text'>
                                  I ordered chicken once. I replicated the transactional email I received. 
-                             </p>
-                         </div>
+                             </span>
+                             </div>
                          }  
+                         </div>
                      </Link>
                  </div>
              </motion.li>
@@ -190,23 +196,26 @@ React.useEffect(() => {
                  <div className={`project-list-individual-container`}>
                      <Link to="/first-newsletter-sample/" className='email-project-link' 
                      onMouseEnter={hoverFourth} onMouseLeave={hoverReset} onTouchStart={hoverFourth}>
-                         <p ref={ref4}>Fashion Newsletter </p>
-                         <img className="email-preview"
-                         src="/homepage-images/fashion-nova-newsletter-email-preview.png" />   
-                          {
-                         hoverClass.emailFourth && 
-                         <div className='project-desc-text email-desc-text'>
-                             <p>
-                                 HTML | CSS
-                             </p>
-                             <p className='desc-text'>
-                                 Fashion Nova email design that I copied.
-                             </p>
-                         </div>
-                         }                       
+                        <p ref={ref4}>Fashion Newsletter </p>
+                        <div className='email-proj-img-container'> 
+                            <img className="email-preview"
+                            src="/homepage-images/fashion-nova-newsletter-email-preview.png" />   
+                            {
+                            hoverClass.emailFourth && 
+                            <div className='project-desc-text email-desc-text'>
+                                <span>
+                                    HTML | CSS
+                                </span>
+                                <span className='desc-text'>
+                                    Fashion Nova email design that I copied.
+                                </span>
+                            </div>
+                            }            
+                         </div>           
                      </Link>
                  </div>
              </motion.li>
+             
         </>
   )
 }

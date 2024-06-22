@@ -13,7 +13,19 @@ const Homepage = ({PageState,isHomePage}) => {
     React.useEffect(() => {
         isHomePage(true);
         },[PageState]);
-    
+
+    React.useEffect(() => {
+        // Get the URL fragment
+        const fragment = window.location.hash.substring(1);
+        if (fragment) {
+            // Scroll to the section with the matching ID
+            const section = document.getElementById(fragment);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
+      
 
   return (
     <div className='home-page'>
@@ -79,8 +91,8 @@ const Homepage = ({PageState,isHomePage}) => {
                 </ul>
             </div>
         </div>
-        <ContactMe componentID='email-form' />
-        <div className="homepage-footer">
+        <ContactMe />
+        <div className="homepage-footer" id="foot">
             <Footer />
         </div>
     </div>
