@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const motionVariantsEmail = {
-    emailHidden: {opacity: 0, x: -100},
+    emailHidden: {opacity: 0, x: -40},
     emailVisible: {opacity: 1, x: 0}
 };
 

@@ -14,6 +14,11 @@ const [stateValues, selectValue] = React.useState("landingPage");
   return (
     <div className='project-carousel-container'>
       <div className='project-carousel-selections'>
+            <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
+                className={`project-selection ${ stateValues === "webProj" ? "selected" : ""}`}
+                name="webProj">
+                  Web App Projects
+          </div>
           <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
               className={`project-selection ${stateValues === "email" ? "selected" : ""}`}
               name="email">
@@ -24,11 +29,6 @@ const [stateValues, selectValue] = React.useState("landingPage");
                 name="landingPage">
                   Landing Pages
             </div>
-            <div onClick={(e) => selectValue(e.target.getAttribute("name"))} 
-                className={`project-selection ${ stateValues === "webProj" ? "selected" : ""}`}
-                name="webProj">
-                  Web App Projects
-          </div>
        </div>
        
         <div className="list">

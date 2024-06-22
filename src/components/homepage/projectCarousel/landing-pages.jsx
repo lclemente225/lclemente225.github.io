@@ -3,7 +3,7 @@ import '../homepage.css';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useAnimation} from "framer-motion";
 const motionVariantsLanding = {
-    landingHidden: {opacity: 0, x: -40},
+    landingHidden: {opacity: 0, x: 40},
     landingVisible: {opacity: 1, x: 0},
     landingExit:{opacity: 0, x: 40}
 };
