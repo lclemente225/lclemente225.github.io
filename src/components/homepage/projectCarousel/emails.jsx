@@ -113,7 +113,7 @@ React.useEffect(() => {
                          hoverClass.emailFirst && 
                          <div className='project-desc-text email-desc-text '>
                              <span>
-                                 HTML CSS
+                                 HTML | CSS
                              </span>
                              <span className='desc-text'>
                                  Sample design taken from SJSU
