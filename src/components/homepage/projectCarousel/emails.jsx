@@ -207,7 +207,7 @@ React.useEffect(() => {
                                     HTML | CSS
                                 </span>
                                 <span className='desc-text'>
-                                    Fashion Nova email design that I copied.
+                                    A replicated fashion Nova email design.
                                 </span>
                             </div>
                             }            
