@@ -9,7 +9,7 @@ import { AnimatePresence } from "framer-motion";
 const ProjectList = () => {
 
   //look at instance methods in moz dev docs
-const [stateValues, selectValue] = React.useState("landingPage");
+const [stateValues, selectValue] = React.useState("webProj");
 
   return (
     <div className='project-carousel-container'>
