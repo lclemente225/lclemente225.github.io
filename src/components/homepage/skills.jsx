@@ -22,7 +22,7 @@ const Skills = () => {
         </div>
         <div className='one-column-skills-section'>
         <h2>
-            Front End Web Development Tools
+            Web Development Tools
         </h2>
             <ul>
                 <li>
