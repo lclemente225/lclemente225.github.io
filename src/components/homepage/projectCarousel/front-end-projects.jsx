@@ -11,25 +11,36 @@ const motionVariantsWebProj = {
 export const FrontEndProjects = () => {
     const [hoverClass, setHoverClass] = React.useState({
         frontEndFirst: false,
-        frontEndSecond: false
+        frontEndSecond: false,
+        frontEndThird: false
     });
 
     function hoverFirst(){
         setHoverClass({
             frontEndFirst: true,
-            frontEndSecond: false
+            frontEndSecond: false,
+            frontEndThird: false
         });
     }
     function hoverSecond(){
         setHoverClass({
             frontEndFirst: false,
-            frontEndSecond: true
+            frontEndSecond: true,
+            frontEndThird: false
+        });
+    }
+    function hoverThird(){
+        setHoverClass({
+            frontEndFirst: false,
+            frontEndSecond: false,
+            frontEndThird: true
         });
     }
     function hoverReset(){
         setHoverClass({
             frontEndFirst: false,
-            frontEndSecond: false
+            frontEndSecond: false,
+            frontEndThird: false
         });
     }
 
@@ -79,6 +90,41 @@ React.useEffect(() => {
                                         </span>
                                         <span className='desc-text'>
                                             A full stack project that filters through a database of cards
+                                        </span>
+                                    </div>
+                                    }
+                                </div>
+                        </Link>
+                       
+                    </div>
+                </motion.li>
+                <motion.li
+                variants={motionVariantsWebProj}
+                initial= "WebProjHidden"
+                animate={mainControls2}
+                exit="WebProjHidden"
+                transition={{
+                    duration: 1, 
+                    delay: 0.25
+                }}>
+                    <div className='project-list-individual-container'>
+                        <Link to="https://lc-pdfsigner.netlify.app/" className='email-project-link' 
+                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
+                                <p ref={ref2} >PDF Signer</p>
+                                <div className='proj-img-container'>
+                                    <img className="email-preview"
+                                    src="/homepage-images/pdf-signer-pic.png"/>
+                                    {
+                                    hoverClass.frontEndThird && 
+                                    <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
+                                        <span className='demo-title'>
+                                            View Live Demo
+                                        </span>
+                                        <span>
+                                            HTML | CSS | Javascript 
+                                        </span>
+                                        <span className='desc-text'>
+                                            A simple way to sign pdfs
                                         </span>
                                     </div>
                                     }

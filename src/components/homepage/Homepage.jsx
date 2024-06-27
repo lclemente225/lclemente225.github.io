@@ -88,6 +88,21 @@ const Homepage = ({PageState,isHomePage}) => {
                             This portfolio
                         </a>
                     </li>
+                    <li>
+                        <a href="https://github.com/lclemente225/sample-newsletter-fashion-nova">
+                            Fashion Nova Replica Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lclemente225/sample-doordash-email">
+                            Doordash Replica Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lclemente225/sample-newsletter-fashion-nova">
+                            Watch Product Replica Email
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
