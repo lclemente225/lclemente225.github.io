@@ -95,12 +95,14 @@ const Homepage = ({PageState,isHomePage}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/lclemente225/sample-doordash-email">
+                        <a href="https://github.com/lclemente225/sample-doordash-email"
+                        target='_blank'>
                             Doordash Replica Email
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/lclemente225/sample-newsletter-fashion-nova">
+                        <a href="https://github.com/lclemente225/sample-newsletter-fashion-nova"
+                        target='_blank'>
                             Watch Product Replica Email
                         </a>
                     </li>

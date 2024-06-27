@@ -74,7 +74,8 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
+                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}
+                        target='_blank'>
                                 <p ref={ref2} >Yugioh Card Price Checker</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
@@ -109,7 +110,8 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://lc-pdfsigner.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
+                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}
+                        target='_blank'>
                                 <p ref={ref2} >PDF Signer</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
@@ -144,7 +146,8 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="https://lawrence-riddlemediddle.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}
+                        target='_blank'>
                                 <p ref={ref1} >Trivia Quiz</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
