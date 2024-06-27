@@ -89,11 +89,6 @@ const Homepage = ({PageState,isHomePage}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/lclemente225/sample-newsletter-fashion-nova">
-                            Fashion Nova Replica Email
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://github.com/lclemente225/sample-doordash-email">
                             Doordash Replica Email
                         </a>

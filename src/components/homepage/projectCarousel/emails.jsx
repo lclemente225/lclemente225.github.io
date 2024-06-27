@@ -185,7 +185,7 @@ React.useEffect(() => {
                      </Link>
                  </div>
              </motion.li>
-             <motion.li
+            {/*  <motion.li
              variants={motionVariantsEmail}
              initial="emailHidden"
              animate={mainControls4}
@@ -214,7 +214,7 @@ React.useEffect(() => {
                          </div>           
                      </Link>
                  </div>
-             </motion.li>
+             </motion.li> */}
              
         </>
   )
