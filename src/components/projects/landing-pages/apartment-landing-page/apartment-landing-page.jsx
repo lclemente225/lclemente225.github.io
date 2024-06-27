@@ -38,7 +38,7 @@ const ApartmentLandingPage = ({PageState,isHomePage}) => {
                     <a href="#apartment-landing-page-experience">
                         Experience
                     </a>
-                    <a id="apartment-nav-inquire-button" href="#apartment-landing-page-hero-section">
+                    <a id="apartment-nav-inquire-button" href="#apartment-landing-page-form">
                         Inquire Now
                     </a>
                 </nav>
