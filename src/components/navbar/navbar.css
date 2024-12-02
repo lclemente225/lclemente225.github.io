@@ -8,6 +8,9 @@
     font-family: 'Ubuntu', sans-serif !important;
     font-size:20px;
 }
+.social-links{
+    font-size: 15px;
+}
 ul.navbar-list{
     padding: 0;
     margin:0;
@@ -33,12 +36,7 @@ ul.navbar-list{
 @media only screen and (max-width:960px){
     ul.navbar-list{
         justify-content: center;
-
-    }
-    .law-designs-logo{
-        position:absolute;
-        height: 200px;
-        width:200px;
+        flex-wrap: wrap;
     }
     #navbar-project-page{
         margin-right:50px;
