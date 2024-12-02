@@ -41,7 +41,7 @@ const [stateValues, selectValue] = React.useState("webProj");
           </AnimatePresence>
           { stateValues === "email" && 
           <span className='email-note'>
-            *Note: I replicated these designs to show my HTML and CSS skills in Email Development
+            *Note: I replicated these designs to show my HTML and CSS skills in Email Development. These are not my designs.
           </span>
           }
           </ul>

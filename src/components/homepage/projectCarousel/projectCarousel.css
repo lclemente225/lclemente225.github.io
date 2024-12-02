@@ -41,7 +41,7 @@
     width: 100%;
 }
 .list{
-    min-height: 20vh;
+    min-height: 200px;
     width: 80%;
     border: 2px solid black;
     box-shadow: 0 10px 10px black;
@@ -188,5 +188,8 @@
     }
     .project-list ul{
          grid-template-columns: 1fr;
+    }
+    .email-note{
+     font-size: 12px;
     }
 }
