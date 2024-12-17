@@ -474,6 +474,7 @@
     #apartment-landing-hamburger,
     #apartment-landing-hamburger i{
         display:none !important;
+        color: white;
     }
     #apartment-nav-inquire-button{
         padding:5px 10px;
