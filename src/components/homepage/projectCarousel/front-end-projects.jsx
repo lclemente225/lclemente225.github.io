@@ -73,7 +73,7 @@ React.useEffect(() => {
                     delay: 0.25
                 }}>
                     <div className='project-list-individual-container'>
-                        <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
+                        <Link to="/summary/webProjects/1" className='email-project-link' 
                         onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}
                         target='_blank'>
                                 <p ref={ref2} >Yugioh Card Price Checker</p>
@@ -84,7 +84,7 @@ React.useEffect(() => {
                                     hoverClass.frontEndFirst && 
                                     <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
                                         <span className='demo-title'>
-                                            View Live Demo
+                                            View Project Summary
                                         </span>
                                         <span>
                                             ReactJS | SQL | Express 
@@ -120,7 +120,7 @@ React.useEffect(() => {
                                     hoverClass.frontEndThird && 
                                     <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
                                         <span className='demo-title'>
-                                            View Live Demo
+                                            View Project Summary
                                         </span>
                                         <span>
                                             HTML | CSS | Javascript 
@@ -156,7 +156,7 @@ React.useEffect(() => {
                                     hoverClass.frontEndSecond && 
                                     <div className='project-desc-text front-end-desc-text'>
                                         <span className='desc-title'>
-                                            View Live Demo
+                                            View Project Summary
                                         </span>
                                         <span>
                                             HTML | CSS | ReactJS | REST API

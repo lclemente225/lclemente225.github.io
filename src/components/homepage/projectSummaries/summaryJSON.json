@@ -1,0 +1,20 @@
+{
+    "webProjects":{
+        "1":{
+            "title": "Yugioh Price Checker Project",
+            "desc": "This is the pdf project",
+            "link": "https://ygo-pricechecker.netlify.app/"
+        },
+        "2":{
+            "title": "PDF Signer",
+            "desc":"Woot",
+            "link": "https://lc-pdfsigner.netlify.app/"
+        }
+    },
+    "emails":{
+
+    },
+    "landingPages":{
+
+    }
+}
