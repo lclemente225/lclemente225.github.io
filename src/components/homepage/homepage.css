@@ -1,24 +1,4 @@
-:root{
-    --background-color: #918450;
-    --secondary-background-color: #A41623;
-    --list-color: black;
-    --footer-color: #FFB563;
-    --text-color: white;
-    --box-color: #FFB563;
-    --project-carousel: #FFD29D;
-}
-/*#FFF6DC #C4C1A4 */
-body{
-    background-color: var(--background-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-ul{ 
-    list-style: none !important;
-}
-a{
-    text-decoration: none;
-    color: var(--link-color);
-}
+
 .home-page{
     width: 100% !important;
     font-family: 'Ubuntu', sans-serif;
