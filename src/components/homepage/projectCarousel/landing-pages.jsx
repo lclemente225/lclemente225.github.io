@@ -65,7 +65,7 @@ React.useEffect(() => {
                 delay: 0.25
             }}>
             <div className='project-list-individual-container' >
-                <Link to="/sample-apartment-landingPage/" className='email-project-link' 
+                <Link to="/summary/landingPages/1" className='email-project-link' 
                 onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst} >
                         <p ref={ref1} >Apartment </p>
                         <div className='proj-img-container'>
@@ -100,7 +100,7 @@ React.useEffect(() => {
                 delay: 0.25
             }}>
             <div className='project-list-individual-container'>
-                <Link to="/sample-yugi-tutor-landingPage/" className='email-project-link' 
+                <Link to="/summary/landingPages/2" className='email-project-link' 
                 onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond} >
                     <p ref={ref2}>Personal Business</p>
                         <div className='proj-img-container'>

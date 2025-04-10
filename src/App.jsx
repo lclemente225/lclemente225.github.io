@@ -10,6 +10,7 @@ import ItServiceLandingPage from './components/projects/landing-pages/it-service
 import YugiTutorBusiness from './components/projects/landing-pages/yugi-tutor-landing-page/yugi-tutor-landing-page.jsx';
 import SjsuNewsletter1 from './components/projects/emails/newsletter/sjsu-newsletter-1/sjsu-newsletter-1.jsx';
 import About from './components/about/about.jsx';
+import { ProjectSummary } from './components/homepage/projectSummaries/summary.jsx';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/sample-service-it-landingPage/" element={<ItServiceLandingPage isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/sample-sjsu-newsletter-1/" element={<SjsuNewsletter1 isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/about" element={<About isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="/summary/:projectType/:id" element={<ProjectSummary isHomePage={isHomePage} PageState={PageState}/>}/>
         </Routes>
     </div>
   )
