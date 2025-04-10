@@ -103,7 +103,7 @@ React.useEffect(() => {
                  delay: 0.25
              }}>
                  <div className={`project-list-individual-container`}>
-                     <Link to="/sample-sjsu-newsletter-1/" className='email-project-link' 
+                     <Link to="/summary/emails/1" className='email-project-link' 
                      onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                          <p  ref={ref1}>School Newsletter</p>
                         <div className='email-proj-img-container'> 
@@ -134,7 +134,7 @@ React.useEffect(() => {
                  delay: 0.25
              }}>
                  <div className={`project-list-individual-container`}>
-                     <Link to="/first-promotional-sample/" className='email-project-link' 
+                     <Link to="/summary/emails/2" className='email-project-link' 
                      onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
                         <p ref={ref2}>Promotional </p>
                         <div className='email-proj-img-container'> 
@@ -164,7 +164,7 @@ React.useEffect(() => {
                  delay: 0.25
              }}>
                  <div className={`project-list-individual-container`}>
-                     <Link to="/first-transactional-sample/" className='email-project-link' 
+                     <Link to="/summary/emails/3" className='email-project-link' 
                      onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
                           <p ref={ref3}>Order Transaction </p>
                         <div className='email-proj-img-container'>    
