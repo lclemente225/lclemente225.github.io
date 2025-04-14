@@ -56,7 +56,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     duration: 1, 
                     delay: 0.50
                 }}>
-                Full Stack Web Developer | HTML Email Developer
+                Front End Developer | HTML Email Developer
             </motion.h2>
         </div>
         <Skills/>
