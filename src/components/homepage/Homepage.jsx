@@ -111,7 +111,10 @@ const Homepage = ({PageState,isHomePage}) => {
                 </ul>
             </div>
         </div>
-        <WorkSamplesSection/>
+        <div className='project-list'>
+            <h4>Work Experience</h4>
+            <WorkSamplesSection/>
+        </div>
         <ContactMe />
         <div className="homepage-footer" id="foot">
             <Footer />

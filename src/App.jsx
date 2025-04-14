@@ -11,7 +11,7 @@ import YugiTutorBusiness from './components/projects/landing-pages/yugi-tutor-la
 import SjsuNewsletter1 from './components/projects/emails/newsletter/sjsu-newsletter-1/sjsu-newsletter-1.jsx';
 import About from './components/about/about.jsx';
 import { ProjectSummary } from './components/homepage/projectSummaries/summary.jsx';
-
+import { WorkSamples } from './components/workSamples/workSamples.jsx';
 import './App.css';
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
           <Route path="/sample-sjsu-newsletter-1/" element={<SjsuNewsletter1 isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/about" element={<About isHomePage={isHomePage} PageState={PageState}/>}/>
           <Route path="/summary/:projectType/:id" element={<ProjectSummary isHomePage={isHomePage} PageState={PageState}/>}/>
+          <Route path="/work-samples/:projectName" element={<WorkSamples isHomePage={isHomePage} PageState={PageState}/>}/>
         </Routes>
     </div>
   )

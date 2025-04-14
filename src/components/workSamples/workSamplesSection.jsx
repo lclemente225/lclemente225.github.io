@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom';
+import './workSamples.css'
 
 export const WorkSamplesSection = () => {
  /*    const {projectType, id} = useParams();
@@ -15,13 +16,15 @@ export const WorkSamplesSection = () => {
     } */
     
     return(
-        <div>
-            <h4>Projects I've worked on</h4>
-            <div>
-                <span>Dunk4Dreams</span>
-                <span>DunkZone</span>
-                <span>Chef Dom Souza</span>
+        <>
+        <div className='work-samples-container'>
+            <div className='work-samples-list'>
+                    <Link to="/work-samples/josephineClemente">Josephine Clemente</Link>
+                    <Link to="/work-samples/d4d">Dunk4Dreams</Link>
+                    <Link to="/work-samples/dz">DunkZone</Link>
+                    <Link to="/work-samples/chefDomSouza">Chef Dom Souza</Link>
             </div>
         </div>
+        </>
     )
 }
