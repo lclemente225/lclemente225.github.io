@@ -73,9 +73,8 @@ React.useEffect(() => {
                     delay: 0.25
                 }}>
                     <div className='project-list-individual-container'>
-                        <Link to="https://ygo-pricechecker.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}
-                        target='_blank'>
+                        <Link to="/summary/webProjects/1" className='email-project-link' 
+                        onMouseEnter={hoverFirst} onMouseLeave={hoverReset} onTouchStart={hoverFirst}>
                                 <p ref={ref2} >Yugioh Card Price Checker</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
@@ -84,7 +83,7 @@ React.useEffect(() => {
                                     hoverClass.frontEndFirst && 
                                     <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
                                         <span className='demo-title'>
-                                            View Live Demo
+                                            View Project Summary
                                         </span>
                                         <span>
                                             ReactJS | SQL | Express 
@@ -109,9 +108,8 @@ React.useEffect(() => {
                     delay: 0.25
                 }}>
                     <div className='project-list-individual-container'>
-                        <Link to="https://lc-pdfsigner.netlify.app/" className='email-project-link' 
-                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}
-                        target='_blank'>
+                        <Link to="/summary/webProjects/2" className='email-project-link' 
+                        onMouseEnter={hoverThird} onMouseLeave={hoverReset} onTouchStart={hoverThird}>
                                 <p ref={ref2} >PDF Signer</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
@@ -120,7 +118,7 @@ React.useEffect(() => {
                                     hoverClass.frontEndThird && 
                                     <div className='project-desc-text front-end-desc-text first-front-end-proj-text'>
                                         <span className='demo-title'>
-                                            View Live Demo
+                                            View Project Summary
                                         </span>
                                         <span>
                                             HTML | CSS | Javascript 
@@ -145,7 +143,7 @@ React.useEffect(() => {
                     delay: 0.25
                 }}>
                     <div className='project-list-individual-container'>
-                        <Link to="https://lawrence-riddlemediddle.netlify.app/" className='email-project-link' 
+                        <Link to="/summary/webProjects/3" className='email-project-link' 
                         onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}
                         target='_blank'>
                                 <p ref={ref1} >Trivia Quiz</p>
@@ -156,13 +154,13 @@ React.useEffect(() => {
                                     hoverClass.frontEndSecond && 
                                     <div className='project-desc-text front-end-desc-text'>
                                         <span className='desc-title'>
-                                            View Live Demo
+                                            View Project Summary
                                         </span>
                                         <span>
                                             HTML | CSS | ReactJS | REST API
                                         </span>
                                         <span className='desc-text'>
-                                            All the questions are sourced from OpenTrivia DB API
+                                            A fun trivia quiz!
                                         </span>
                                     </div>
                                     }

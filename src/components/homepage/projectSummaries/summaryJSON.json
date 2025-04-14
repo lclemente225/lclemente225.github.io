@@ -1,0 +1,65 @@
+{
+    "webProjects":{
+        "1":{
+            "title": "Yugioh Price Checker Project",
+            "desc": "This is a simple application that obtains product pricing data from an external API. The user can add a product of choice into a shopping list and compare prices among the various vendors.",
+            "imgSrc": "/homepage-images/ygo-price-checker-preview.png",
+            "link": "https://ygo-pricechecker.netlify.app/",
+            "tech": ["HTML", "CSS", "Javascript", "ReactJS", "SQL", "Express.js"]
+        },
+        "2":{
+            "title": "PDF Signer",
+            "desc": "I wanted to make my own way to sign pdfs. This is a project where I utilize HTML canvas to render pdfs, write on them using the mouse, and print them in an A4 paper format. I used pdflib to render the pdf file onto the HTML canvas. I used jsPDF to save the canvas as a pdf.",
+            "link": "https://lc-pdfsigner.netlify.app/",
+            "imgSrc": "/homepage-images/pdf-signer-pic.png",
+            "tech": ["HTML", "CSS", "Javascript"]
+        },
+        "3":{
+            "title": "Lawrence's Riddle me Diddle",
+            "desc": "This is a simple trivia project. It integrates an external API to obtain trivia data. Each time you take the quiz, the questions are randomized. A score out of 10 will show at the end of the quiz. You will also see your correct and wrong answers.",
+            "link": "https://lawrence-riddlemediddle.netlify.app/",
+            "imgSrc":"/homepage-images/quizzical-preview-img.png",
+            "tech": ["HTML", "CSS", "Javascript", "ReactJS", "SQL", "Express.js"]
+        }
+    },
+    "emails":{
+        "1":{
+            "title":"Sample School Newsletter",
+            "desc":"This is a design I copied from my alma mater, San Jose State University. This is an email project where I looked at the design and wrote the HTML and CSS from scratch. I used HTML tables for formatting to practice developing HTML emails.",
+            "link":"/sample-sjsu-newsletter-1/",
+            "imgSrc":"/homepage-images/sjsu-newsletter-email-preview.png",
+            "tech":["HTML", "CSS"]
+        },
+        "2":{
+            "title":"Sample Promo Email",
+            "desc":"This is a design I replicated following an email developer course. I used HTML tables for formatting to practice developing HTML emails.",
+            "link":"/first-promotional-sample/",
+            "imgSrc":"/homepage-images/hero-watch-email-preview.png",
+            "tech":["HTML", "CSS"]
+        },
+        "3":{
+            "title":"Sample Transactional Email",
+            "desc":"This is a design I found while looking through my emails. I wanted to replicate a real-life email design from a company. I used HTML tables for formatting to practice developing HTML emails.",
+            "link":"/first-transactional-sample/",
+            "imgSrc":"/homepage-images/doordash-order-email.png",
+            "tech":["HTML", "CSS"]
+        }
+    },
+    "landingPages":{
+        "1":{
+            "title":"Sample Apartment Landing Page",
+            "desc":"This is a sample luxury apartment complex landing page.",
+            "link":"/sample-apartment-landingPage/",
+            "imgSrc":"/homepage-images/apartment-landing-page-preview.png",
+            "tech":["HTML", "CSS"]
+        },
+        "2":{
+            "title":"Business Landing Page",
+            "desc":"This is a business landing page. I used one of my favorite children cartoons as the sample business.",
+            "link":"/sample-yugi-tutor-landingPage/",
+            "imgSrc":"/homepage-images/yugi-tutor-preview.png",
+            "tech":["HTML", "CSS"]
+        }
+
+    }
+}

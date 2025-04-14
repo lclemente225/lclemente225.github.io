@@ -79,7 +79,7 @@ const Homepage = ({PageState,isHomePage}) => {
                     <li>
                         <a href="https://github.com/lclemente225/quizzical"
                         target='_blank'>
-                            Lawrence's Riddle me Diddle
+                            Trivia Quiz
                         </a>
                     </li>
                     <li>
