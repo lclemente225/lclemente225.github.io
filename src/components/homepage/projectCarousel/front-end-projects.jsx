@@ -144,8 +144,7 @@ React.useEffect(() => {
                 }}>
                     <div className='project-list-individual-container'>
                         <Link to="/summary/webProjects/3" className='email-project-link' 
-                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}
-                        target='_blank'>
+                        onMouseEnter={hoverSecond} onMouseLeave={hoverReset} onTouchStart={hoverSecond}>
                                 <p ref={ref1} >Trivia Quiz</p>
                                 <div className='proj-img-container'>
                                     <img className="email-preview"
