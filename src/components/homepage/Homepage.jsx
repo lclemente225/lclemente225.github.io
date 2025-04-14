@@ -6,6 +6,7 @@ import { HomepageFooter as Footer } from './footer';
 import './homepage.css';
 import { motion } from "framer-motion";
 import { contactMe as ContactMe } from './contactMe';
+import { WorkSamplesSection } from '../workSamples/workSamplesSection';
 
 
 const Homepage = ({PageState,isHomePage}) => {
@@ -109,6 +110,7 @@ const Homepage = ({PageState,isHomePage}) => {
                 </ul>
             </div>
         </div>
+        <WorkSamplesSection/>
         <ContactMe />
         <div className="homepage-footer" id="foot">
             <Footer />

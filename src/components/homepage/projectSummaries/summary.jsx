@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom';
 import json from'./summaryJSON.json';
 import Navbar from '../../navbar/Navbar';
-import "./summary.css"
+import "./summary.css";
 import { HomepageFooter } from '../footer';
 
 export const ProjectSummary = ({isHomePage, PageState, }) => {
