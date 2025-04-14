@@ -10,6 +10,7 @@ import { WorkSamplesSection } from '../workSamples/workSamplesSection';
 
 
 const Homepage = ({PageState,isHomePage}) => {
+    const pageProps = {PageState: PageState,isHomePage: isHomePage}
 
     React.useEffect(() => {
         isHomePage(true);

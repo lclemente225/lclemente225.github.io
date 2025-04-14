@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 import Navbar from '../navbar/Navbar';
 import { HomepageFooter } from '../homepage/footer';
-import EmailUpload from '../../../public/about-images/email-upload';
+import EmailUploadIcon from './email-upload-icon';
 import { Link } from 'react-router-dom';
         
 
@@ -23,7 +23,7 @@ const About = ({isHomePage, PageState}) => {
             </div>
         </section>
             <Link className='about-contact-msg' to='/#email-form'>
-                <EmailUpload width={30}/>
+                <EmailUploadIcon width={30}/>
                 Feel free to email me
             </Link>
         <div className="homepage-footer">
