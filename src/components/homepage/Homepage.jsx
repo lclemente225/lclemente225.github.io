@@ -111,10 +111,10 @@ const Homepage = ({PageState,isHomePage}) => {
                 </ul>
             </div>
         </div>
-        <div className='project-list'>
+       {/*  <div className='project-list'>
             <h4>Work Experience</h4>
             <WorkSamplesSection/>
-        </div>
+        </div> */}
         <ContactMe />
         <div className="homepage-footer" id="foot">
             <Footer />

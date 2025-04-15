@@ -18,22 +18,38 @@ export const WorkSamples = ({isHomePage, PageState}) => {
             )
         })
     }
-    
+    const descArray = projectInfo.workedOn;
+    const techUsed = parseArray(projectInfo.tech);
+
     return(
         <>
         <Navbar PageState={PageState}/>
-            work sampels
+            <h2>
+                {projectInfo.title}
+            </h2>
             <div>
-                Title
+           {/*  <iframe 
+            style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+            width="800" height="450" 
+            src="https://embed.figma.com/board/CTXakEZwaD8e0vNPvwQZln/Dom-Souza-Website?node-id=0-1&embed-host=share" 
+            allowfullscreen
+            loading='lazy'>
+                
+            </iframe>
+            <iframe 
+            style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+            width="800" height="450" 
+            src="https://embed.figma.com/design/427IOTMny7epO1yIRe2EfP/Dom-Souza-Site-Styles?node-id=0-1&embed-host=share" 
+            allowfullscreen
+            loading='lazy'>
+
+            </iframe> */}
             </div>
             <div>
-                gif/image
+                {descArray[0]}
             </div>
             <div>
-                talk about what you worked on
-            </div>
-            <div>
-                Technologies Used:
+                Technologies Used: {techUsed}
             </div>
         <div className="homepage-footer" id="foot">
             <HomepageFooter/>

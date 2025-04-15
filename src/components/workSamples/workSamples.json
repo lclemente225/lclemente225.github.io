@@ -3,22 +3,29 @@
         "title":"Josephine Clemente D.D.S",
         "gifLink": "wa",
         "workedOn": ["I worked on the whole website."],
-        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"]
+        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"],
+        "siteURL": "https://josephine-clemente.com"
     },
     "d4d":{
-        "title":"Josephine Clemente D.D.S",
+        "title":"Dunk4Dreams",
         "gifLink": "wa",
         "workedOn": ["I worked on the whole website."],
-        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"]},
+        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"],
+        "siteURL": "https://dunk4dreams.com"
+    },
     "dz":{
-        "title":"Josephine Clemente D.D.S",
+        "title":"DunkZone",
         "gifLink": "wa",
         "workedOn": ["I worked on the whole website."],
-        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"]},
+        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"],
+        "siteURL": "https://dunk-zone.com"
+    },
     "chefDomSouza":{
-        "title":"Josephine Clemente D.D.S",
+        "title":"Chef Souza",
         "gifLink": "wa",
-        "workedOn": ["I worked on the whole website."],
-        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"]
+        "workedOn": ["I worked with the client to create a design on Figma.",
+    "Created the website using the GoDaddy website editor."],
+        "tech": ["Wordpress", "HTML", "CSS", "Javascript", "Elementor"],
+        "siteURL": "https://chefdomsouza.com/"
     }
 }
