@@ -17,8 +17,8 @@ const About = ({isHomePage, PageState}) => {
         <section className='about-container'>
             <img src="/about-images/Linkedin Pic2.png" alt="Lawrence self portrait" className='linkedin-self-portrait'/>
             <div className='about-desc'>
-                Hi I'm Lawrence! A self-taught software developer based the Silicon Valley. I learned my skills from Scrimba and Bay Valley Tech. 
-                In addition to full-stack web development, I have some data analytics work using datasets from Kaggle.
+                Hi I'm Lawrence! A self-taught front end developer based the Silicon Valley. I learned my skills from Scrimba and Bay Valley Tech. 
+                In addition to front end web development, I have some data analytics work using datasets from Kaggle.
                 I'm currently looking for any work, freelance or a full/part-time job.
             </div>
         </section>
