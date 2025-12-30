@@ -51,7 +51,7 @@
 .project-list{
     width: 100%;
 }
-.project-list h1, h4{
+.project-list h1, .project-list h4{
     margin: 0 0 100px;
     padding: 20px 0;
     width: 100%;
